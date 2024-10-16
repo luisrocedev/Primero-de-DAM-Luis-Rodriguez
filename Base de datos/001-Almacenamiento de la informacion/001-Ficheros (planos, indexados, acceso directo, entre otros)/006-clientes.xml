@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+    <cliente>
+        <nombre>
+            Luis Rodriguez
+        </nombre>
+        <apellidos>
+            Rodriguez
+        </apellidos>
+        <telefono>
+            722152111
+        </telefono>
+        <email>
+            luisilustraciones@gmail.com 
+        </email>
+    </cliente>
+    <cliente>
+        <nombre>
+            Josue Rodriguez
+        </nombre>
+        <apellidos>
+            Rodriguez
+        </apellidos>
+        <telefono>
+            66764537
+        </telefono>
+        <email>
+            josue.rodriguez@gmail.com
+        </email>
+    </cliente>
+</clientes>

@@ -1,0 +1,11 @@
+CLIENTE1:
+Nombre: Luis
+Apellidos: Rodriguez
+Telefono: 7238473845
+email: luisilustraciones@gmail.com
+
+CLIENTE2:
+Nombre: jose
+Apellidos: Rodriguez
+Telefono: 7238473845
+email: josue.rodriguez@gmail.com 
