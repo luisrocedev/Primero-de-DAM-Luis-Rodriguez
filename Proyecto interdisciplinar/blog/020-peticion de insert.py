@@ -14,7 +14,8 @@ conexion = mysql.connector.connect(
     host=servidor,      
     database=base_de_datos,  
     user=usuario,  
-    password=contrasena  
+    password=contrasena,
+    port=8889
 )                                                                           # Establezco una conexión con la base de datos con los datos seleccionados
 
 @aplicacion.route('/')                                                      # Defino la ruta en la que el servidor va a escuchar
