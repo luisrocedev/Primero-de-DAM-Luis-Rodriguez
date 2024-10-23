@@ -28,11 +28,11 @@ def inicio():                                                               # De
         entradas.append(fila)                                               # A la lista de entradas, le añado una entrada
     return entradas                                                         # Devuelvo la lista de entradas, ahora con las entradas correctas
 
-@aplicacion.route('/toma')
-def toma(): 
-    titulo = request.args.get('titulo')
-    fecha = request.args.get('fecha')
-    contenido = request.args.get('contenido')
+@aplicacion.route('/toma')                                                  # Creo una nueva ruta
+def toma():                                                                 # Defino una funcion
+    titulo = request.args.get('titulo')                                     # atrapo el parametro get llamado titulo
+    fecha = request.args.get('fecha')                                       # Atrapo el parámetro get llamado fecha
+    contenido = request.args.get('contenido')                               # Atrapo el parámetro get llamado contenido
     
     peticion = f"""
         INSERT INTO entradas 
@@ -41,10 +41,10 @@ def toma():
             '{titulo}',
             '{fecha}',
             '{contenido}'
-        );""" 
-    cursor = conexion.cursor()
-    cursor.execute(peticion)
-    conexion.commit()
-    return "ok"
+        );"""                                                               # Formateo  una peticion INSERT de SQL
+    cursor = conexion.cursor()                                              # Creo un cursor
+    cursor.execute(peticion)                                                # Ejecuto la peticioń
+    conexion.commit()                                                       # Lanzo la petición a la conexión
+    return "ok"                                                             # Devuelvo algo aunque no sea nada
 
-aplicacion.run()                                                            # Ejecuto la aplicación
+aplicacion.run()   
