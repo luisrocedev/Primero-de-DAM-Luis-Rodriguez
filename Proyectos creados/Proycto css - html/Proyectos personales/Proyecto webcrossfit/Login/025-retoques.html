@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head lang="es">
+        <title>Login Aplicacion Crossfit</title>
+        <meta charset="utf-8">
+        <style>
+            @font-face {
+                font-family: 'fuentecrossfit';
+                src: url('font/CrossfitDemo-Regular.otf');
+                font-style: normal;
+            }
+            html,body{
+                padding:0px;margin:0px;
+                background:url(fondocross.jpg);
+                background-size:cover;
+                background-position:middle middle;
+                height:100%;
+            }
+            main{
+                width: 500px;
+                height: 600px;
+                background: rgba(255, 255, 255, 0,2);
+                box-sizing: border-box;
+                padding: 20px;
+                position: absolute;
+                top:50%;
+                left:50%;
+                margin-left:-250px;
+                margin-top:-300px;
+                backdrop-filter: blur(15px);
+                text-align: center;
+                color: orange;
+                text-align: center;
+                font-family: 'fuentecrossfit', sans-serif;
+                text-transform: uppercase;
+                border: 1px solid orange;
+                border-radius:20px;
+            }
+            input[type=email],input[type=password],input[type=submit]{
+                width:100%;
+                margin:20px 0px;
+                padding:20px 0px;
+                border:none;
+                background:rgba(0,0,0,0);
+                border-bottom:1px solid white;
+                outline:none;
+                color:white;
+                font-weight:bold;
+                font-size:20px;
+            }
+            input::placeholder {
+                color: white; 
+            }
+            h1{
+                font-size:60px;
+            }
+            input[type=submit]{
+                background:orange;
+                border:none;
+                color:black;
+                border-radius:50px;
+                cursor: pointer;
+                transition: background 0.3s ease;
+            }
+            input[type=submit]:hover{
+                background: rgb(255, 255, 255);
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s ease;
+                text-transform: none;
+                display: inline-block;
+            }
+            a:hover{
+                color:orange;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <main>
+            <form>
+                <h1>Iniciar sesion</h1>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Contraseña">
+                <input type="checkbox">Recordar
+                <a href="recordar.html">Olvide la contraseña</a>
+                <input type="submit" value="Acceder">
+                <p>No tengo cuenta</p>
+                <a href="crear.php">Crear una</a>
+            </form>
+        </main>
+    </body>
+</html>
