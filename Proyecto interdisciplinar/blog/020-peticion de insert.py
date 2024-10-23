@@ -10,12 +10,15 @@ usuario = "blog"                                                            # Cr
 contrasena = "blog"                                                         # Creo una variable para definir la contraseña del usuario
 base_de_datos = "blog"                                                      # Creo una variable para definiar la base de datos a la que me conecto
 
+import mysql.connector
+
 conexion = mysql.connector.connect(
-    host=servidor,      
-    database=base_de_datos,  
-    user=usuario,  
-    password=contrasena  
-)                                                                           # Establezco una conexión con la base de datos con los datos seleccionados
+    host="localhost",
+    user="blog",  # Nombre del usuario que verificaste/creaste
+    password="blog",  # La contraseña correcta para 'blog'
+    database="blog"  # Asegúrate de que la base de datos exista
+)
+                                                                         # Establezco una conexión con la base de datos con los datos seleccionados
 
 @aplicacion.route('/')                                                      # Defino la ruta en la que el servidor va a escuchar
 def inicio():                                                               # Defino lo que se ejecuta en esa ruta
