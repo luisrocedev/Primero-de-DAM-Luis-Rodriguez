@@ -61,12 +61,13 @@ while True:
         contador = 0                                                                                # Creo una variable para contar los registros
         print("Vamos a leer registros:")
         for cliente in agenda:                                                                      # Leemos a los clientes en la agenda
-            print("Cliente numero", contador, "---------------")                                    # Mostrar los datos del cliente
-            print("\033[31mNombre:\t\t\033[0m", cliente.nombre)                                     # Añado \033[31m y \t\t\033[0m para dar color 
-            print("\033[32mApellidos:\t\033[0m", cliente.apellidos)
-            print("\033[33mEmail:\t\t\033[0m", cliente.email)
-            print("\033[34mTelefono:\t\033[0m", cliente.telefono)
-            print("\033[34mDireccion:\t\033[0m", cliente.direccion)
+            print("Cliente numero", contador, "---------------")    # Mostrar los datos del cliente
+            print("\033[31mNombre:\t\t\033[0m", cliente.nombre)     # Rojo
+            print("\033[32mApellidos:\t\033[0m", cliente.apellidos) # Verde
+            print("\033[33mEmail:\t\t\033[0m", cliente.email)       # Amarillo
+            print("\033[34mTelefono:\t\033[0m", cliente.telefono)   # Azul
+            print("\033[35mDireccion:\t\033[0m", cliente.direccion) # Magenta
+
             contador += 1                                                                           # Incrementamos la variable del contador
         input("Pulsa una tecla para continuar...")                                                  # Opcion al usuario para continuar
 
