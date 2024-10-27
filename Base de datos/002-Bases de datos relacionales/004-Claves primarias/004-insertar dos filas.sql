@@ -1,1 +1,0 @@
-INSERT INTO empleados VALUES("Luis","Rodriguez Cedenio",722152111,"luis@gmail.com");
