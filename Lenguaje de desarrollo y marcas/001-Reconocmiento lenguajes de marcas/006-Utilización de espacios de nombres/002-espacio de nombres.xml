@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<luis:pieza>
+	<luis:nombre>Camiseta azul</luis:nombre>
+	<luis:precio>4.76</luis:precio>
+	<luis:color>azul</luis:color>
+</luis:pieza>

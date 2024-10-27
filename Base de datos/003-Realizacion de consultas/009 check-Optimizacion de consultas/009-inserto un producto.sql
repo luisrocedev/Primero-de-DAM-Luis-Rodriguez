@@ -1,0 +1,1 @@
+INSERT INTO `productos` (`identificador`, `nombre`, `descripcion`, `precio`) VALUES (NULL, 'Patinete de xiamoi 365', 'Patinete para ir por la calle con mucha autonomía ', '400');

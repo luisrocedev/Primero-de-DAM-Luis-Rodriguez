@@ -1,0 +1,1 @@
+INSERT INTO `pedidos` (`identificador`, `fecha`, `clientes_apellidos`) VALUES (NULL, '2024-10-05', '22');

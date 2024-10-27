@@ -1,0 +1,95 @@
+<!doctype html>                                             
+<html>
+    <head lang="es">                                        
+        <title>Login Aplicacion Crossfit</title>            
+        <meta charset="utf-8">                              
+        <style>
+            @font-face {
+                font-family: 'fuentecrossfit';              /* Defino una fuente personalizada */
+                src: url('font/CrossfitDemo-Regular.otf');  /* Ubicación del archivo de fuente */
+                font-style: normal;                         /* Estilo normal para la fuente */
+            }
+
+            html, body {
+                padding: 0px;                               /* Sin relleno en la página */
+                margin: 0px;                                /* Sin márgenes en la página */
+                background: url(fondocross.jpg);            /* Establezco una imagen de fondo */
+                background-size: cover;                     /* La imagen cubre todo el fondo */
+                background-position: middle middle;         /* Centro la imagen de fondo */
+                height: 100%;                               /* Altura total del documento */
+            }
+            main {
+                width: 500px;                               /* Ancho del contenedor principal */
+                height: 600px;                              /* Altura del contenedor principal */
+                background: rgba(255, 255, 255, 0.2);     /* Fondo blanco con opacidad */
+                box-sizing: border-box;                     /* El margen crece hacia dentro y no hacia afuera */
+                padding: 20px;                              /* Tiene un margen inferior de 20px */
+                position: absolute;                         /* Esta posicionado de forma absoluta */
+                top: 50%;                                   /* Su centro (la esquina) esta al 50% en horizontal */
+                left: 50%;                                  /* Su centro esta al 50% en vertical */
+                margin-left: -250px;                        /* Ajuste negativo para centrar horizontalmente */
+                margin-top: -300px;                         /* Ajuste negativo para centrar verticalmente */
+                backdrop-filter: blur(15px);                /* Aplico un efecto de desenfoque al fondo */
+                text-align: center;                         /* Alinea el texto al centro */
+                color: orange;                            /* Color del texto */
+                font-family: 'fuentecrossfit', sans-serif;  /* Fuente personalizada */
+                text-transform: uppercase;                  /* Convierto el texto a mayúsculas */
+                border: 1px solid orange;                 /* Borde naranja alrededor del contenedor */
+                border-radius: 40px;                        /* Esquinas redondeadas del contenedor */
+            }
+            input[type=email], input[type=password], input[type=submit] {
+                width: 100%;                                /* Tienen una anchura del 100% */
+                margin: 20px 0px;                           /* Margen vertical pero no horizontal */
+                padding: 20px 0px;                          /* Margen interior vertical pero no horizontal */
+                border: none;                               /* Sin borde */
+                background: rgba(0, 0, 0, 0);             /* Sin fondo  */
+                border-bottom: 1px solid white;           /* Borde inferior blanco */
+                outline: none;                              /* Sin contorno */
+                color: white;                             /* Color del texto */
+                font-weight: bold;                          /* Texto en negrita */
+                font-size: 20px;                            /* Tamaño de fuente */
+            }
+            input::placeholder {
+                color: white;                           /* Color del texto del placeholder */
+            }
+            h1 {
+                font-size: 60px;                          /* Tamaño de fuente del h1 */
+            }
+            input[type=submit] {
+                background: orange;                     /* Color de fondo del botón de envío */
+                border: none;                             /* Sin borde para el botón */
+                color: black;                           /* Color del texto del botón */
+                border-radius: 50px;                      /* Esquinas redondeadas del botón (acceder)*/
+                cursor: pointer;                          /* Cambia el cursor al pasar sobre el botón */
+                transition: background 0.3s ease;         /* Efecto de transición suave al cambiar el fondo */
+            }
+            input[type=submit]:hover {
+                background: rgb(255, 255, 255);          /* Fondo blanco al pasar el mouse */
+            }
+            a {
+                color: white;                           /* Color del texto del enlace */
+                text-decoration: none;                    /* Sin subrayado en los enlaces */
+                transition: color 0.3s ease;              /* Efecto de transición suave al cambiar el color */
+                text-transform: none;                    /* No aplico transformacion en este apartado */
+            }
+            a:hover {
+                color: orange;                         /* Cambio el color del enlace al pasar el mouse */
+            }
+            
+        </style>
+    </head>
+    <body>
+        <main>
+            <form>
+                <h1>Iniciar sesion</h1> 
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Contraseña"> 
+                <input type="checkbox">Recordar 
+                <a href="recordar.html">Olvide la contraseña</a> 
+                <input type="submit" value="Acceder"> 
+                <p>No tengo cuenta</p> 
+                <a href="crear.php">Crear una</a> 
+            </form>
+        </main>
+    </body>
+</html>
