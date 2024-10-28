@@ -27,26 +27,28 @@
         <article id="pagina7">Esta es la página 7</article>
     </main>
         <script>
-            var pagina = 1;                                                         // Cuando el programa inicia, estoy en la pagina 1
-            console.log("ahora estoy en la pagina",pagina)                          // Saco por consola la pagina en la que estoy
-            document.querySelector("#pagina"+pagina).style.display = "block"        // Como la variable vale 1, muestro solo la pagina 1
+            var pagina = 1;    
+            muestraPagina()                                                     // Cuando el programa inicia, estoy en la pagina 1
             document.querySelector("#anterior").onclick = function(){               // Cuando pulso el boton con el id anterior
+                borraPaginas()
+                pagina--;
+                muestraPagina()
+            }                                                 
+            document.querySelector("#posterior").onclick = function(){               // Cuando pulso el boton con el id anterior
+                borraPaginas()
+                pagina++;
+                muestraPagina()
+            }
+
+            function borraPaginas(){
                 let paginas = document.querySelectorAll("article")                  // En primer lugar selecciono todas las paginas
                 paginas.forEach(function(pagina){                                   // Ahora recorro las paginas una a una
                     pagina.style.display = "none"                                   // Y oculto cada una de las paginas
                 })
-                pagina--;                                                           // Le quito una unidad a la pagina
-                document.querySelector("#pagina"+pagina).style.display = "block"    // Y muestro la página correspondiente a esa unidad
-                console.log("ahora estoy en la pagina",pagina)                      // Y saco de nuevo por consola la pagina en la que estoy
             }
-            document.querySelector("#posterior").onclick = function(){              // Cuando pulso el boton con el id posterior
-                let paginas = document.querySelectorAll("artcile")                  // En primer lugar selecciono todas las paginas
-                paginas.forEach(function(pagina){                                   // Ahora recorro las paginas una a una
-                    pagina.style.display = "none"                                   // Y oculto cada una de las paginas
-                })
-                pagina++;                                                           // Le suma una unidad a la pagina
+            function muestraPagina(){
                 document.querySelector("#pagina"+pagina).style.display = "block"    // Y muestro la página correspondiente a esa unidad
-                console.log("ahora estoy en la pagina",pagina)                      // Y saco de nuevo por consola la pagina en la que estoy
+                console.log("ahora estoy en la pagina",pagina) 
             }
         </script>
     </body>
