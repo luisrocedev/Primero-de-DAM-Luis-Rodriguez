@@ -3,7 +3,9 @@
   <head>
     <title>Portafolio</title>
     <meta charset="utf-8">
-    <style> 
+    <style>      
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
         body,html{                                  /* Selecciono el body y el html */
             padding:0px;                            /* Le quito el margen interior */
             margin:0px;                             /* Le quito el margen exterior */
@@ -27,10 +29,10 @@
         button{                                     /* Estilos comunes a los dos botones */
             position:absolute;                      /* Su posicion es absoluta para moverlos con libertad por la pantalla */
             z-index:1000;                           /* Por si se quedan detras, los muevo delante */
-            background:peru;                      /* Su fondo es de color peru */
-            color:moccasin;                       /* Su color de frente es mocasin */
-            width:50px;                             /* Tienen una anchura de 50 pixeles */
-            height:50px;                            /* Tienen una altura de 50 pixeles */
+            background:whitesmoke;                        /* Su fondo es de color peru */
+            color:rgb(0, 0, 0);                         /* Su color de frente es mocasin */
+            width:100px;                             /* Tienen una anchura de 50 pixeles */
+            height:100px;                            /* Tienen una altura de 50 pixeles */
             border-radius:50px;                     /* Estan redondeados */
             line-height:50px;                       /* Su altura de linea es de 50px */
             text-align:center;                      /* El texto esta alineado al centro */
@@ -39,15 +41,20 @@
             font-weight:bold;                       /* La fuente es negrita */
             top:50%;                                /* Esta al 50% en vertical */
             margin-top:-25px;                       /* Lo centro en vertical */
+            box-sizing:border-box;
+            padding:15px;
         }
         #anterior{                                  /* Solo para el boton anterior */
             left:10px;                              /* Esta a 10 pixeles de la izquierda */
+            text-align:right;
         }
         #posterior{                                 /* Solo para el boton posterior */
             right:10px;                             /* Esta a 10 pixeles de la derecha */
+            text-align:left;
         }
         article{
-            font-family:sans-serif;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-size:cover;
         }
         article h1{
             font-size:48px;
@@ -58,12 +65,16 @@
         }
         article .texto{
             width:30%;
-            backdrop-filter:blur(5px);
+            backdrop-filter:brightness(0.2) blur(5px);
             box-sizing:border-box;
             padding:30px;
             color:white;
             border:1px solid white;
             height:100%;
+            text-shadow:0px 2px 4px rgba(0,0,0,0.6); /* Le pongo sombra al texto */
+            border-radius:10px;                      /* Le pongo un radio de empalme a la caja */
+            box-shadow:0px 5px 10px rgba(0,0,0,0.5); /* Le pongo una sombra arrojada a la caja */
+            line-height:30px;
         }
         .aparece{
             animation: animaparece 1s;
@@ -92,6 +103,14 @@
                 opacity:0;
                 filter:blur(25px);
             }          
+        }
+        main{
+            width:100%;
+            height:100%;
+            background:url(https://scontent.fvlc4-1.fna.fbcdn.net/v/t39.30808-6/402097106_754090466762180_4670283019886151017_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=g6JmNojOnj4Q7kNvgGfeelY&_nc_zt=23&_nc_ht=scontent.fvlc4-1.fna&_nc_gid=AOOhdHgClebjJZ5LdFlbEPF&oh=00_AYBPHTEU6Q5o5j-3I2hX3a7hqpXQeMEMDV_h--foCceQrQ&oe=6725D53C);
+            background-repeat:no-repeat;
+            background-position:center center;
+            filter: drop-shadow(0 0 3px white) drop-shadow(0 0 3px white) drop-shadow(0 0 3px white) drop-shadow(0 0 3px white);
         }
     </style>
   </head>
