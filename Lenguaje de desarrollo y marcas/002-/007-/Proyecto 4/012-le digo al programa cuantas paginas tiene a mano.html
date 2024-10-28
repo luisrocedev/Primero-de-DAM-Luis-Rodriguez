@@ -27,16 +27,21 @@
         <article id="pagina7">Esta es la página 7</article>
     </main>
         <script>
-            var pagina = 1;    
-            muestraPagina()                                                     // Cuando el programa inicia, estoy en la pagina 1
-            document.querySelector("#anterior").onclick = function(){               // Cuando pulso el boton con el id anterior
+            var numeropaginas = 7
+            var pagina = 1;                                                     // Cuando el programa inicia, estoy en la pagina 1
+            muestraPagina()                                                     
+            document.querySelector("#anterior").onclick = function(){           // Cuando pulso el boton con el id anterior
                 borraPaginas()
-                pagina--;
+                if(pagina > 1){                                                 // Si el numero de pagina es mayor que cero
+                    pagina--;                                                   // Le quito una unidad a la pagina
+                }
                 muestraPagina()
             }                                                 
-            document.querySelector("#posterior").onclick = function(){               // Cuando pulso el boton con el id anterior
-                borraPaginas()
-                pagina++;
+            document.querySelector("#posterior").onclick = function(){          // Cuando pulso el boton con el id anterior
+                borraPaginas() 
+                if(pagina < numeropaginas){                                     // Si la pagina actual es menor que el numero de paginas
+                    pagina++;                                                   // Le suma una unidad a la pagina
+                }
                 muestraPagina()
             }
 
@@ -48,7 +53,7 @@
             }
             function muestraPagina(){
                 document.querySelector("#pagina"+pagina).style.display = "block"    // Y muestro la página correspondiente a esa unidad
-                console.log("ahora estoy en la pagina",pagina) 
+                console.log("ahora estoy en la pagina",pagina)                      // Y saco de nuevo por consola la pagina en la que estoy
             }
         </script>
     </body>
