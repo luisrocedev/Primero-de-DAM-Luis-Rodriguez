@@ -17,58 +17,42 @@
             }
             .contenedor{
                 width: 1000px;
-                margin-left: auto;
-                margin-right: auto;
+                margin: 0 auto;
+                padding: 0 20px;
             }
             /*////////////// ESTILOS DE LA CABECERA ///////////////*/
             header{
-                height: 100px;
+                height: 80px;
                 background: #faf7ee;
-                padding-left: 20px;
             }
-            header .identidad, header nav, header button{
-                display: inline-block;
+            header .contenedor{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
             }
-            .identidad{
-                width: 30%;
+            .identidad img{
+                width: 70px;
             }
-            nav{
-                width: 39%;
-            }
-            header button{
-                width: 30%;
-            }
-            header .identidad *{
-                padding: 0px;
-                margin: 0px;
-            }
-            header nav ul{
+            nav ul{
                 list-style-type: none;
-                padding: 0px;
-                margin: 0px;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                gap: 25px;
             }
-            header nav ul li{
-                display:inline-block;
-				font-size:13px;
-				padding:5px;
-				font-weight:bold;
-            }
-            header nav ul li a{
+            nav ul li a{
+                font-size: 15px;
+                font-weight: bold;
                 color: inherit;
                 text-decoration: none;
             }
-            header .contenedor *{
-                vertical-align: middle;
-            }
-            header button{
+            .btn-trial{
                 background: var(--primario);
                 border: none;
-                color: #faf7ee;
-                padding: 10px;
-                text-transform: none;
+                color: var(--secundario);
+                padding: 10px 20px;
                 font-weight: bold;
                 border-radius: 7px;
-                display: inline-block;
             }
             img{
                 width: 70px;
@@ -76,43 +60,60 @@
             }
             /*////////////// ESTILOS DE LA PANCARTA HEROE ///////////////*/
             #uno{
-                background:var(--secundario) url(producto2.png);
+                background:var(--secundario) url(producto2.png) no-repeat right;
                 background-size: contain;
-                background-repeat: no-repeat;
-                background-position-x:570px;
-                position: absolute;
-                height: 280px;
+                padding: 50px 0;
+                text-align: left;
+                padding-left: 10px;
             }
             #uno .texto{
-                width: 100%;
                 color: var(--primario);
-                float: left;
-                text-align: justify;
-                padding-left: 20px;
             }
             #uno .texto h1{
-                font-size: 36px;
-                font-weight: bold;     
+                font-size: 40px;
+                font-weight: bold;
+                margin-bottom: 10px;   
             }
             #uno .texto h4{
-                font-size: 14px;
-                font-weight: lighter; 
+                font-size: 18px;
+                font-weight: lighter;
+                margin-bottom: 20px;
             }
-            #uno .texto button{
+            #uno input #uno button{
+                height: 40px;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+            #uno input{
+                border: 1px solid #ccc;
+                padding: 5px 10px;
+                width: 200px;
+            }
+            #uno button{
                 background: var(--primario);
                 border: none;
-                color: #faf7ee;
-                padding: 10px;
-                text-transform: none;
+                color: var(--secundario);
+                height: 30px;
                 font-weight: bold;
                 border-radius: 7px;
             }
-            #uno input{
-                border-radius: 7px;
-                text-transform: none;
-                background-color: white;
-                width: 200px;
-                height: 30px;
+            /*////////////// ESTILOS DE LA SEGUNDA SECCION ///////////////*/
+            #dos{
+                background: var(--primario);
+                padding: 60px 0;
+                color: black;
+            }
+            #dos .contenedor{
+                display: flex;
+				flex-direction: column;
+				align-items: center;
+            }
+            #dos h2{
+            }
+
+            #dos .texto h4{
+                font-size: 24px;
+                color: #faf7ee;
             }
         </style>
     </head>
@@ -132,15 +133,15 @@
                         <li><a href="#">Learn</a></li>
                         <li><a href="#">Log in</a></li>
                     </ul>
-                    <button>Start free trial</button>
                 </nav>
+                <button class="btn-trial">Start free trial</button>
             </div>
         </header>
         <section id ="uno">
             <div class="contenedor">
                 <div class="texto">
-                    <h1>The platform commerce is<br>built on</h1>
-                    <h4>Millions of the worlds most successful brands<br>bfhsdjfbdsbfhdjs</h4>
+                    <h1>The platform commerce is built on</h1>
+                    <h4>Millions of the world's most successful brands trust Shopify to sell, ship, and process payments anywhere.</h4>
                     <input type="email" placeholder="Enter your email address">
                     <button>Start free trial</button>
                     <p>Try Shopify free for 14 days, no credit card required.</p>
@@ -149,27 +150,11 @@
         </section>
         <section id ="dos">
             <div class="contenedor">
-            </div>
-        </section>
-        <section id ="tres">
-            <div class="contenedor">
-            </div>
-        </section>
-        <section id ="cuatro">
-            <div class="contenedor">
-            </div>
-        </section>
-        <section id ="cinco">
-            <div class="contenedor">
-            </div>
-        </section>
-        <section id ="seis">
-            <div class="contenedor">
-            </div>
-        </section>
-            <footer>
-                <div class="contenedor">
+                <h2>Bring your business online</h2>
+                <p>Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</p>
+                <div class="cincoarticulos">
                 </div>
-            </footer>
+            </div>
+        </section>
     </body>
 </html>
