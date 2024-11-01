@@ -1,34 +1,25 @@
 from ConectorBD import *
-import tkinter as tk
+from flask import Flask, jsonify, request
+from flask_cors import CORS
 
 conexion1 = ConectorBD()
 
-def damedatos(tabla):
-    print(tabla)
-    global texto
-    datos = conexion1.leerTabla(tabla)
-    textoformateado = ""
+app = Flask(__name__)
+CORS(app)
+@app.route('/dameTablas', methods=['GET'])
+def dame_tablas():
+    try:
+        tablas = conexion1.dameTablas()
+        return jsonify(tablas)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+@app.route('/leerTabla/<string:tabla>', methods=['GET'])
+def leer_tabla(tabla):
+    try:
+        registros = conexion1.leerTabla(tabla)
+        return jsonify(registros)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
     
-    for dato in datos:
-        for clave, valor in dato.items():
-            textoformateado += f"{clave}: {valor}\n"
-        textoformateado += "---------------\n"
-    
-    texto.delete(1.0, tk.END)
-    texto.insert(tk.END, textoformateado)  
-
-ventana = tk.Tk()
-
-tablas = conexion1.dameTablas()
-
-for tabla in tablas:
-    tk.Button(
-        ventana,
-        text=tabla['Tables_in_programacion'],
-        command=lambda t=tabla['Tables_in_programacion']: damedatos(t)
-    ).pack(padx=10, pady=10)
-
-texto = tk.Text(ventana)
-texto.pack(padx=10, pady=10)
-
-ventana.mainloop()
+if __name__ == '__main__':
+    app.run(debug=True)
