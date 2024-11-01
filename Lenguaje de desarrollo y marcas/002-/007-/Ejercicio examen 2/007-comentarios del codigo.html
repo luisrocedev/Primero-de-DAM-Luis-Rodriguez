@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Página de inicio</title> <!-- Título que aparecerá en la pestaña del navegador -->
+    <style>
+
+
+                                        /*/ESTILOS GENERALES/*/
+        :root {
+            /* Definición de variables CSS para colores y estilos */
+            --primario: #f7f2f0;                      /* Color de fondo primario */
+            --secundario: #ffffff;                    /* Color de fondo secundario (blanco) */
+            --texto-principal: #5b5957;               /* Color del texto principal */
+            --botones: #cf9b35;                       /* Color de los botones */
+        }
+        /* Aplicación de estilos a los elementos de la página */
+        body, html {
+            margin: 0;                                  /* Eliminar márgenes predeterminados */
+            font-family: Arial, Helvetica, sans-serif;  /* Establecer fuente para todo el documento */
+        }
+        header, section {
+            width: 100%;                                /* Los encabezados y secciones ocuparán todo el ancho de la pantalla */
+        }
+        .contenedor {
+            width: 80%;                                 /* Contenedor ocupará el 80% del ancho de la pantalla */
+            max-width: 1200px;                          /* Establecer un ancho máximo para el contenedor */
+            margin: 0 auto;                             /* Centrar el contenedor horizontalmente */
+            padding: 0 17px;                            /* Espaciado interno */
+        }
+
+
+
+                                        /*/ESTILOS DE LA CABECERA/*/
+        header {
+            padding: 30px 0;                            /* Espaciado interno superior e inferior en la cabecera */
+            background: var(--primario);                /* Usar el color primario como fondo de la cabecera */
+        }
+        header .contenedor {
+            display: flex;                              /* Usar flexbox para el diseño de la cabecera */
+            align-items: center;                        /* Centrar verticalmente los elementos */
+            justify-content: space-between;             /* Espaciado entre elementos */
+        }
+        nav {
+            display: flex;                              /* Usar flexbox para el menú de navegación */
+            gap: 20px;                                  /* Espacio entre los elementos del menú */
+            margin: 0 auto;                             /* Centrar el nav */
+        }
+        nav ul {
+            display: flex;                              /* Usar flexbox para la lista de navegación */
+            gap: 20px;                                  /* Espacio entre los enlaces */
+            list-style-type: none;                      /* Eliminar viñetas de la lista */
+            margin: 0;                                  /* Eliminar márgenes predeterminados */
+            padding: 0;                                 /* Eliminar relleno predeterminado */
+        }
+        nav ul li a {
+            font-size: 15px;                            /* Tamaño de fuente para los enlaces */
+            font-weight: lighter;                       /* Peso de la fuente más ligero */
+            color: var(--texto-principal);              /* Color del texto de los enlaces */
+            text-decoration: none;                      /* Eliminar subrayado de los enlaces */
+        }
+        /* Estilos para el botón de email */
+        .btn-email-trial {
+            background: var(--botones);                 /* Usar color de botón definido */
+            border: none;                               /* Sin borde */
+            color: var(--secundario);                   /* Color del texto en el botón */
+            font-weight: lighter;                       /* Peso de la fuente más ligero */
+            text-transform: uppercase;                  /* Transformar texto a mayúsculas */
+            border-radius: 7px;                         /* Bordes redondeados */
+            height: 40px;                               /* Altura del botón */
+            cursor: pointer;                            /* Cambiar cursor al pasar sobre el botón */
+        }
+
+
+                                        /*/ESTILOS DE LA PANCARTA HÉROE/*/
+        #uno {
+            background: var(--primario) url(banner.png); /* Fondo primario con imagen */
+            background-repeat: no-repeat;                /* No repetir la imagen de fondo */
+            display: flex;                               /* Usar flexbox para el diseño */
+            justify-content: space-between;              /* Espacio entre elementos */
+            padding: 60px 0;                             /* Espaciado interno superior e inferior */
+            align-items: center;                         /* Centrar verticalmente los elementos */
+        }
+        #uno .texto {
+            width: 50%;                                  /* Ancho del contenedor de texto */
+            float: right;                                /* Flotar el texto a la derecha */
+            text-align: justify;                         /* Justificar el texto */
+        }
+        #uno .texto h1 {
+            font-size: 56px;                             /* Tamaño de fuente del encabezado */
+            font-weight: bold;                           /* Peso de la fuente en negrita */
+            color: var(--texto-principal);               /* Color del texto del encabezado */
+        }
+        /* Estilos para el botón en la sección de héroe */
+        .btn-recieve {
+            background: var(--botones);                  /* Usar color de botón definido */
+            border: none;                                /* Sin borde */
+            color: var(--secundario);                    /* Color del texto en el botón */
+            font-weight: lighter;                        /* Peso de la fuente más ligero */
+            text-transform: uppercase;                   /* Transformar texto a mayúsculas */
+            border-radius: 7px;                          /* Bordes redondeados */
+            height: 40px;                                /* Altura del botón */
+            cursor: pointer;                             /* Cambiar cursor al pasar sobre el botón */
+        }
+
+
+                                        /*/ESTILOS DE LA PANCARTA DOS/*/
+        #dos {
+            background: var(--secundario);              /* Fondo secundario para esta sección */
+            display: flex;                              /* Usar flexbox para el diseño */
+            justify-content: space-between;             /* Espacio entre elementos */
+            padding: 60px 0;                            /* Espaciado interno superior e inferior */
+        }
+
+        #dos .texto {
+            width: 50%;                                 /* Ancho del contenedor de texto */
+            float: left;                                /* Flotar el texto a la izquierda */
+            text-align: justify;                        /* Justificar el texto */
+        }
+
+        #dos .contenedor {
+            display: flex;                              /* Usar flexbox para el diseño de la sección */
+            align-items: center;                        /* Centrar verticalmente los elementos */
+            gap: 580px;                                 /* Espacio entre el texto y la imagen */
+        }
+
+        #dos h2 {
+            font-size: 20px;                            /* Tamaño de fuente del subtítulo */
+            font-weight: lighter;                       /* Peso de la fuente más ligero */
+        }
+
+        .contenedor img {
+            width: 300px;                               /* Ancho de la imagen */
+            max-width: 100%;                            /* Asegurarse de que no exceda el ancho del contenedor */
+            height: auto;                               /* Mantener la proporción de la imagen */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="identidad">
+                <img src="logo.png" alt="Shanekinkennon" style="width: 120px; height: auto;"> <!-- Logo de la empresa -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Work with CEO's</a></li>                            <!-- Enlace al trabajo con CEOs -->
+                    <li><a href="#">Planning</a></li>                                   <!-- Enlace a planificación -->
+                    <li><a href="#">About</a></li>                                      <!-- Enlace sobre la empresa -->
+                    <li><a href="#">Testimonials</a></li>                               <!-- Enlace a testimonios -->
+                </ul>
+            </nav>
+            <button class="btn-email-trial">Get my biweekly email</button>              <!-- Botón para suscripción a correos -->
+        </div>
+    </header>
+    <section id="uno">
+        <div class="contenedor">
+            <div class="texto">
+                <h1>I help CEOs<br>adapt so your<br>business thrives</h1>               <!-- Título principal -->
+                <button class="btn-recieve">Recieve my weekly whatever</button>         <!-- Botón de acción -->
+            </div>
+        </div>
+    </section>
+    <section id="dos">
+        <div class="contenedor">
+            <h2>Is your leadership approach<br>challenged in<br>profound new days?</h2> <!-- Subtítulo de la sección -->
+            <img src="ejemplo1.png" alt="producto 1">                                   <!-- Imagen representativa -->
+        </div>
+    </section>
+</body>
+</html>

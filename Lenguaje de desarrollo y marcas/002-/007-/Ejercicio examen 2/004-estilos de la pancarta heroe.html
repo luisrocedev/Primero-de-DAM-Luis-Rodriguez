@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pagina de inicio</title>
+        <style>
+            /*/ESTILOS GENERALES/*/
+            :root{
+                --primario:#f7f2f0;
+                --secundario:#ffffff;
+                --texto-principal:#5b5957;
+                --botones:#cf9b35;
+            }
+            body,html{
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header,section{
+                width: 100%;
+            }
+            .contenedor{
+                width: 80%;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0px 17px;
+            }
+            /*/ESTILOS DE LA CABECERA/*/
+            header{
+                padding: 30px 0;
+                background: var(--primario);
+            }
+            header .contenedor{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            nav{
+                display: flex;
+                gap: 20px;
+                margin: 0 auto; /* Esto centrará el nav */
+            }
+            nav ul{
+                display: flex;
+                gap: 20px;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            nav ul li a{
+                font-size: 15px;
+                font-weight: lighter;
+                color: var(--texto-principal);
+                text-decoration: none;
+            }
+            .btn-email-trial{
+                background: var(--botones);
+                border: none;
+                color: var(--secundario);
+                font-weight: lighter;
+                text-transform: uppercase;
+                border-radius: 7px;
+                height: 40px;
+                cursor: pointer;
+            }
+            /*/ESTILOS DE LA PANCARTA HEROE/*/
+            #uno{
+                background: var(--primario);
+                display: flex;
+                justify-content: space-between;
+                padding: 60px 100px;
+            }
+            #uno .texto h1{
+                font-size: 56px;
+                font-weight: bold;
+                color: var(--texto-principal);
+            }
+            .btn-recieve{
+                background: var(--botones);
+                border: none;
+                color: var(--secundario);
+                font-weight: lighter;
+                text-transform: uppercase;
+                border-radius: 7px;
+                height: 40px;
+                cursor: pointer;
+            }
+            /*/ESTILOS DE LA PANCARTA HEROE/*/
+            #dos{
+                background: var(--secundario);
+                display: flex;
+                justify-content: space-between;
+                padding: 60px 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="contenedor">
+                <div class="identidad">
+                    <img src="logo.png" alt="Shanekinkennon">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Work with CEO's</a></li>
+                        <li><a href="#">Planning</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </nav>
+                <button class="btn-email-trial">Get my biweekly email</button>
+            </div>
+        </header>
+        <section id="uno">
+            <div class="contenedor">
+                <div class="texto">
+                    <h1>I help CEOs<br>adapt so your<br>business thrives</h1>
+                    <button class="btn-recieve">Recieve my weekly whatever</button>
+                </div>
+            </div>
+        </section>
+        <section id="dos">
+            <div class="contenedor">
+                <h2>Is your leadership approach<br>challenged in<br>profound new days?</h2>
+                <img src="producto.jpg" alt="producto 1">
+            </div>
+        </section>
+    </body>
+</html>
