@@ -15,9 +15,44 @@ body>*{
     margin: auto;
     background: var(--fondo1)
 }
-header{
+header {
     background: var(--fondo1);
-    height:590px;
+    height: 590px;
+    box-sizing: border-box;
+    padding: 9px 76px; /* Ajuste de padding en el top y bottom para centrar mejor */
+    font-family: "Playfair Display", serif;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--texto-secundario);
+    font-weight: lighter;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+}
+header .hire-me{
+    background: var(--boton-rojo);
+    border: none;
+    border-radius: 5px;
+    color: var(--fondo2);
+    font-weight: bold;
+    padding: 10px 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    float: right;
 }
 section:nth-child(2){
     background: var(--fondo2);
@@ -35,25 +70,60 @@ footer{
     background: var(--texto-principal);
     height: 283px;
 }
-header{
-    color: var(--texto-principal);
-    box-sizing: border-box;
-    padding: 100px;
-    font-family: "Playfair Display", serif;
-}
 header .texto{
     width: 40%;
     padding: 10px;
-    padding-bottom: 0px;
+    margin-top: 100px;
     box-sizing: border-box;
 }
 header h1{
     padding: 0px;
-    margin: 0px;
+    margin: 0px 0px 10px 0;
     font-size: 61px;
     font-weight: bold;
+    color: var(--texto-principal);
 }
 header p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px; 
+    font-weight: lighter;
+    font-size: 10px;
+    margin-top: 0px; 
+    color: var(--texto-principal);
+}
+.button-container{
+    display: inline-block;
+    text-align: center;
+    
+}
+.btn-1, .btn-2{
+    display: inline-block;
+}
+button{
+    padding: 10px 20px;
+    height: 40px;
+    margin-top: 20px;
+}
+.btn-1 button{
+    background: var(--texto-principal);
+    border: none;
+    border-radius: 5px;
+    color: var(--fondo2);
+    font-weight: bold;
+}
+.btn-2 button{
+    background: var(--boton-rojo);
+    border: none;
+    border-radius: 5px;
+    color: var(--fondo2);
+    font-weight: bold;
+}
+.btn-1 button:hover{
+    background: var(--boton-rojo);
+}
+.btn-2 button:hover{
+    background: var(--texto-principal);
+}
+section>.texto{
+    width: 40%;
+
 }
