@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			/*////////////// ESTILOS GENERALES ///////////////*/
+            :root{
+                --primario:#636363;
+                --secundario:rgba(245,245,245,255);
+                --texto-principal:#4c49c5;
+            }
+			body,html{
+				padding:0px;
+				margin:0px;
+				font-family:sans-serif;
+			}
+			header,section,footer{
+				width:100%;
+			}
+            .contenedor{
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+			/*////////////// ESTILOS DE LA CABECERA ///////////////*/
+			header{
+				height:100px;
+				background: var(--secundario);
+				display:flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				align-items: center;
+				align-content: center;
+			}
+			header .identidad,header nav,header button{
+				display:inline-block;
+				color: var(--primario);
+			}
+			.identidad{
+				width:30%;
+			}
+			nav{
+				width:39%;
+			}
+			header button{
+				width:30%;
+			}
+			header .identidad *{
+				padding:0px;
+				margin:0px;
+			}
+			header .identidad h1{
+				font-size:18px;
+			}
+			header .identidad h2{
+				font-size:12px;
+			}
+			header nav ul{
+				list-style-type:none;
+				padding:0px;
+				margin:0px;
+			}
+			header nav ul li{
+				display:inline-block;
+				font-size:11px;
+				text-transform:uppercase;
+				padding:5px;
+				font-weight:bold;
+				
+			}
+			header nav ul li a{
+				color:inherit;
+				text-decoration:none;
+			}
+
+			header .contenedor *{
+				vertical-align:middle;
+			}
+			header button{
+				background:var(--primario);
+				border:none;
+				color:white;
+				padding:10px;
+				text-transform:uppercase;
+				font-weight:bold;
+			}
+			/*////////////// ESTILOS DE LA PANCARTA HEROE ///////////////*/
+			#uno{
+				background: var(--secundario) url(banner.png);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: 500px;
+				height:590px;
+			}
+			#uno .texto{
+				width:50%;
+				color: var(--texto-principal);
+				float:left;
+				text-align:justify;
+			}
+			#uno .texto h4{
+				font-size:15px;
+			}
+			#uno .texto h3{
+				font-size:90px;
+			}
+			#uno .texto button{
+				background: var(--primario);
+				color:var(--secundario);
+				padding:10px;
+				border:none;
+                border-radius: 2px;
+				font-weight:bold;
+			}
+            /*////////////// ESTILOS DE LA SEGUNDA SECCION ///////////////*/
+            #dos{
+                background-color: var(--primario);
+                height: 545;
+                padding-top: 20px;
+            }
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="contenedor">
+				<div class="identidad">
+					<h1>Luis Rodriguez</h1>
+					<h2>Programador e ilustrador</h2>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Accelerator</a></li>
+						<li><a href="#">Intensive</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Speaking</a></li>
+					</ul>
+				</nav>
+				<button>Hire Me</button>
+			</div>
+		</header>
+		<section id="uno">
+			<div class="contenedor">
+				<div class="texto">
+					<h4>Hello World! I am</h4>
+					<h3>Serena-AI</h3>
+					<p class="negrita">Senior Front-End Web Designer Based On Sylhet IT Academy.</p>
+					<button>Download resume</button>
+					<button>Contact Me</button>
+				</div>
+			</div>
+		</section>
+		<section id="dos">
+			<div class="contenedor">
+                <div>
+                    <h4>About...</h4>
+                    <h3>SerenaAI</h3>
+                    <p>SerenaAi is an artificial intelligence application designed to optimize small business management. It automates administrative tasks such as inventory tracking, scheduling, and invoicing, reducing the manual workload. With real-time data analytics, SerenaAi helps entrepreneurs make strategic decisions to boost revenue and efficiency. It also provides personalized reminders and optimization suggestions, adapting to each business’s unique needs.</p>
+                    <button>Know More</button>
+                </div>
+                <img src="serena.png"
+			</div>
+		</section>
+		<section id="tres">
+			<div class="contenedor">
+			</div>
+		</section>
+		<section id="cuatro">
+			<div class="contenedor">
+			</div>
+		</section>
+		<section id="cinco">
+			<div class="contenedor">
+			</div>
+		</section>
+		<section id="seis">
+			<div class="contenedor">
+			</div>
+		</section>
+		<footer>
+			<div class="contenedor">
+			</div>
+		</footer>
+	</body>
+</html>

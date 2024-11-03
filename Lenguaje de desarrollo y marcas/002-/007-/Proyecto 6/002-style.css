@@ -48,11 +48,12 @@ header .hire-me{
     border-radius: 5px;
     color: var(--fondo2);
     font-weight: bold;
-    padding: 10px 20px;
-    height: 40px;
-    display: flex;
-    align-items: center;
+    
+    
+    
+    
     float: right;
+    margin: 0px auto;
 }
 section:nth-child(2){
     background: var(--fondo2);
@@ -123,7 +124,19 @@ button{
 .btn-2 button:hover{
     background: var(--texto-principal);
 }
-section>.texto{
-    width: 40%;
-
+section> .texto{
+    width: 50%;
+    float: right;
+}
+section article> .textointerior{
+    display: inline-block;
+    width: 80%;
+    padding-left: 10px;
+}
+section h4, p{
+    margin: 0px;
+    padding: 0px;
+}
+section img{
+    
 }
