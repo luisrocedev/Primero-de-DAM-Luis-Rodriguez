@@ -1,0 +1,43 @@
+header{
+    padding: 50px 150px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+        box-sizing: border-box;
+}
+header #corporativo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+}
+header #corporativo img{
+    width: 60px;
+}
+header h1{
+    font-size: 18px;
+    color: white;
+}
+header h2{
+    font-size: 14px;
+    color: white;
+}
+header nav a{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 10px;
+    font-weight: bold;
+}
+header button{
+    background: yellow;
+    color: black;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 30px;
+}

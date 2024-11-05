@@ -1,0 +1,11 @@
+#heroe{
+    text-align: left;
+    padding: 130px;
+    box-sizing: border-box;
+    color: white;
+}
+#heroe h3{
+    font-size: 96px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
