@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /*////////////// ESTILOS GENERALES ///////////////*/
+            :root{
+                --primario:#eeff00;
+                --secundario:#ffffff;
+                --black:#000000;
+            }
+            body,html{
+                padding: 0px;
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                background: var(--black)
+            }
+            header,section,footer{
+                width: 100%;
+            }
+            .contenedor{
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /*////////////// ESTILOS DE LA CABECERA ///////////////*/
+            header{
+                height: 100px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+            }
+            header .identidad,header nav,header button{
+                display: inline-block;
+                color: var(--secundario);
+            }
+            .identidad{
+                width: 30%;
+            }
+            nav{
+                width: 69%;
+            }
+            header button{
+                height: 45px;
+                background:var(--primario);
+				border:none;
+				color:var(--black);
+				padding:10px;
+				font-weight:bold;
+                border-radius: 5px;
+            }
+            header .identidad *{
+                padding: 0px;
+                margin: 0px;
+            }
+            header .identidad h1{
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+            header nav ul li{
+                display: inline-block;
+                font-size: 16px;
+                padding: 10px;
+            }
+            header nav ul li a{
+                color: inherit;
+                text-decoration: none;
+            }
+            header .contenedor *{
+                vertical-align: middle;
+            }
+            ul{
+                float: right;
+            }
+            /*////////////// ESTILOS DE LA PANCARTA HEROE ///////////////*/
+            #uno{
+                background: var(--black);
+                height: 400px;
+            }
+            #uno .texto{
+                color: var(--secundario);
+                float: left;
+                text-align:left;
+                width: 72%;
+            }
+            #uno .texto h2{
+                margin: 0px;
+                padding: 0px;
+                font-size: 91px;
+                text-transform: uppercase;
+            }
+            /*////////////// ESTILOS DE LA SEGUNDA SECCION ///////////////*/
+            #dos{
+                background-color: var(--secundario);
+                height: 970px;
+            }
+            #dos .contenedor{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+                align-content: stretch;
+            }
+            #dos h3{
+                font-size: 32px;
+                font-weight: bold;
+                text-transform: uppercase;
+                
+            }
+            #dos p{
+                font-size: 16px;
+                text-align: center;
+                
+            }
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </style>
+        <meta charset="utf-8">
+        <title>TaronjaBuster</title>
+    </head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="identidad">
+                <h1>TaronjaBuster</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"></a>Ventajas</li>
+                    <li><a href="#"></a>Precios</li>
+                    <li><a href="#"></a>Prueba Gratis</li>
+                    <button>Iniciar sesión</button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="uno">
+        <div class="contenedor">
+            <div class="texto">
+                <h2>Control absoluto sin<br>complicaciones</h2>
+                <p>La app ideal para reservas, pagos y más, todo al mejor precio. Sin costes de instalación ni permanencia. Tu centro deportivo eficiente y accesible.</p>
+                <button>Prueba gratuita</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <section id="dos">
+            <div class="contenedor">
+                <div class="texto2">
+                    <h3>Precios Flexibles, Crecemos Contigo</h3>
+                    <p>Sin costes de instalación ni permanencia. A medida que tu negocio crece, ajustamos tu plan automáticamente.</p>
+                    <img src="ejemplo1.png">
+                    <img src="ejemplo2.png">
+                    <img src="ejemplo3.png">
+                    <img src="ejemplo4.png">
+                </div>
+            </div>
+        </section>
+        <section id="tres">
+            <div class="contenedor">
+                <div class="texto3">
+                    <h4>Para todos los dispositivos</h4>
+                    <p>WodBuster se adapta a tí, estés donde estés.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
