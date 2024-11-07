@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+	<head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<style>
+			/*////////////// ESTILOS GENERALES ///////////////*/
+            :root{
+                --primario:#636363;
+                --secundario:rgba(245,245,245,255);
+                --texto-principal:#4c49c5;
+            }
+
+			body,html{
+				padding:0px;
+				margin:0px;
+				font-family: "Poppins", serif;
+			}
+			header,section,footer{
+				width:100%;
+                font-family: "Poppins", serif;
+			}
+            .contenedor{
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+			/*////////////// ESTILOS DE LA CABECERA ///////////////*/
+			header{
+				height:100px;
+				background: var(--secundario);
+				display:flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				align-items: center;
+				align-content: center;
+			}
+			header .identidad,header nav,header button{
+				display:inline-block;
+				color: var(--primario);
+			}
+			.identidad{
+				width:30%;
+			}
+			nav{
+				width:39%;
+			}
+			header .identidad *{
+				padding:0px;
+				margin:0px;
+			}
+			header .identidad h1{
+				font-size:18px;
+			}
+			header .identidad h2{
+				font-size:12px;
+			}
+			header nav ul{
+				list-style-type:none;
+				padding:0px;
+				margin:0px;
+			}
+			header nav ul li{
+				display:inline-block;
+				font-size:11px;
+				text-transform:uppercase;
+				padding:5px;
+				font-weight:bold;
+				
+			}
+			header nav ul li a{
+				color:inherit;
+				text-decoration:none;
+			}
+
+			header .contenedor *{
+				vertical-align:middle;
+			}
+			header button{
+				background:var(--primario);
+				border:none;
+				color:white;
+				padding:10px;
+				border-radius: 5px;
+				font-weight:bold;
+			}
+			/*////////////// ESTILOS DE LA PANCARTA HEROE ///////////////*/
+			#uno{
+				background: var(--secundario) url(banner.png);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: 500px;
+				height:590px;
+			}
+			#uno .texto{
+				width:50%;
+				color: var(--texto-principal);
+				float:left;
+				text-align:justify;
+			}
+			#uno .texto h4{
+				font-size:19px;
+                font-weight: normal;
+			}
+			#uno .texto h3{
+				font-size:90px;
+			}
+			#uno .texto button{
+				background: var(--primario);
+				color:var(--secundario);
+				padding:10px;
+				border:none;
+                border-radius: 5px;
+				font-weight:bold;
+                font-family: "Poppins", serif;
+			}
+            /*////////////// ESTILOS DE LA SEGUNDA SECCION ///////////////*/
+            #dos{
+                background-color: var(--secundario);
+                height: 545;
+                padding-top: 20px;
+            }
+			#dos .contenedor{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				align-items: center;
+				align-content: center;
+			}
+			#dos .contenedor>*{
+				width: 50%;
+			}
+			#dos .texto h4{
+				font-size:15px;
+			}
+			#dos .texto h3{
+				font-size:90px;
+			}
+			#dos button{
+				background:var(--primario);
+				border:none;
+				color:white;
+				padding:10px;
+				font-weight:bold;
+				border-radius: 5px;
+			}
+            #Serena-AI{
+                position: fixed;
+                right: 50px;
+                bottom: 10px;
+                height: 100px;
+            }
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="contenedor">
+				<div class="identidad">
+					<h1>Luis Rodriguez</h1>
+					<h2>Programador e ilustrador</h2>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Accelerator</a></li>
+						<li><a href="#">Intensive</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Speaking</a></li>
+					</ul>
+				</nav>
+				<button>Hire Me</button>
+			</div>
+		</header>
+		<section id="uno">
+			<div class="contenedor">
+				<div class="texto">
+					<h4>Hello World! I am</h4>
+					<h3>Serenai</h3>
+					<p class="negrita">the easiest way.</p>
+					<button>Download resume</button>
+					<button>Contact Me</button>
+				</div>
+			</div>
+		</section>
+		<section id="dos">
+			<div class="contenedor">
+                <div>
+                    <img
+                    <h4>About...</h4>
+                    <h3>SerenaAI</h3>
+                    <p>SerenaAi is an artificial intelligence application designed to optimize small business management. It automates administrative tasks such as inventory tracking, scheduling, and invoicing, reducing the manual workload. With real-time data analytics, SerenaAi helps entrepreneurs make strategic decisions to boost revenue and efficiency. It also provides personalized reminders and optimization suggestions, adapting to each business’s unique needs.</p>
+                    <button>Know More</button>
+                </div>
+                <img src="serena.png"
+			</div>
+		</section>
+		<section id="tres">
+			<div class="contenedor">
+			</div>
+		</section>
+		<section id="cuatro">
+			<div class="contenedor">
+			</div>
+		</section>
+		<section id="cinco">
+			<div class="contenedor">
+			</div>
+		</section>
+		<section id="seis">
+			<div class="contenedor">
+			</div>
+		</section>
+		<footer>
+			<div class="contenedor">
+			</div>
+		</footer>
+		<img src="serenaai.png" id="Serena-AI">
+	</body>
+</html>
