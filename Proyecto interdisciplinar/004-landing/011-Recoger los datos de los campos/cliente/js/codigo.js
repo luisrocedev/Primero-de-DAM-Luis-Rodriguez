@@ -47,5 +47,10 @@ window.onload = function(){
   let boton = document.querySelector("#contacto button")
   boton.onclick = function(){
     console.log("vamos a guardar un mensaje")
+    let nombre = document.querySelector("#contactonombre").value
+    let email = document.querySelector("#contactoemail").value
+    let asunto = document.querySelector("#contactoasunto").value
+    let texto = document.querySelector("#contactotexto").value
+    console.log(nombre,email,asunto,texto)
   }
 }
