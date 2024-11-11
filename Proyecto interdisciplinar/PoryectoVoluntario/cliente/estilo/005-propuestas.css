@@ -1,34 +1,54 @@
-#propuestas .contenido{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: stretch;
-	gap:50px;
-}
 #propuestas form{
 	text-align:left;
 }
 #propuestas input,#propuestas textarea{
-box-sizing:border-box;
-	width:98%;
+	box-sizing:border-box;
 	border:none;
 	background:rgb(240,240,240);
 	padding:10px;
 	margin-bottom:5px;
 }
-#propuestas .a50{
-	width:48%;
-}
-#propuestas .a50:first-child{
-	margin-right:15px;
-}
 #propuestas h4{
 	font-size: 50px;
-	margin: 10px;
+	margin-bottom: 30px;
 	padding: 0px;
+	color: #745b46;
+	font-style: oblique;
 }
 #propuestas h3{
 	font-weight: lighter;
+	margin-bottom: 45px;
+	font-size: 25px;
+	font-style: oblique;
+	color: #a08a77;
 }
+.contenedor{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+	gap: 10px;
+}
+.formu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: baseline;
+	align-content: stretch;
+	width: 50%;
+    gap: 10px; /* Espacio entre los inputs en una misma fila */
+}
+textarea {
+	width: 100%;
+    resize: vertical; /* Permitir cambiar el tamaño solo en vertical */
+}
+#propuestas .contenedor button{
+	margin-top: 15px;
+	width: 156px;
+	height: 55px;
+	font-size: 20px;
+}
+

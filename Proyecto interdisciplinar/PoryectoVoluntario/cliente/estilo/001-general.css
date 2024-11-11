@@ -44,6 +44,9 @@ section{
 	padding:50px 150px;
 	box-sizing:border-box;
 }
+header,#heroe{
+	background: url(imagenes/lucesfondo.png);
+}
 header{
 	height:60px;
 	background:#e7e1da;
@@ -52,11 +55,13 @@ header{
 	background: #e7e1da;
 }
 #objetivo{
+	padding:50px 0px;
 	height:690px;
 	background: #ddd5cc;
 }
 #propuestas{
-	height:400px;
+	padding:30px 150px;
+	height:450px;
 	background:#e7e1da;
 }
 footer{
@@ -65,25 +70,35 @@ footer{
 
 /*/////////////////// BOTONES ///////////////////*/
 
-button{
-	background:#f8141d;
-	color: #e7e1da;
-	border:none;
-	padding:0px;
-	height: 50px;
-	width: 90px;
-	border-radius:5px;
-	cursor: pointer;
-    transition: background-color 0.2s;
+button {
+    font-family: "Lato";
+    border: none;
+    padding: 0px;
+    height: 50px;
+    width: 90px;
+    cursor: pointer;
+    background: linear-gradient(to left top, 
+                #df282f 49%, 
+                #c6a487 50%, 
+                #bb080f 51%);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    outline: none;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
 }
-button:hover{
-    background:#3e7b4a;
+
+button:hover {
+    background: linear-gradient(to left top, 
+                #429552 49%, 
+                #d0bd6d 50%, 
+                #3e7b4a 51%);
 }
 .secundario{
     background:#3e7b4a;
 }
 .secundario:hover{
-    background:#f8141d;
+    background:#bb080f;
 }
 
 /*/////////////////// FEEDBACK ///////////////////*/

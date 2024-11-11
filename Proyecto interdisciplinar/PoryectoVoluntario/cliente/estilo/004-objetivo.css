@@ -2,10 +2,11 @@
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-evenly;
 	align-items: stretch;
 	align-content: stretch;
     padding-top: 100px;
+    padding-left: 70px;
+    padding-bottom: 130px;
 }
 #objetivo .texto{
     display: flex;
@@ -14,41 +15,66 @@
 	justify-content: center;
 	align-items: center;
 	align-content: stretch;
+    width: 600px;
 }
 #objetivo .texto h3{
     font-size: 35px;
     text-align: left;
     color: #ac8564;
-    height: 200px;
-    width: 500px;
     font-weight: normal;
 }
 #objetivo .texto h4{
-    font-size: 40px;
+    font-size: 50px;
     color: #745b46;
     text-align: justify;
     font-style: oblique;
-    text-decoration: underline;
-    text-decoration-style: dotted;
+    margin-right: 100px;
+    margin-bottom: 45px;
 }
 #objetivo .logo img {
     height: 150px;
 }
+#objetivo #quedonar h4{
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 70px;
+}
+#objetivo #quedonar{
+    align-content: center;
+}
 #objetivo #quedonar article{
-	background:white;
-	padding:20px;
-	margin-bottom:10px;
+    margin-left: 70px;
+	background: #e7e1da;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 20px;
 	border-radius:5px;
+    margin-bottom: 10px;
 	box-shadow:0px 4px 6px rgba(0,0,0,0.1);
+}
+#objetivo #quedonar article ul{
+    text-align: left;
+    padding: 0px;
+}
+#objetivo #quedonar article ul li h6{
+    font-weight: normal;
+    font-size: 15px;
+}
+#objetivo .texto .firma{
+    margin-right: 100px;
+    font-style: oblique;
+    color: #a08a77;
 }
 button.secundario {
     margin-top: 10px;
     height: 50px;
     width: 200px;
+    margin-right: 100px;
 } 
 #objetivo #quedonar article ul li:nth-child(odd)::marker {
     color: #3e7b4a; /* Color para los elementos impares */
 }
 #objetivo #quedonar article ul li:nth-child(even)::marker {
-    color: #f8141d; /* Color para los elementos pares */
+    color: #df282f; /* Color para los elementos pares */
 }
