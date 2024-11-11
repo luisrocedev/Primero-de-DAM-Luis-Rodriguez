@@ -1,71 +1,43 @@
-/*#objetivo .contenedor{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    align-content: stretch;
-    color: blue;
-}*/
-
-/*#objetivo .columna article{
-	background:white;
-	padding:20px;
-	margin-bottom:10px;
-	border-radius:5px;
-	box-shadow:0px 4px 6px rgba(0,0,0,0.1);
-}
-#objetivo article{
-	text-align:left;
-}
-#objetivo #quedonar article ul li::marker{
-	color:#3e7b4a;
-}
-#objetivo #col2 article img{
-	width:60px;
-}
-#objetivo #col2 article .texto{
-	width:80%;
-}
-#objetivo #col2 article{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: flex-start;
-	align-content: stretch;
-}
-#objetivo .columna>h6{
-	font-size:24px;
-	margin-bottom:20px;
-}*/
 #objetivo{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px; /* Espacio entre los elementos */
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: stretch;
+    padding-top: 100px;
 }
-#contenedor .texto{
-    height: 250px;
-    width: 500px;
+#objetivo .texto{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
 }
-#contenedor .texto h3{
-    font-size: 40px;
+#objetivo .texto h3{
+    font-size: 35px;
     text-align: left;
     color: #ac8564;
+    height: 200px;
+    width: 500px;
+    font-weight: normal;
 }
-#contenedor .texto h4{
+#objetivo .texto h4{
     font-size: 40px;
-    color: #ac8564;
+    color: #745b46;
+    text-align: justify;
+    font-style: oblique;
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
-#contenedor .texto, #quedonar {
+#objetivo .texto, #quedonar {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
- #contenedor .logo img {
-    max-width: 100%;
-    height: auto;
+#objetivo .logo img {
+    height: 150px;
 }
 button.secundario {
     margin-top: 10px;

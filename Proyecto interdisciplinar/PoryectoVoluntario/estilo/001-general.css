@@ -60,12 +60,6 @@ header{
 footer{
 	background: #817363;
 }
-#contenedor{
-    display:grid;
-    grid-template-columns: auto auto auto;
-    gap:25px;
-    margin-top:100px;
-}
 
 /*/////////////////// BOTONES ///////////////////*/
 
