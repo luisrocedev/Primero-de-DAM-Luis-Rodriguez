@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="estilo/004-objetivo.css">
     <link rel="stylesheet" href="estilo/005-propuestas.css">
     <link rel="stylesheet" href="estilo/006-footer.css">
+    <script src="js/codigo.js"></script>
   </head>
   <body>
     <header>
@@ -61,13 +62,11 @@
         <h4>Propuestas</h4>
         <h3>En esta sección, puedes aportar tus ideas y colaborar activamente en el desarrollo del proyecto.</h3>
         <div class="contenido">
-          <form>
-						<input type="text" placeholder="Tu nombre" class="a50">
-						<input type="email" placeholder="Tu email" class="a50">
-						<input type="text" placeholder="Asunto">
-						<textarea></textarea>
-						<button type="submit">Enviar</button>
-          </form>
+          <input type="text" placeholder="Tu nombre" id="contactonombre" class="a50">
+          <input type="email" placeholder="Tu email" id="contactoemail" class="a50">
+          <input type="text" placeholder="Asunto" id="contactoasunto">
+          <textarea id="contactotexto"></textarea>
+          <button>Enviar</button>
         </div>
       </section>
     </main>
@@ -87,5 +86,8 @@
 			<hr>
 			<p>(c) 2024 - Luis Jahir Rodríguez Cedeño | Agustín Morcillo Aguado</p>
     </footer>
+    <div id="feedbackmail">
+      <p>Tu propuesta se ha enviado correctamente</p>
+    </div>
   </body>
 </html>
