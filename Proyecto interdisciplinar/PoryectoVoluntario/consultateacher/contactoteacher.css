@@ -1,4 +1,4 @@
-#propuestas .contenido{
+#contacto .contenido{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -7,10 +7,10 @@
 	align-content: stretch;
 	gap:50px;
 }
-#propuestas form{
+#contacto form{
 	text-align:left;
 }
-#propuestas input,#propuestas textarea{
+#contacto input,#contacto textarea{
 box-sizing:border-box;
 	width:100%;
 	border:none;
@@ -18,9 +18,9 @@ box-sizing:border-box;
 	padding:10px;
 	margin-bottom:5px;
 }
-#propuestas .a50{
+#contacto .a50{
 	width:48%;
 }
-#propuestas .a50:first-child{
+#contacto .a50:first-child{
 	margin-right:15px;
 }
