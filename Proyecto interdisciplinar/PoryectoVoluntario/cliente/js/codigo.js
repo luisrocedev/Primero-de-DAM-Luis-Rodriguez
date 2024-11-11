@@ -35,7 +35,7 @@ window.onload = function(){													// Cuando la ventana haya cargado
 			document.querySelector("#contactoasunto").value = ""
 			document.querySelector("#contactotexto").value = ""
 			document.querySelector("#feedbackmail").style.display = "block"
-			document.querySelector("#feedbackmail").classList.add = "animado"
+			document.querySelector("#feedbackmail").classList.add("animado");
 		})
 	}
 	
