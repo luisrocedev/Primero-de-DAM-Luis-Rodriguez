@@ -1,0 +1,59 @@
+/*/////////////////// FUENTES ///////////////////*/
+@font-face {
+    font-family: miserif;
+    src: url(fuentes/serif.ttf);
+  }
+
+/*/////////////////// PROPIEDADES GENERALES ///////////////////*/
+
+body,html{
+	background:black;
+	font-family:sans-serif;
+	margin:0px;
+	padding:0px;
+}
+
+/*/////////////////// BLOQUES CONSTRUCTIVOS ///////////////////*/
+
+header,main,footer{
+	width:1200px;
+	background:white;
+	margin:auto;
+}
+section{
+	width:100%;
+	text-align:center;
+	box-sizing:border-box;
+	padding:50px 150px;
+	box-sizing:border-box;
+}
+header{
+	height:60px;
+	background:#e7e1da;
+}
+#heroe{
+	height:690px;
+	background: #c3b9ad;
+}
+#objetivo{
+	height:690px;
+	background: #e7e1da;
+}
+#propuestas{
+	height:690px;
+	background:#c3b9ad;
+}
+footer{
+	height:690px;
+	background: #e7e1da;
+}
+
+/*/////////////////// BOTONES ///////////////////*/
+
+button{
+	background:#f8141d;
+	color: #e7e1da;
+	border:none;
+	padding:20px;
+	border-radius:5px;
+}
