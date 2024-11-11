@@ -39,7 +39,11 @@ header nav a{
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    transition: color 0.2s;
 }
-header nav a:hover{
+header nav a:nth-child(odd):hover{
     color: #45a049;
+}
+header nav a:nth-child(even):hover{
+    color: #f8141d;
 }

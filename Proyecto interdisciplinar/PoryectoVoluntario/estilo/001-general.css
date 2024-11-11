@@ -77,7 +77,15 @@ button{
 	height: 50px;
 	width: 90px;
 	border-radius:5px;
+	cursor: pointer;
+    transition: background-color 0.2s;
+}
+button:hover{
+    background:#3e7b4a;
 }
 .secundario{
     background:#3e7b4a;
+}
+.secundario:hover{
+    background:#f8141d;
 }
