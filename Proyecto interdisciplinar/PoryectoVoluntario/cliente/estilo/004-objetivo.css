@@ -34,8 +34,17 @@
 #objetivo .logo img {
     height: 150px;
 }
+#objetivo #quedonar article{
+	background:white;
+	padding:20px;
+	margin-bottom:10px;
+	border-radius:5px;
+	box-shadow:0px 4px 6px rgba(0,0,0,0.1);
+}
 button.secundario {
     margin-top: 10px;
+    height: 50px;
+    width: 200px;
 } 
 #objetivo #quedonar article ul li:nth-child(odd)::marker {
     color: #3e7b4a; /* Color para los elementos impares */
