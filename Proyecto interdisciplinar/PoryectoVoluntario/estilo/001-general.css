@@ -1,14 +1,17 @@
 /*/////////////////// FUENTES ///////////////////*/
 @font-face {
-    font-family: miserif;
-    src: url(fuentes/serif.ttf);
+    font-family: amatic;
+    src: url(fuentes/AmaticSC-Bold.ttf);
+		font-family: league;
+		src: url(fuentes/LeagueSpartan-Regular.ttf);
   }
 
 /*/////////////////// PROPIEDADES GENERALES ///////////////////*/
 
 body,html{
 	background:black;
-	font-family:sans-serif;
+	font-family:league;
+	font-weight: lighter;
 	margin:0px;
 	padding:0px;
 }
@@ -32,7 +35,7 @@ header{
 	background:#e7e1da;
 }
 #heroe{
-	height:690px;
+	height:565px;
 	background: #e7e1da;
 }
 #objetivo{
