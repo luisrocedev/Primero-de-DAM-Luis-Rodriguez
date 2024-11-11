@@ -22,6 +22,12 @@ h4,h3{
 	margin-top: 0px;
 }
 
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
 /*/////////////////// BLOQUES CONSTRUCTIVOS ///////////////////*/
 
 header,main,footer{
@@ -67,7 +73,9 @@ button{
 	background:#f8141d;
 	color: #e7e1da;
 	border:none;
-	padding:20px;
+	padding:0px;
+	height: 50px;
+	width: 90px;
 	border-radius:5px;
 }
 .secundario{

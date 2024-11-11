@@ -34,4 +34,12 @@ header nav a{
     font-size:14px;
     padding:10px;
     font-weight:bold;
+    background-color: #e7e1da; /* Color de fondo normal */
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+header nav a:hover{
+    color: #45a049;
 }

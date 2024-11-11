@@ -44,20 +44,35 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px; /* Espacio entre los elementos */
-  }
-  #contenedor .texto{
-    height: 100px;
-    width: 50px;
-  }
-  #contenedor .texto, #quedonar {
+}
+#contenedor .texto{
+    height: 250px;
+    width: 500px;
+}
+#contenedor .texto h3{
+    font-size: 40px;
+    text-align: left;
+    color: #ac8564;
+}
+#contenedor .texto h4{
+    font-size: 40px;
+    color: #ac8564;
+}
+#contenedor .texto, #quedonar {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  #contenedor .logo img {
+}
+ #contenedor .logo img {
     max-width: 100%;
     height: auto;
-  }
-  button.secundario {
+}
+button.secundario {
     margin-top: 10px;
-  }  
+} 
+#objetivo #quedonar article ul li:nth-child(odd)::marker {
+    color: #3e7b4a; /* Color para los elementos impares */
+}
+#objetivo #quedonar article ul li:nth-child(even)::marker {
+    color: #f8141d; /* Color para los elementos pares */
+}
