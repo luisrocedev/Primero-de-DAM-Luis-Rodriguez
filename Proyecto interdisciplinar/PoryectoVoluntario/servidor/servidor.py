@@ -5,40 +5,6 @@ import mysql.connector
 app = Flask(__name__)
 CORS(app)
 
-# Endpoint para obtener artículos
-@app.route('/damearticulos')
-def home():
-    conexion = mysql.connector.connect(
-        host="localhost",
-        user="navidana",
-        password="navidana",
-        database="navidana"
-    )
-    cursor = conexion.cursor(dictionary=True)
-    peticion = "SELECT * FROM contacto"
-    cursor.execute(peticion)
-    resultados = cursor.fetchall()
-    cursor.close()
-    conexion.close()
-    return jsonify(resultados), 200
-
-# Endpoint para obtener elementos del portafolio
-@app.route('/dameportafolio')
-def portafolio():
-    conexion = mysql.connector.connect(
-        host="localhost",
-        user="landing",
-        password="landing",
-        database="landing"
-    )
-    cursor = conexion.cursor(dictionary=True)
-    peticion = "SELECT * FROM portafolio ORDER BY RAND() LIMIT 3"
-    cursor.execute(peticion)
-    resultados = cursor.fetchall()
-    cursor.close()
-    conexion.close()
-    return jsonify(resultados), 200
-
 # Endpoint para insertar un nuevo artículo en la tabla blog
 @app.route('/insertamensaje', methods=['POST'])
 def insertamensaje():
@@ -48,14 +14,13 @@ def insertamensaje():
     asunto = datos.get('asunto')
     texto = datos.get('texto')
 
-
     try:
         # Conexión y ejecución de inserción en la base de datos
         conexion = mysql.connector.connect(
             host="localhost",
-            user="landing",
-            password="landing",
-            database="landing"
+            user="navidana",
+            password="navidana",
+            database="navidana"
         )
         cursor = conexion.cursor()
         peticion = "INSERT INTO contacto (nombre, email, asunto, texto) VALUES (%s, %s, %s, %s)"
