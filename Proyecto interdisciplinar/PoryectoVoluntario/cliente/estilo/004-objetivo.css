@@ -73,10 +73,10 @@ button.secundario {
     width: 200px;
     margin-right: 100px;
 } 
-#objetivo #quedonar article ul li:nth-child(odd)::marker {
-    color: #3e7b4a; /* Color para los elementos impares */
+#objetivo #quedonar article ul li:nth-child(odd)::marker {          /* Coloreamos los puntos impares de la lista */
+    color: #3e7b4a;                                               /* Color para los elementos impares */
 }
-#objetivo #quedonar article ul li:nth-child(even)::marker {
-    color: #df282f; /* Color para los elementos pares */
+#objetivo #quedonar article ul li:nth-child(even)::marker {         /* Coloreamos los puntos pares de la lista */
+    color: #df282f;                                               /* Color para los elementos pares */
 }
 
