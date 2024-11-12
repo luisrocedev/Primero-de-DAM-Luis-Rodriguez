@@ -1,5 +1,5 @@
 header{
-    padding:50px 130px;
+    padding:50px 127px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -35,15 +35,17 @@ header h2{
     font-size:18px;
 }
 header nav a{
-    font-size:14px;
+    font-size:17px;
     padding:10px;
-    font-weight:bold;
+    font-weight:lighter;
     background-color: #e7e1da;
     color: rgb(0, 0, 0);
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: none;
     cursor: pointer;
     transition: color 0.2s;
+    text-transform: capitalize;
+    
 }
 header nav a:nth-child(odd):hover{
     color: #45a049;
