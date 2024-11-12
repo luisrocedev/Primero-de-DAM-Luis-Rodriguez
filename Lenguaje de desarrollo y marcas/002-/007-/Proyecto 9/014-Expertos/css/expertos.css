@@ -1,0 +1,22 @@
+.cabecera{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+	gap:50px;
+}
+.cabecera .texto{
+	text-align:left;
+}
+.articulos{
+	display:grid;
+	grid-template-columns: auto auto auto auto;
+	gap:25px;
+	margin-top:100px;
+}
+
+.articulos article{
+	text-align:left;
+}
