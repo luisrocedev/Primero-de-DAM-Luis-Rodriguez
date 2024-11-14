@@ -1,0 +1,15 @@
+Windows (CMD)
+	Navegar: cd <ruta>
+	Listar: dir (todos: dir /a)
+	Crear y eliminar directorios:
+		Crear: mkdir <nombre>
+		Eliminar: rmdir <nombre> (vacío) o rmdir /s <nombre> (con contenido)
+	Crear y eliminar archivos:
+		Crear: type nul > <nombre>
+		Eliminar: del <nombre>
+	Copiar y mover:
+		Copiar: copy <origen> <destino>
+		Mover: move <origen> <destino>
+notepad archivo.txt
+start archivo.txt
+notepad archivo.txt

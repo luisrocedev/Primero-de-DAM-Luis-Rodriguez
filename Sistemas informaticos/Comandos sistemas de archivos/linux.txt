@@ -1,0 +1,17 @@
+Linux
+	Navegar: cd <ruta>
+	Listar: ls (todos: ls -a)
+
+	Crear y eliminar directorios:
+		-Crear: mkdir <nombre>
+		-Eliminar: rmdir <nombre> (vacío) o rm -r <nombre> (con contenido)
+
+	Crear y eliminar archivos:
+		-Crear: touch <nombre>
+		-Eliminar: rm <nombre>
+	Abri archivo:
+	cat archivo.txt
+	nano archivo.txt
+	vim archivo.txt
+	Copiar y mover:
+	Cambiar permisos: chmod <permisos> <archivo>
