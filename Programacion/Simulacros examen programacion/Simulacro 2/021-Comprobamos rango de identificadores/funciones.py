@@ -15,13 +15,17 @@ def seleccionaCapitulos():
     return filas                                            # Imprimo las filas
 
 def seleccionaCapitulo(Identificador):
-    if isinstance(Identificador, (int)):
+    try:
+        Identificador = int(Identificador)
         cursor = conexion.cursor(dictionary = True)             # Creo un cursor y me aseguro de que la info me viene en JSON
         peticion = f"SELECT * FROM capitulos WHERE Identificador = {Identificador}"                    # Pido todo de capitulos
         cursor.execute(peticion)                                # Ejecuto la peticion
         filas = cursor.fetchall()                               # Saco las filas
-        return filas                                            # Imprimo las filas
-    else:
+        if filas != []:
+            return filas                                            # Imprimo las filas
+        else:
+            return False
+    except:
         return False
 
 def insertaCapitulo(Titulo,Subtitulo,Imagen,Video,Texto):
