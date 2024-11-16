@@ -1,38 +1,12 @@
+from entrenador import Entrenador
+from clasecross import Clasecross
+from limpiapantalla import limpiaPantalla
 import pickle
-import platform
-import os
 
-# Función para limpiar la pantalla en función del sistema operativo
-def limpiaPantalla():
-    if platform.system() == "Windows":
-        os.system("cls")  # Comando para limpiar la pantalla en Windows
-    else:
-        os.system("clear")  # Comando para limpiar la pantalla en Linux/Mac
-
-limpiaPantalla()  # Llamada a la función limpiaPantalla para limpiar la pantalla al iniciar
-
-# Definición de la clase 'Entrenador'
-class Entrenador:
-    def __init__(self, nuevoidentificador, nuevonombre, nuevosapellidos, nuevoemail, nuevotelefono, nuevadireccion):
-        self.identificador = nuevoidentificador  # Atributo identificador del entrenador
-        self.nombre = nuevonombre  # Atributo nombre del entrenador
-        self.apellidos = nuevosapellidos  # Atributo apellidos del entrenador
-        self.email = nuevoemail  # Atributo email del entrenador
-        self.telefono = nuevotelefono  # Atributo teléfono del entrenador
-        self.direccion = nuevadireccion  # Atributo dirección del entrenador
-
-# Definición de la clase 'Clasecross' (aunque no se utiliza en este código)
-class Clasecross:
-    def __init__(self, nuevoidentificador, nuevonombre, nuevohorario, nuevoentrenador):
-        self.identificador = nuevoidentificador  # Atributo identificador de la clase
-        self.nombre = nuevonombre  # Atributo nombre de la clase
-        self.horario = nuevohorario  # Atributo horario de la clase
-        self.entrenador = nuevoentrenador  # Atributo entrenador que dirige la clase
-
+limpiaPantalla()
 # Listas para almacenar los entrenadores y las clases
 entrenadores = []  # Lista vacía donde se almacenarán los entrenadores
 clasecross = []  # Lista vacía donde se almacenarán las clases (aunque no se usa en el código)
-
 # Imprime un mensaje de bienvenida
 print("Programa de Consola")
 print("v0.1 por Luis Rodriguez")

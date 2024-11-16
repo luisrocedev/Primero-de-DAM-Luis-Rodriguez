@@ -1,3 +1,7 @@
+#Clase y Objeto
+#Clase: Es una plantilla que define atributos y métodos comunes. Es el "molde" a partir del cual se crean los objetos.
+#Objeto: Es una instancia de una clase. Cada objeto tiene su propio estado (valores de atributos) y comportamientos (métodos).
+
 class Persona:                                              # Definición de la clase Persona
     def __init__(self, nombre, edad):                       # Atributos de la clase
         self.nombre = nombre
