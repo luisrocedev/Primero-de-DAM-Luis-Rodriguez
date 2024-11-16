@@ -1,0 +1,6 @@
+Importante, cuando vayamos a hacer la refacorizacion, es muy importante hacer carpetas.
+Una que se llame funciones.py y la otra principal.py
+ 
+
+En principal debemos hacer un from funciones import*. Importante definir las funciones a usar 
+en funciones.py sino no funciona

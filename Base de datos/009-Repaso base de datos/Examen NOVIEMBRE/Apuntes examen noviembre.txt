@@ -1,0 +1,71 @@
+1.-Detectar y disenar el modelo de datos con entidades y propieades dentro de cada entidad
+2.-Crear las tablas basica en la base de datos implementando el modelo de datos
+3.-Crear las restricciones foraneas y tasblas auxiliares si fuera necesario
+4.-Probar el modelo de datos mediante la insercion de elementos
+5.-Probar el modelo de datos creando una peticion LEFT JOIN para juntar datos de las tablas
+6.-No olvidar guarda el resultado de la consulta JOIN en una vista
+
+
+tabla capitulos:
+-Titulo
+-Subtitulo
+-Imagen
+-Video
+-Texto
+
+tabla expertos(individual)
+-Nombre
+-Oficio
+-Imagen
+-Video
+-Texto
+
+tabla externa apareceexpertos
+-idaparece FK (siempre INT)
+-idexperto FK
+
+tabla proyectos
+-Titulo
+-Subtitulo
+-Coletilla
+-Texto
+
+tabla creditos
+-Titulo
+-Resumen
+-Colaboracion
+-Entrevistados
+
+tabla documentaciongrafica
+-categoria FK
+-imagen 
+-texto
+
+documentaciongraficacategorias
+-nombrecategoria
+
+tabla bibliografia
+-Titulo
+-Autore
+-Imagen
+-Enlace
+
+IMPORTANTE HACER UN LEFT JOIN NO TE OLVIDES LUIS!!!!!
+
+SELECT * FROM `capitulosexpertos`(o lo que sea)
+
+LEFT JOIN capitulos(o lo que sea)
+ON (o lo que sea)capitulosexpertos.capitulos_nombre = capitulos.Identificador
+
+LEFT JOIN expertos(o lo que sea)
+ON capitulosexpertos.expertos_nombre = expertos.Identificador
+
+y luego quitar el asterisco y hacer
+
+SELECT
+
+capitulos.Titulo,
+capitulos.Subtitulo,
+expertos.nombre
+
+Despues hacer un crear vista para guardar el LEFT JOIN.
