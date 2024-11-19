@@ -1,6 +1,7 @@
 header{
 		width:100%;
 		position:fixed;
+		z-index: 999;
 	}
 	header .universidad{
 		box-sizing:border-box;
@@ -15,6 +16,7 @@ header{
 	}
 	header .universidad img{
 		width:250px;
+		padding-left: 30px;
 	}
 	header .universidad nav img{
 		width:30px;
@@ -41,7 +43,6 @@ header{
 	}
 	header .proyecto{
 		background:#2f2e3e;
-		padding:0px 30px;
 		box-sizing:border-box;
 		padding:7.2px;
 		display: flex;
@@ -50,10 +51,10 @@ header{
 		justify-content: space-between;
 		align-items: center;
 		align-content: stretch;
-
 	}
 	header .proyecto img{
 		width:158px;
+		padding-left: 30px;
 		}
 	header .proyecto ul{
 		list-style-type:none;
