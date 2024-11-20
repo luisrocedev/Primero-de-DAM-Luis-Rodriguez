@@ -1,0 +1,1 @@
+CREATE TABLE `examenbd`.`bibliografia` (`Identificador` INT(255) NOT NULL AUTO_INCREMENT , `Imagen` VARCHAR(255) NOT NULL , `Titulo` VARCHAR(255) NOT NULL , `Autor` VARCHAR(255) NOT NULL , PRIMARY KEY (`Identificador`)) ENGINE = InnoDB;

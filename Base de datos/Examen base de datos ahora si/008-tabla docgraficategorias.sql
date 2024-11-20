@@ -1,0 +1,2 @@
+CREATE TABLE `examenbd`.`documentaciongraficacategorias` (`Identificador` INT(255) NOT NULL AUTO_INCREMENT , `nombrecategoria` INT(255) NOT NULL , PRIMARY KEY (`Identificador`)) ENGINE = InnoDB;
+ALTER TABLE `documentaciongraficacategorias` CHANGE `nombrecategoria` `nombrecategoria` VARCHAR(255) NOT NULL;

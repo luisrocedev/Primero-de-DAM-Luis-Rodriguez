@@ -1,0 +1,1 @@
+CREATE TABLE `examenbd`.`creditos` (`Identificador` INT(255) NOT NULL AUTO_INCREMENT , `Titulo` VARCHAR(255) NOT NULL , `Personas` VARCHAR(255) NOT NULL , `Cargos` VARCHAR(255) NOT NULL , PRIMARY KEY (`Identificador`)) ENGINE = InnoDB;

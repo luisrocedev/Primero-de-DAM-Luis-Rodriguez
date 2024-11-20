@@ -1,0 +1,1 @@
+CREATE TABLE `examenbd`.`capitulosexpertos` (`Identificador` INT NOT NULL AUTO_INCREMENT , `id_capitulo` INT NOT NULL , `id_expertos` INT NOT NULL , PRIMARY KEY (`Identificador`)) ENGINE = InnoDB;

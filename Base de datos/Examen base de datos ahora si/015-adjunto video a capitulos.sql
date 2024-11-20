@@ -1,0 +1,1 @@
+ALTER TABLE `capitulos` CHANGE `Video` `Video` VARCHAR(255) NOT NULL;
