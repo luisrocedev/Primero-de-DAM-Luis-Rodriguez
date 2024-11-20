@@ -66,7 +66,7 @@ while True:
             SET 
               Titulo = '{Titulo}'
             WHERE
-            Identificador = {Identificador};
+            Identificador = {Identificador}
             """                                                      # Inserto un nuevo capítulo
             cursor.execute(peticion)                                 # Ejecuto la peticion
             filas = cursor.fetchall()                                # Saco las filas
@@ -80,7 +80,7 @@ while True:
             SET 
               Subtitulo = '{Subtitulo}'
             WHERE
-            Identificador = {Identificador};
+            Identificador = {Identificador}
             """                                                      # Inserto un nuevo capítulo
             cursor.execute(peticion)                                 # Ejecuto la peticion
             filas = cursor.fetchall()                                # Saco las filas
@@ -94,7 +94,7 @@ while True:
             SET 
               Imagen = '{Imagen}'
             WHERE
-            Identificador = {Identificador};
+            Identificador = {Identificador}
             """                                                      # Inserto un nuevo capítulo
             cursor.execute(peticion)                                 # Ejecuto la peticion
             filas = cursor.fetchall()                                # Saco las filas
@@ -108,7 +108,7 @@ while True:
             SET 
               Video = '{Video}'
             WHERE
-            Identificador = {Identificador};
+            Identificador = {Identificador}
             """                                                      # Inserto un nuevo capítulo
             cursor.execute(peticion)                                 # Ejecuto la peticion
             filas = cursor.fetchall()                                # Saco las filas
@@ -122,7 +122,7 @@ while True:
             SET 
               Texto = '{Texto}'
             WHERE
-            Identificador = {Identificador};
+            Identificador = {Identificador}
             """                                                      # Inserto un nuevo capítulo
             cursor.execute(peticion)                                 # Ejecuto la peticion
             filas = cursor.fetchall()                                # Saco las filas

@@ -1,0 +1,15 @@
+Estudiantes
+id (PK)
+nombre (VARCHAR)
+apellido (VARCHAR)
+correo (VARCHAR)
+
+Cursos
+id (PK)
+nombre (VARCHAR)
+descripcion (VARCHAR)
+
+Estudiantes_Cursos (tabla intermedia para la relación muchos a muchos)
+id (PK)
+id_estudiante (FK -> Estudiantes.id)
+id_curso (FK -> Cursos.id)

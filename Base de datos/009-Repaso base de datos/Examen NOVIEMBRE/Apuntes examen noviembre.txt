@@ -69,3 +69,17 @@ capitulos.Subtitulo,
 expertos.nombre
 
 Despues hacer un crear vista para guardar el LEFT JOIN.
+
+OTRO EJEMPLO DE LEFT JOIN
+
+SELECT
+    estudiantes.nombre AS nombre_estudiante,
+    estudiantes.apellido,
+    estudiantes.correo,
+    cursos.nombre AS nombre_curso,
+    cursos.descripcion
+FROM estudiantes_cursos
+LEFT JOIN estudiantes
+    ON estudiantes_cursos.id_estudiante = estudiantes.id
+LEFT JOIN cursos
+    ON estudiantes_cursos.id_curso = cursos.id;
