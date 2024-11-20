@@ -1,0 +1,66 @@
+MODELO BASE DE DATOS
+
+aviso legal:
+-id
+-titulo
+-texto
+
+bibliografia:
+-id
+-imagen
+-titulo
+-autor
+
+capitulos:
+-id
+-numerador
+-titulo
+-subtitulo
+-texto
+-imagen
+-video
+
+capitlosexpertos:
+-id
+-id_capitulo FK
+-id_expertos FK
+
+cookies:
+-id
+-titulo
+-texto
+
+creditos:
+-id
+-titulo
+-personas
+-cargos
+
+documentaciongrafica:
+-id
+-imagen
+-texto
+-id_categoria FK
+
+documentaciongraficacategorias
+-id
+-nombrecategoria
+
+expertos:
+-id
+-nombre
+-oficio
+-video
+-texto
+
+inicio:
+-id
+-titulo
+-subtitulo
+-texto
+
+proyecto:
+-id
+-titulo
+-texto
+-imagen
