@@ -5,7 +5,7 @@ ventana = tk.Tk()
 def saluda():
     print("Yo te saludo")
 
-botn = tk.Button(
+boton = tk.Button(
     ventana,
     text="Pulsame"
     )
