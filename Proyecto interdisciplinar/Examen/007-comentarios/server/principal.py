@@ -1,6 +1,7 @@
 from funciones import *                                 #importo todas las funciones
 from flask import Flask                                 #importo flask
 from flask_cors import CORS                             #import CORS para que no me de error
+
 aplicacion = Flask(__name__)                            #Inserto codigo para validar CORS
 CORS(aplicacion)  
 
@@ -9,8 +10,8 @@ user="cookiesexamen",                                   # Usuario de la base de 
 password="cookiesexamen",                               # Contraseña del usuario 
 database="cookiesexamen"                                # Base de datos
 
-@aplicacion.route('/cookies')                    # Cuando alguien llame a damearticulos
-def inicio():                                     # Defino una funcion
-    return seleccionaCookies()              # Devuelvo un mensaje
+@aplicacion.route('/cookies')                           # Cuando la app llame a cookies
+def inicio():                                           # Defino una funcion
+    return seleccionaCookies()                          # Devuelvo un seleccionacookis
 
-aplicacion.run()                                                             # Mensaje de cierre
+aplicacion.run()                                        # Mensaje de cierre
