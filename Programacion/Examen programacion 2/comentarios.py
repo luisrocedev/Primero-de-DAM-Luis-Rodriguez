@@ -25,8 +25,7 @@ def calcula():
 
   resultadoimpuesto = None                      # Inicializo la variable para guardar el resultado
 
-  if resultado() == "":
-    resultadoimpuesto = irpf(operando.get(), )
+
   
 
   resultado.config(text=resultadoimpuesto)
