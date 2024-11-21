@@ -1,5 +1,5 @@
 ///////////////////////////// INSTALAR UBUNTU /////////////////////////////
-
+ip: 192.168.1.225
 paso1
 	-instalar ubuntu
 	-asegurate de tener adaptador puente
