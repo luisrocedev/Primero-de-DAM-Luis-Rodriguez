@@ -12,11 +12,11 @@
 }
 
 :root{
-    --color_text-primary: #AB29CA;
-    --color_text-secundary: #101E2C;
-    --color_text-tertiary: #485663;
-    --main_color-primary: #9A00BF;
-    --main_color-secundary: #F4D4FB;
+    --color_text-primary: #e95e30;;
+    --color_text-secundary: #FAFBFE;
+    --color_text-tertiary: #2d2e2f;
+    --main_color-primary: #e95e30;
+    --main_color-secundary: #1c1c1c;
     --background-color: #FAFBFE;
     --lowText_font_size: 16px;
     --text_size_title: 40px;
@@ -28,9 +28,9 @@
 
 header{
     width: 100%;
-    height: 100px;
-    position: fixed;
+    height: 110px;
     z-index: 100;
+    background: var(--main_color-secundary);
 }
 
 .container__header{
@@ -41,6 +41,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
+    background: var(--main_color-secundary);
 }
 
 .logo{
@@ -90,10 +91,11 @@ header{
     font-weight: 500;
     margin: 0px 20px;
     transition: all 300ms;
+    color: #e6e6e6;
 }
 
 .btn__quote:hover{
-    color: white;
+    color: var(--main_color-secundary);
     background: var(--main_color-primary);
 }
 
@@ -129,7 +131,7 @@ header{
 .text__cover p{
     font-size: 1rem;
     margin-top: 40px;
-    color: var(--color_text-tertiary);
+    color: var(--color_text-secundary);
     font-weight: 400;
 }
 
@@ -140,7 +142,7 @@ header{
     padding: 10px 20px;
     text-align: center;
     background: var(--main_color-primary);
-    color: white;
+    color: var(--main_color-secundary);
     border-radius: 8px;
     border: 2px solid transparent;
     cursor: pointer;
@@ -189,7 +191,7 @@ header{
 .text__card-primary h1{
     font-size: var(--text_size_title);
     font-weight: 600;
-    color: var(--color_text-secundary);
+    color: var(--color_text-tertiary);
 }
 
 .container__box-cardPrimary{
