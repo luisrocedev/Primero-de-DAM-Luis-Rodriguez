@@ -1,0 +1,65 @@
+/*portada de inicio*/
+
+.container__cover{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--main_color-secundary);
+}
+.cover{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.text__cover{
+    width: 100%;
+    padding-right: 150px;
+}
+
+.text__cover h1{
+    font-family: 'Manuka', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 7vw;
+    color: var(--color_text-secundary);
+}
+
+.text__cover p{
+    font-size: 1rem;
+    margin-top: 40px;
+    color: var(--color_text-secundary);
+    font-weight: 400;
+}
+
+.btn__text{
+    display: block;
+    width: 180px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    background: var(--main_color-primary);
+    color: var(--main_color-secundary);
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.btn__text:hover{
+    background: transparent;
+    border: 2px solid var(--main_color-primary);
+    color: var(--main_color-primary);
+}
+
+.image__cover{
+    width: 100%;
+}
+.image__cover img{
+    
+    width: 590px;
+    transform: translateX(-160px);
+}
+
+/*Estilos generales CARDS*/
