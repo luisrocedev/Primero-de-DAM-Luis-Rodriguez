@@ -1,0 +1,62 @@
+/*Estilo header*/
+header{
+    height: 100px;
+}
+
+.container__header{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 40px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 160px;
+}
+
+.menu nav ul{
+    display: flex;
+    padding-left: 400px;
+}
+
+.menu nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.menu nav ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--color_text-tertiary);
+    transition: opacity 300ms;
+}
+
+.menu nav ul li a:hover{
+    opacity: 0.6;
+}
+
+.btn__header-register,
+.btn__register-cover{
+    padding: 14px 50px;
+    border: none;
+    background: var(--color_text-tertiary);
+    color: var(--color_text-secundary);
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background, color, 300ms;
+}
+
+.btn__header-register:hover,
+.btn__register-cover:hover{
+    background: var(--color_text-primary);
+    color: black;
+}
+
+#icon_menu{
+    display: none;
+}

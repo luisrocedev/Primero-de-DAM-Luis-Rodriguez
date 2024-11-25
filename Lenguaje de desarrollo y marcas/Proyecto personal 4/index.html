@@ -7,25 +7,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Landing Page con efecto Paralax - Luis Rodriguez</title>
         <script src="https://kit.fontawesome.com/0bf3618e67.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/banner-contenedor.css">
+        <link rel="stylesheet" href="css/cover.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/servicios.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        
     </head>
     <body>
+        <!--Header - Menu-->
         <header>
             <div class="container__header">
-
                 <div class="logo">
                     <img src="media/logo.png" alt="">
                 </div>
 
-
                 <div class="menu">
                     <nav>
                         <ul>
-                            <li><a href="#">Productos</a></li>
-                            <li><a href="#">Soluciones</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Sobre mi</a></li>
-                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Ventajas</a></li>
+                            <li><a href="#">Precios</a></li>
+                            <li><a href="#">Prueba gratis</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -35,15 +38,16 @@
                 </div>
             </div>
         </header>
-
+        
         <main>
+
+            <!--INICIO-->
+            <!--Portada de inicio-->
             <script src="js/script.js"></script>
             <div class="cover">
-
                 <div class="text__information_cover">
-                    <h1>Tus reservas en un solo click</h1>
-                    <p>Usa la comodidad de tu aplicacion para poder registrarse en tus clases de TaronjaBox y ver 
-                        cuanto antes que WOD va a ver ese dia.</p>
+                    <h1>Control absoluto,sin complicaciones.</h1>
+                    <p>La app ideal para reservas, pagos y más, todo al mejor precio. Sin costes de instalación ni permanencia. Tu centro deportivo eficiente y accesible.</p>
                     <div class="buttons__cover">
                         <input type="button" class="btn__register-cover" value="Registrase">
                         <input type="button" class="btn__readMore-cover" value="Leer mas">
@@ -51,12 +55,13 @@
                 </div>
 
                 <div class="media__cover">
-                    <video src="media/animacion_cover.webm" autoplay playinline loop muted
-                    preload="auto"></video>
+                    <!--<video src="media/animacion_cover.webm" autoplay playinline loop muted
+                    preload="auto"></video>-->
+                    <img src="assets/images/img.png" alt="">
                 </div>
-
             </div>
 
+            <!--Contenedor del banner-->
             <div class="container__banner">
                 <div class="banner">
                     <div class="banner__icon-heart">
@@ -66,17 +71,50 @@
                         <img src="media/fire-dynamic-color.png" id="icon_fire" alt="">
                     </div>
                     <div class="banner__text">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam praesentium unde quisquam distinctio tempore,
-                             cupiditate magnam aliquam asperiores sunt possimus nihil rem!
-                        </h2>
+                        <h2>Luis Rordriguez, programador e ilustrador</h2>
                         <a href="#">Leer mas</a>
                     </div>
                 </div>
             </div>
 
-
-
+            <!--Servicios-->
+            <div class="container__service container__card-primary div__offset">
+                <div class="service card__primary">
+                    <div class="text__service text__card-primary">
+                        <p>QUE HAGO</p>
+                        <h1>Servicio para resolver todo tipo de problemas empresariales</h1>
+                    </div>
+                    <div class="container__card-service container__box-cardPrimary">
+                        <div class=" card__service box__card-primary">
+                            <img src="assets/images/Services/grid.png" alt="">
+                            <h2>Control empresarial completo</h2>
+                            <p>Soluciones creativas y funcionales con una base sólida en programación 
+                                y habilidades artísticas.</p>
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class=" card__service box__card-primary">
+                            <img src="assets/images/Services/grid.png" alt="">
+                            <h2>Control empresarial completo</h2>
+                            <p>Soluciones creativas y funcionales con una base sólida en programación 
+                                y habilidades artísticas.</p>
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class=" card__service box__card-primary">
+                            <img src="assets/images/Services/grid.png" alt="">
+                            <h2>Control empresarial completo</h2>
+                            <p>Soluciones creativas y funcionales con una base sólida en programación 
+                                y habilidades artísticas.</p>
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
-        
     </body>
 </html>
