@@ -3,7 +3,7 @@
 </style>
 <header>
 	<div class="contenedor">
-		<img src="img/logo.svg">
+		<img src="img/logo.png">
 		<nav>
 			<ul>
 				<li>
