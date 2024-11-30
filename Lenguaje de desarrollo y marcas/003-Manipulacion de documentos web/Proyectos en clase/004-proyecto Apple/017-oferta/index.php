@@ -3,7 +3,6 @@
 	<head>
 		<title>Apple</title>
 		<link rel="Stylesheet" href="estilo/general.css">
-		<link rel="Stylesheet" href="estilo/oferta.css">
 		<meta charset="utf-8">
 	</head>
 	<body>
