@@ -39,3 +39,18 @@ nav ul li{
 	padding: 20px;
 	border-bottom:1px solid white;
 }
+section{
+	box-sizing: border-box;
+	padding: 20px;
+}
+table{
+	width: 100%;
+}
+table thead tr{
+	background: darkslateblue;
+	color: white;
+}
+table thead tr td{
+	color: white;
+	padding: 10px;
+}
