@@ -49,3 +49,15 @@
     0%{left: 0px;}
     100%{left: -10240px;}
 }
+
+#botonera{
+	text-align: center;
+}
+.punto{
+	width: 10px;
+	height: 10px;
+	background: grey;
+	border-radius: 20px;
+	margin: 10px;
+	display: inline-block;
+}
