@@ -1,17 +1,15 @@
 <!doctype html>
 <html>
-    <head>
-        <link rel="stylesheet" href="estilo/escritorio.css">
-    </head>
-    <body>
-        <header>
-            <main>
-                <nav>
-                    <section>
-
-                    </section>
-                </nav>
-            </main>
-        </header>
-    </body>
+	<head>
+		<link rel="Stylesheet" href="estilo/escritorio.css">
+	</head>
+	<body>
+		<header></header>
+		<main>
+			<nav>
+			</nav>
+			<section>
+			</section>
+		</main>
+	</body>
 </html>
