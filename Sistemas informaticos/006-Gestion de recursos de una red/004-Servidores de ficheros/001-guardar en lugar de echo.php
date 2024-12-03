@@ -15,4 +15,3 @@ if ($fileHandle) {
     echo "No se pudo abrir el archivo para escritura.";
 }
 ?>
-
