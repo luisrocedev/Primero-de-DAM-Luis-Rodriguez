@@ -1,0 +1,53 @@
+
+<header>
+	<div class="contenedor">
+		<img src="img/logo.png">
+		<nav>
+			<ul>
+				<template id="elementomenu">
+					<li>
+						<a href="">hola</a>
+					</li>
+				</template>
+			</ul>
+		</nav>
+		<div id ="supermenu">
+			<div class ="columna">
+				<h3>Cabecera</h3>
+				<ul>
+					<li>Elemento</li>
+					<li>Elemento</li>
+					<li>Elemento</li>
+					<li>Elemento</li>
+					<li>Elemento</li>
+				</ul>
+			</div>
+			<div class ="columna">
+				<h3>Cabecera</h3>
+				<ul>
+					<li>Elemento</li>
+					<li>Elemento</li>
+					<li>Elemento</li>
+					<li>Elemento</li>
+					<li>Elemento</li>
+				</ul>
+			</div>
+			<div class ="columna">
+				<h3>Cabecera</h3>
+				<ul>
+					<li>Elemento</li>
+					<li>Elemento</li>
+					<li>Elemento</li>
+					<li>Elemento</li>
+					<li>Elemento</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<style>
+	<?php include "cabecera.css"?>
+</style>
+<script>
+	<?php include "cabecera.js"?>
+</script>
