@@ -22,4 +22,3 @@ fclose($manejadorarchivo);
 echo "ok compilado";
 
 ?>
-
