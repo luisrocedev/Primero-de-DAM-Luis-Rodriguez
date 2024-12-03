@@ -20,9 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `proyectoapple`
 --
+consulta SQL: Copiar
+
+
+--
+-- Base de datos: `proyectoapple`
+--
 CREATE DATABASE IF NOT EXISTS `proyectoapple` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
 USE `proyectoapple`;
+-- --------------------------------------------------------
 
+--
+-- Estructura de tabla para la tabla `categorias`
+--
+
+CREATE TABLE `categorias` (
+  `Identificador` int NOT NULL,
+  `nombre` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+MySQL ha dicho: Documentación
+
+#1273 - Collation desconocida: 'utf8mb4_0900_ai_ci'
 -- --------------------------------------------------------
 
 --
