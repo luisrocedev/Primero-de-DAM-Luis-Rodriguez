@@ -22,3 +22,4 @@ while ($fila = $resultado->fetch_assoc()) {
 
 $conexion->close();
 ?>
+
