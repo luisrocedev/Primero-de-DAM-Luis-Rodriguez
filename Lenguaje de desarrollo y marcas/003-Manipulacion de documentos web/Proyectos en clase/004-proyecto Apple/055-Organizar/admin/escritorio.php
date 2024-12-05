@@ -1,4 +1,4 @@
-<?php include "error.php"?>
+<?php include "utilidades/error.php"?>
 <!doctype html>
 <html>
 	<head>
