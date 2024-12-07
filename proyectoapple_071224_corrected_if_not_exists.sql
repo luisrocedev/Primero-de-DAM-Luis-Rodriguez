@@ -27,10 +27,10 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `categorias`
 --
 
-CREATE TABLE `categorias` (
+CREATE TABLE IF NOT EXISTS `categorias` (
   `Identificador` int NOT NULL,
   `nombre` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `categorias`
@@ -57,14 +57,14 @@ INSERT INTO `categorias` (`Identificador`, `nombre`) VALUES
 -- Estructura de tabla para la tabla `destacados`
 --
 
-CREATE TABLE `destacados` (
+CREATE TABLE IF NOT EXISTS `destacados` (
   `Identificador` int NOT NULL,
   `titulo` varchar(255) NOT NULL,
   `texto` varchar(255) NOT NULL,
   `enlace` varchar(255) NOT NULL,
   `comprar` varchar(255) NOT NULL,
   `imagen` mediumblob NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `destacados`
@@ -81,14 +81,14 @@ INSERT INTO `destacados` (`Identificador`, `titulo`, `texto`, `enlace`, `comprar
 -- Estructura de tabla para la tabla `heroes`
 --
 
-CREATE TABLE `heroes` (
+CREATE TABLE IF NOT EXISTS `heroes` (
   `Identificador` int NOT NULL,
   `titulo` varchar(255) NOT NULL,
   `texto` varchar(255) NOT NULL,
   `enlace` varchar(255) NOT NULL,
   `comprar` varchar(255) NOT NULL,
   `imagen` mediumblob NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `heroes`
@@ -107,13 +107,13 @@ INSERT INTO `heroes` (`Identificador`, `titulo`, `texto`, `enlace`, `comprar`, `
 -- Estructura de tabla para la tabla `oferta`
 --
 
-CREATE TABLE `oferta` (
+CREATE TABLE IF NOT EXISTS `oferta` (
   `Identificador` int NOT NULL,
   `texto` varchar(255) NOT NULL,
   `enlace` varchar(255) NOT NULL,
   `fehcainicio` date NOT NULL,
   `fechafinal` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `oferta`
@@ -128,7 +128,7 @@ INSERT INTO `oferta` (`Identificador`, `texto`, `enlace`, `fehcainicio`, `fechaf
 -- Estructura de tabla para la tabla `usuarios`
 --
 
-CREATE TABLE `usuarios` (
+CREATE TABLE IF NOT EXISTS `usuarios` (
   `Identificador` int NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
   `contrasena` varchar(255) COLLATE utf8mb4_general_ci NOT NULL
