@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:8889
--- Tiempo de generación: 07-12-2024 a las 08:30:29
--- Versión del servidor: 8.0.35
+-- Tiempo de generación: 08-12-2024 a las 18:57:54
+-- Versión del servidor: 5.7.44
 -- Versión de PHP: 8.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -28,12 +28,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `oferta` (
-  `Identificador` int NOT NULL,
+  `Identificador` int(11) NOT NULL,
   `texto` varchar(255) NOT NULL,
   `enlace` varchar(255) NOT NULL,
   `fehcainicio` date NOT NULL,
   `fechafinal` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `oferta`
@@ -60,7 +60,7 @@ ALTER TABLE `oferta`
 -- AUTO_INCREMENT de la tabla `oferta`
 --
 ALTER TABLE `oferta`
-  MODIFY `Identificador` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Identificador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
