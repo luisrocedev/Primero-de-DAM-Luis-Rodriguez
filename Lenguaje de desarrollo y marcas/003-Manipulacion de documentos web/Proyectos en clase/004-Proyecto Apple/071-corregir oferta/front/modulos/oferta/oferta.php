@@ -1,6 +1,6 @@
 <section id="oferta">
-		<p></p>
-		<a>Saber más</a>
+		<p><a>Saber más</a></p>
+		
 	</section>
 	
 	<script>
