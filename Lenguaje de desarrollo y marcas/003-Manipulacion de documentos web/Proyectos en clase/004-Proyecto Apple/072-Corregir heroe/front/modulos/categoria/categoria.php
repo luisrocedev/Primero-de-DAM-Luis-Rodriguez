@@ -1,28 +1,35 @@
 <main>
     <?php
     include "modulos/bloque/bloque.php";
+    
+    $conexion = mysqli_connect(
+			"localhost", 
+			"proyectoapple", 
+			"proyectoapple", 
+			"proyectoapple"
+		);		
+	
+		$peticion = "
+		SELECT * 
+		FROM bloques
+		WHERE categorias_nombre = ".$_GET['cat']."
+		;";																					// Creo una petición
+		//echo $peticion;
+		$resultado = mysqli_query($conexion, $peticion);						// Ejecuto la petición contra el servidor
+																								// Creo un array vacio
+		while($fila = mysqli_fetch_array($resultado, MYSQLI_ASSOC)){		// Para cada uno de los resultados
+			if($fila['tipobloque_tipo'] == "1"){
+				$bloque = new BloqueCompleto($fila['titulo'], $fila['subtitulo']);
+    			echo $bloque->getBloque();
+			}else if($fila['tipobloque_tipo'] == "2"){
+				$bloque = new BloqueCaja($fila['titulo'], $fila['subtitulo']);
+    			echo $bloque->getBloque();
+			}
+		 }
+																		
+		
 
-    $bloque1 = new BloqueCompleto("Titulo bloque 1");
-    echo $bloque1->getBloque();
-
-    $bloque2 = new BloqueCaja("Titulo bloque 2", "Subtitulo Bloque 2");
-    echo $bloque2->getBloque();
-
-    $bloque3 = new BloqueCaja("Titulo bloque 3", "Subtitulo Bloque 3", "Texto bloque 3");
-    echo $bloque3->getBloque();
-
-    $bloque4 = new BloqueCaja(
-        "Titulo bloque 4",
-        "Subtitulo Bloque 4",
-        "Texto bloque 4",
-        "",
-        "",
-        [
-        	"background" => "red",
-        	"border-radius" => "25px"
-        	]
-    );
-    echo $bloque4->getBloque();
+    
     ?>
 </main>
 <script>
