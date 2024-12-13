@@ -10,7 +10,7 @@
 						"localhost", 
 						"proyectoapple", 
 						"proyectoapple", 
-						"proyectoapple"
+						"proyectoapple2"
 					);	
 				}
 			// Otros métodos que necesito
