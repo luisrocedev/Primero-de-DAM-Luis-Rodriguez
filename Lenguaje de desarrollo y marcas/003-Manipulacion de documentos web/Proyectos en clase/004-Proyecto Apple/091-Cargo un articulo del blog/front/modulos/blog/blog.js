@@ -13,6 +13,28 @@ function cargaBlog(){
 		 	instancia.querySelector("time").textContent = dato.fecha		// Introduzco la fecha personalizada
 		 	instancia.querySelector("article").setAttribute("Identificador",dato.Identificador)
 		 	instancia.querySelector("article").onclick = function(){
+		 	
+		 		// Cargo el artículo del blog
+		 		fetch("../back/?busca=blog&campo=Identificador&dato="+this.getAttribute("Identificador")) 													// Cargo un endpoint en el back
+					.then(function(response) { 													// Cuando obtenga respuesta
+						 return response.json(); 													// La convierto en json
+					})
+					.then(function(datos) {
+						let modal = document.querySelector("#modalpersonalizado")
+						modal.innerHTML = ""
+						let titulo = document.createElement("h3")
+						titulo.textContent = dato.titulo
+						modal.appendChild(titulo)
+						
+						let fecha = document.createElement("time")
+						fecha.textContent = dato.fecha
+						modal.appendChild(fecha)
+						
+						let contenido = document.createElement("p")
+						contenido.textContent = dato.contenido
+						modal.appendChild(contenido)
+					 })
+		 		// Eventos
 		 		document.querySelector("#contienemodalpersonalizado").style.display = "block"
 		 		document.querySelector("#contienemodalpersonalizado").onclick = function(event){
 		 			event.stopPropagation()
