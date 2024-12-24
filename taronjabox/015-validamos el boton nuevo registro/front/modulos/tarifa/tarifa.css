@@ -1,0 +1,10 @@
+#tarifas{
+	display: grid;
+  	grid-template-columns: auto auto;
+}
+#tarifas article{
+	min-height:300px;
+	text-align:center;
+	box-sizing:border-box;
+	padding:40px;
+}
