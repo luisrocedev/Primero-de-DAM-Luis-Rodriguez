@@ -12,7 +12,10 @@
 	while ($fila = $resultado->fetch_assoc()) {			// Para cada resultado obtenido
 	  echo "<td>".$fila['Field']."</td>";					// Creo una columna de la tabla
 	}
-
+	echo "
+	<td>
+		
+	</td>"; 
 	$conexion->close();											// Cierro la base de datos
 ?>
 
