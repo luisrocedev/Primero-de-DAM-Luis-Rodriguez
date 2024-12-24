@@ -45,8 +45,8 @@
 	</div>
 </header>
 <script>
-	<?php include "cabecera.js"?>
+	<?php include "header.js"?>
 </script>
 <style>
-	<?php include "cabecera.css"?>
+	<?php include "header.css"?>
 </style>

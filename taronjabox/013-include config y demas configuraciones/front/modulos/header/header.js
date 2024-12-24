@@ -1,4 +1,4 @@
-fetch("../back/?tabla=categorias")													// Cargo un endpoint en el back
+fetch("../back/?tabla=header")													// Cargo un endpoint en el back
 .then(function(response){														// Cuando obtenga respuesta
 	return response.json()														// La conbierto en json
 })
@@ -8,7 +8,7 @@ fetch("../back/?tabla=categorias")													// Cargo un endpoint en el back
 	let plantilla = document.querySelector("#elementomenu")
 	datos.forEach(function(dato){
 		let instancia = plantilla.content.cloneNode(true);
-		instancia.querySelector("a").textContent = dato.nombre
+		instancia.querySelector("a").textContent = dato.seccion
 		cabecera.appendChild(instancia)
 		
 	})

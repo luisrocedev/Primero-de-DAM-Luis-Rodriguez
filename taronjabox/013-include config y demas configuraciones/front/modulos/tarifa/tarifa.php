@@ -1,5 +1,5 @@
-<section id="destacados">
-	<template id="plantilladestacado">
+<section id="tarifas">
+	<template id="plantillatarifa">
 		<article>
 			<h3>Título</h3>
 			<h4>Frase de marketing</h4>
@@ -10,8 +10,8 @@
 </section>
 
 <script>
-	<?php include "destacados.js"?>
+	<?php include "tarifa.js"?>
 </script>
 <style>
-	<?php include "destacados.css"?>
+	<?php include "tarifa.css"?>
 </style>
