@@ -87,11 +87,22 @@ carpetascopias = "/Users/luiskill99/backups/"
 carpetas = os.listdir(carpetascopias)
 for carpeta in carpetas:
     print(carpeta)
-    fechaepoch = carpeta.split("_")[1]
-    print(fechaepoch)
-    print(str(round(time.time())))
-    if abs(int(fechaepoch) - round(time.time())) > 60*100:
-        shutil.rmtree("/Users/luiskill99/backups/"+carpeta)
+    try:
+        # Intentamos extraer la fechaepoch de la carpeta
+        fechaepoch = carpeta.split("_")[1]
+        
+        # Comprobamos si la fechaepoch es un número válido
+        if fechaepoch.isdigit():
+            print(fechaepoch)
+            print(str(round(time.time())))
+            # Comparamos la diferencia entre las fechas
+            if abs(int(fechaepoch) - round(time.time())) > 60 * 5:
+                shutil.rmtree("/Users/luiskill99/backups/" + carpeta)
+        else:
+            print(f"Advertencia: '{fechaepoch}' no es un número válido, se omite esta carpeta.")
+    except IndexError:
+        # Maneja el caso si la carpeta no tiene el formato esperado
+        print(f"Advertencia: El nombre de la carpeta '{carpeta}' no tiene el formato esperado.")
 
 
 
