@@ -59,10 +59,11 @@ archivo = open("/Users/luiskill99/backups/"+fechacompuesta+"/basededatos/exporta
 subprocess.run(comando, stdout=archivo, check=True)
 archivo.close()
 
-servidorftp = 'home462793689.1and1-data.host'                           # Datos de conexión al SFTP
+'''
+servidorftp = 'XXX'                           # Datos de conexión al SFTP
 puertoftp = 22
-usuarioftp = 'acc861510062'
-contrasenaftp = 'TAME123$'
+usuarioftp = 'XXX'
+contrasenaftp = 'XXX'
 
 carpetalocal = "/Users/luiskill99/backups"+fechacompuesta              # Carpeta de origen en mi ordenador
 carpetaremota = ""                                                      # Carpeta de destino en el FTP
@@ -80,6 +81,17 @@ sftp = ssh.open_sftp()                                                  # Abro u
 upload_folder_to_sftp(sftp, carpetalocal, carpetaremota)                # Subo recursivamente
 sftp.close()                                                            # Cierro el SFTP
 ssh.close()                                                             # Cierro el SSH
+'''
+
+carpetascopias = "/Users/luiskill99/backups/"
+carpetas = os.listdir(carpetascopias)
+for carpeta in carpetas:
+    print(carpeta)
+    fechaepoch = carpeta.split("_")[1]
+    print(fechaepoch)
+    print(str(round(time.time())))
+    if abs(int(fechaepoch) - round(time.time())) > 60*5:
+        shutil.rmtree("/Users/luiskill99/backups/"+carpeta)
 
 
 

@@ -59,10 +59,10 @@ archivo = open("/Users/luiskill99/backups/"+fechacompuesta+"/basededatos/exporta
 subprocess.run(comando, stdout=archivo, check=True)
 archivo.close()
 
-servidorftp = 'home462793689.1and1-data.host'                           # Datos de conexión al SFTP
+servidorftp = 'serverprueba'                           # Datos de conexión al SFTP
 puertoftp = 22
-usuarioftp = 'acc861510062'
-contrasenaftp = 'TAME123$'
+usuarioftp = 'userprueba'
+contrasenaftp = 'contrasenaprueba$'
 
 carpetalocal = "/Users/luiskill99/backups"+fechacompuesta              # Carpeta de origen en mi ordenador
 carpetaremota = ""                                                      # Carpeta de destino en el FTP
