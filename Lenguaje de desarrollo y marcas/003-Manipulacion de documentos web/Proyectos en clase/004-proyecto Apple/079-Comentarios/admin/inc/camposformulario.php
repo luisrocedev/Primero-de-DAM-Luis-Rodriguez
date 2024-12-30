@@ -26,3 +26,4 @@ include "config/config.php";                          // Traigo la conexión a l
 
 	$conexion->close();											// Cierro la base de datos
 ?>
+

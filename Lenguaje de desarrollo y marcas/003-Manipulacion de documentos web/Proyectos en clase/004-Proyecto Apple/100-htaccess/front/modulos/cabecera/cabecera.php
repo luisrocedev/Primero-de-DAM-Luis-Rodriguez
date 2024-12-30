@@ -27,26 +27,7 @@
 					<li>Elemento</li>
 				</ul>
 			</div>
-			<div class="columna">
-				<h3>Cabecera</h3>
-				<ul>
-					<li>Elemento</li>
-					<li>Elemento</li>
-					<li>Elemento</li>
-					<li>Elemento</li>
-					<li>Elemento</li>
-				</ul>
-			</div>
-			<div class="columna">
-				<h3>Cabecera</h3>
-				<ul>
-					<li>Elemento</li>
-					<li>Elemento</li>
-					<li>Elemento</li>
-					<li>Elemento</li>
-					<li>Elemento</li>
-				</ul>
-			</div>
+			
 		</div>
 	</div>
 </header>

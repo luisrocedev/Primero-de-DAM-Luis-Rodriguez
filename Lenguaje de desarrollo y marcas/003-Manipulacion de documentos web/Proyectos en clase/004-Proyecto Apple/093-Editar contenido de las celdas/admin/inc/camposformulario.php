@@ -1,4 +1,3 @@
-
 <?php
 
 	// Este archivo carga las cabeceras de la tabla
@@ -27,3 +26,4 @@ include "config/config.php";                          // Traigo la conexión a l
 
 	$conexion->close();											// Cierro la base de datos
 ?>
+

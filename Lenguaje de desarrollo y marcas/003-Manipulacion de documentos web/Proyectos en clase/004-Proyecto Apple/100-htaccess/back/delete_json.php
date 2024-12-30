@@ -29,3 +29,4 @@ if (unlink($filePath)) {
 // Redirect back to the control panel
 header("Location: panel.php");
 exit;
+

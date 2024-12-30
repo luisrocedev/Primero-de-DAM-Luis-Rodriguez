@@ -17,3 +17,4 @@
 	</td>"; 
 	$conexion->close();											// Cierro la base de datos
 ?>
+

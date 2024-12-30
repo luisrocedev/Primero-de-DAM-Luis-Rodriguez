@@ -3,10 +3,16 @@
   	grid-template-columns: auto auto;
 }
 #destacados article{
-	min-height:300px;
+	min-height:500px;
 	text-align:center;
 	box-sizing:border-box;
 	padding:40px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
 }
 @media screen and (max-width: 800px) {
 	#destacados{

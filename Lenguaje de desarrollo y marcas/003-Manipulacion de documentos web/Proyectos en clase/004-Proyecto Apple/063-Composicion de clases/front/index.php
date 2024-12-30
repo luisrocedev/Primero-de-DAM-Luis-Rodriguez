@@ -16,3 +16,12 @@ ini_set('display_errors', 1);
 		<?php include "modulos/piedepagina/piedepagina.php"; ?>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+

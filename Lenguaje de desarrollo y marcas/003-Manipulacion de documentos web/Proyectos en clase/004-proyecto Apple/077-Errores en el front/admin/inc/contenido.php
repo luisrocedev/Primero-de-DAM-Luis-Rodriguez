@@ -37,3 +37,4 @@ while ($fila = $resultado->fetch_assoc()) {		// Para cada resultado obtenido
 
 $conexion->close();										// Cierro la conexión de base de datos
 ?>
+

@@ -1,4 +1,3 @@
-
 <title>JOCARSA</title>
 <link rel="Stylesheet" href="estilo/general.css">
 <meta charset="utf-8">

@@ -1,4 +1,3 @@
-
 function cargaBlog(){
 	fetch("../back/?tabla=blog") 													// Cargo un endpoint en el back
 	.then(function(response) { 													// Cuando obtenga respuesta

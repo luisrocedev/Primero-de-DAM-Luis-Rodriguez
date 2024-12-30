@@ -5,7 +5,7 @@
 	Este archivo genera elementos de lista que tienen un hipervinculo	
 */
 
-// include "utilidades/error.php";                           // Incluyo los mensajes de error
+//include "utilidades/error.php";                           // Incluyo los mensajes de error
 include "config/config.php";                          // Traigo la conexión a la base de datos
 
 $peticion = "SHOW TABLES in proyectoapple";			// Quiero todas las tablas de la base de datos

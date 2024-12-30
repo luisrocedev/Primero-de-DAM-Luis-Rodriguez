@@ -33,3 +33,4 @@ fetch("../back/?tabla=categorias") // Cargo un endpoint en el back
 .catch(function(error) {
     console.error("Error al cargar las categorías:", error);
 });
+

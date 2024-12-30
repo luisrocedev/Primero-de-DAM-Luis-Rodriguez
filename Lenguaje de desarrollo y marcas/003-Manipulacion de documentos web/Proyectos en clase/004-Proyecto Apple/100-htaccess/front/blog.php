@@ -11,5 +11,5 @@
 		<?php include "modulos/modal/modal.php"; ?>
 		<?php include "modulos/modalpersonalizado/modalpersonalizado.php"; ?>
 	</body>
-</html> 
-<?php include "registro.php"; ?>
+</html>
+<?php include "log/registro.php"; ?>

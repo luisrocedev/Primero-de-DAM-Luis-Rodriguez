@@ -14,3 +14,4 @@ $resultado = $conexion->query($peticion);
 
 ?>
 <meta http-equiv="refresh" content="1; url=../escritorio.php">
+

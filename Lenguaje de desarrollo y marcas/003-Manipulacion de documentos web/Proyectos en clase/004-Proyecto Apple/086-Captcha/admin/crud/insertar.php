@@ -51,3 +51,4 @@ if (!$resultado) {
 ?>
 echo "ok";
 <meta http-equiv="refresh" content="5; url=../escritorio.php">
+

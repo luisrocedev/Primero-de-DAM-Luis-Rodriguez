@@ -1,4 +1,3 @@
-
 console.log("ok en marcha")								// Mensaje de comprobación
 
 let celdas = document.querySelectorAll("td")			// Selecciono todas las celdas
@@ -20,4 +19,3 @@ celdas.forEach(function(celda){							// Para cada una de las celdas
 		fetch("actualizar.php?tabla="+encodeURI(tabla)+"&columna="+encodeURI(columna)+"&identificador="+encodeURI(identificador)+"&contenido="+encodeURI(contenido)+"")
 	}
 })
- 

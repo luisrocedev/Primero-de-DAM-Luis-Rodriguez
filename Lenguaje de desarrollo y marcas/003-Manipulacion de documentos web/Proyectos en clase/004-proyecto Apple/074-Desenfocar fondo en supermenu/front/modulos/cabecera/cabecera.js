@@ -57,3 +57,4 @@ cabecera.onmouseleave = function(){											// Cuando salgo
 	document.querySelector("main").classList.remove("difuminado")	// Le quito la clase css
 	cabecera.style.background = "rgba(255,255,255,1)"					// Y le pongo un color blanco sólido
 }
+

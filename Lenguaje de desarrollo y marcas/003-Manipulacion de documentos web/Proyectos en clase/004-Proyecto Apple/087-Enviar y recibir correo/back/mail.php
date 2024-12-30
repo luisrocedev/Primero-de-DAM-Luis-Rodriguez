@@ -33,3 +33,4 @@ if (mail($to, $subject, $body, $headers)) {
     echo "Hubo un problema al enviar el correo.";
 }
 ?>
+

@@ -42,6 +42,17 @@
 					
 					);																		// Creo una nueva instancia
     			echo $bloque->getBloque();											// Lanzo el html del bloque
+			}else if($fila['tipobloque_tipo'] == "4"){							// Si el bloque es de tipo 2
+				$bloque = new BloqueCajaYoutube(
+					$fila['titulo'], 
+					$fila['subtitulo'],
+					$fila['texto'],
+					"",
+					"",
+					["uno","dos","tres","cuatro"]
+					
+					);																		// Creo una nueva instancia
+    			echo $bloque->getBloque();											// Lanzo el html del bloque
 			}
 		 }
 																		
