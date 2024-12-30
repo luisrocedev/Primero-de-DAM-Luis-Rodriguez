@@ -1,23 +1,17 @@
 {
     "cliente": {
-        "nombre": "Jose Vicente",
-        "apellidos": "Carratala",
-        "email": "info@josevicentecarratala.com"
+        "nombre": "prueba23",
+        "apellidos": "hy",
+        "email": "hy"
     },
     "pedido": {
-        "fecha": "2024-12-18",
-        "numerodepedido": "2024121815245"
+        "fecha": "2024-12-30",
+        "numerodepedido": "20241230211843"
     },
     "productos": [
         {
-            "nombre": "AliceBlue",
-            "descripcion": "Software para digital proctoring en exámenes",
-            "precio": "90.00"
-        },
-        {
-            "nombre": "DarkKhaki",
-            "descripcion": "Aplicación de toma de notas",
-            "precio": "20.00"
+            "nombre": "Diseño 3D",
+            "descripcion": "Diseño 3D"
         }
     ]
 }
