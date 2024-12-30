@@ -1,0 +1,12 @@
+{
+    "cliente": {
+        "nombre": "Mcdonalds",
+        "apellidos": "asd",
+        "email": "luis@gmail.com"
+    },
+    "pedido": {
+        "fecha": "2024-12-30",
+        "numerodepedido": "20241230214957"
+    },
+    "productos": null
+}

@@ -1,0 +1,17 @@
+{
+    "cliente": {
+        "nombre": "prueba",
+        "apellidos": "pruebaaaaaaaa",
+        "email": "luis@gmail.com"
+    },
+    "pedido": {
+        "fecha": "2024-12-30",
+        "numerodepedido": "20241230215047"
+    },
+    "productos": [
+        {
+            "nombre": "Diseño 3D",
+            "descripcion": "Diseño 3D"
+        }
+    ]
+}
