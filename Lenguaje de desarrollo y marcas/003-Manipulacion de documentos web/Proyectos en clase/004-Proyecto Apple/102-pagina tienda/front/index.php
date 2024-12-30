@@ -12,3 +12,12 @@
 	</body>
 </html>
 <?php include "log/registro.php"; ?>
+
+
+
+
+
+
+
+
+

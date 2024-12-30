@@ -53,8 +53,10 @@ abstract class Bloque {
 class BloqueCompleto extends Bloque {
     public function getBloque() {
         $cadena = $this->buildStyles();
+        $fondo = base64_encode($this->imagenfondo);
+        //echo  $fondo;
         return "
-            <div class='bloque completo' style='$cadena'>
+            <div class='bloque completo' style='$cadena;background:url(\"data:image/png;base64,{$fondo}\");background-size:cover;background-position:center center;'>
                 <h3>{$this->titulo}</h3>
                 <h4>{$this->subtitulo}</h4>
                 <p>{$this->texto}</p>
@@ -73,6 +75,17 @@ class BloqueCaja extends Bloque {
                 <p>{$this->texto}</p>
             </div>
         ";
+    }
+}
+
+class BloqueCajaYoutube extends Bloque {
+    public function getBloque() {
+        $cadena = $this->buildStyles();
+        return '
+            <div class="bloque caja" style="'.$cadena.'">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_LbSL3G6S6Q?si=iJbR_XbLmg8-dssi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        ';
     }
 }
 

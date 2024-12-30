@@ -19,3 +19,4 @@ fetch("../back/?busca=productos&campo=Identificador&dato="+idproducto)			// Cons
 document.querySelector("#confirmar").onclick = function(){
 	console.log("confirmas que metes el producto en el carrito")
 }
+
