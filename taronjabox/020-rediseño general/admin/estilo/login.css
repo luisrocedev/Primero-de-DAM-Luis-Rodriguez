@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+main {
+  width: 500px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+  box-sizing: border-box;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -300px;
+  backdrop-filter: blur(15px); /* Desenfoque de fondo */
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #FF8C00; /* darkorange */
+}
+
+input[type=email], input[type=password], input[type=submit] {
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px 0;
+  border: none;
+  background: rgba(0, 0, 0, 0); /* Fondo transparente */
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: white; /* Placeholder blanco */
+}
+
+input[type=submit] {
+  background: #FF8C00; /* darkorange */
+  color: black;
+  border-radius: 50px; /* Borde redondeado */
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+  background-color: #D36B00; /* Sombra oscura al pasar el ratón */
+}
+
+input[type=email] {
+  background: url(../img/email.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 48px;
+}
+
+input[type=password] {
+  background: url(../img/password.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 48px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FF8C00; /* darkorange */
+}

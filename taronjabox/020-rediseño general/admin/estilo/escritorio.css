@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body, html {
+	background-color: #FF8C00; /* darkorange */
+	height: 100%;
+	font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+	min-height: 60px;
+	background-color: #FF8C00; /* darkorange */
+	color: white;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  header nav {
+	width: 20%;
+  }
+  
+  section {
+	background-color: #F0F8FF; /* azure */
+	height: 100%;
+	padding: 20px;
+	overflow-y: auto;
+  }
+  
+  main {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+	height: calc(100% - 60px); /* Adjusted for header */
+  }
+  
+  nav {
+	width: 20%;
+	background-color: #FF8C00; /* darkorange */
+	height: 100%;
+	padding-top: 20px;
+  }
+  
+  nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  nav ul li {
+	color: white;
+	padding: 15px 20px;
+	border-bottom: 1px solid white;
+	transition: background-color 0.3s ease;
+  }
+  
+  nav ul li:hover {
+	background-color: #D36B00; /* Darker shade of darkorange */
+  }
+  
+  nav a {
+	color: inherit;
+	text-decoration: none;
+  }
+  
+  section #nuevo {
+	background-color: #FF8C00; /* darkorange */
+	color: white;
+	border: none;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	font-size: 30px;
+	line-height: 50px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	border-radius: 50%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+  }
+  
+  section .eliminar {
+	background-color: red;
+	color: white;
+	border: none;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+  }
+  
+  form input {
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background-color: #fff;
+	font-size: 16px;
+  }
+  
+  form input[type="submit"] {
+	background-color: #FF8C00; /* darkorange */
+	color: white;
+	border: none;
+	padding: 15px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+	background-color: #D36B00; /* Darker shade of darkorange */
+  }
+  
+  table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+  }
+  
+  table thead tr {
+	background-color: #FF8C00; /* darkorange */
+	color: white;
+  }
+  
+  table th, table td {
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+  }
+  
+  table tbody tr:nth-child(odd) {
+	background-color: #f9f9f9;
+  }
+  
+  table tbody tr:hover {
+	background-color: #f1f1f1;
+  }
+  
+  table img {
+	width: 50px;
+	border-radius: 5px;
+  }
+  
