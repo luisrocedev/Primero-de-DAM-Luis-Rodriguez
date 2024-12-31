@@ -1,24 +1,37 @@
-.heroe{
-	text-align:center;
-	min-height:400px;
-	background:blue;
-	color:white;
-	box-sizing:border-box;
-	padding:40px;
-	background-position:center !important;
-}
-.heroe h3,.heroe h4{
-	font-size:3em;
-	padding:0px;
-	margin:0px;
-	margin-bottom:10px;
-	font-weight:normal;
-}
-.heroe button{
-	padding:20px;
-	border:2px solid white; 
-	border-radius:40px;
-	width:200px;
-	background:none;
-	color:white;
-}
+.heroe {
+	text-align: center;
+	min-height: 400px;
+	background: #2E2E2E; /* Fondo gris oscuro */
+	color: white;
+	box-sizing: border-box;
+	padding: 40px;
+	background-position: center !important;
+  }
+  
+  .heroe h3, .heroe h4 {
+	font-size: 3em;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	font-weight: normal;
+	color: #ffffff; /* Texto en darkorange */
+  }
+  
+  .heroe button {
+	padding: 15px 20px;
+	border: 2px solid #FF8C00; /* Borde en darkorange */
+	border-radius: 40px;
+	width: 200px;
+	background: none;
+	color: white;
+	font-size: 1em;
+	cursor: pointer;
+	transition: all 0.3s ease;
+  }
+  
+  .heroe button:hover {
+	background: #FF8C00; /* Fondo darkorange al pasar el ratón */
+	color: black; /* Texto negro para contraste */
+	border-color: #FFD580; /* Borde más claro */
+  }
+  

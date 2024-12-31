@@ -5,9 +5,10 @@
   }
   
   body, html {
-	background-color: #FF8C00; /* darkorange */
+	background: rgba(0, 0, 0, 0.1); /* Fondo grisáceo suave */
 	height: 100%;
 	font-family: 'Arial', sans-serif;
+	overflow: hidden; /* Evitar scroll */
   }
   
   header {
@@ -18,17 +19,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   header nav {
 	width: 20%;
-  }
-  
-  section {
-	background-color: #F0F8FF; /* azure */
-	height: 100%;
-	padding: 20px;
-	overflow-y: auto;
   }
   
   main {
@@ -36,7 +31,7 @@
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: stretch;
-	height: calc(100% - 60px); /* Adjusted for header */
+	height: calc(100% - 60px); /* Ajustado para el header */
   }
   
   nav {
@@ -44,6 +39,7 @@
 	background-color: #FF8C00; /* darkorange */
 	height: 100%;
 	padding-top: 20px;
+	box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
   }
   
   nav ul {
@@ -55,12 +51,13 @@
   nav ul li {
 	color: white;
 	padding: 15px 20px;
-	border-bottom: 1px solid white;
-	transition: background-color 0.3s ease;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   nav ul li:hover {
-	background-color: #D36B00; /* Darker shade of darkorange */
+	background-color: #D36B00; /* Sombra oscura */
+	transform: translateX(5px);
   }
   
   nav a {
@@ -68,34 +65,36 @@
 	text-decoration: none;
   }
   
+  section {
+	background-color: #FFFFFF; /* Blanco puro para contraste */
+	flex: 1; /* Ajustar la sección al espacio disponible */
+	padding: 20px;
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden; /* Evitar scroll dentro de la sección */
+  }
+  
   section #nuevo {
 	background-color: #FF8C00; /* darkorange */
 	color: white;
 	border: none;
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 	text-align: center;
-	font-size: 30px;
-	line-height: 50px;
+	font-size: 28px;
+	line-height: 60px;
 	position: fixed;
-	bottom: 50px;
-	right: 50px;
+	bottom: 30px;
+	right: 30px;
 	border-radius: 50%;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
+	transition: transform 0.3s ease, background-color 0.3s ease;
   }
   
-  section .eliminar {
-	background-color: red;
-	color: white;
-	border: none;
-	width: 20px;
-	height: 20px;
-	text-align: center;
-	font-size: 12px;
-	line-height: 20px;
-	border-radius: 50%;
-	cursor: pointer;
+  section #nuevo:hover {
+	background-color: #D36B00; /* Más oscuro */
+	transform: scale(1.1);
   }
   
   form input {
@@ -103,7 +102,7 @@
 	padding: 15px;
 	margin-bottom: 10px;
 	border: 1px solid #ddd;
-	border-radius: 4px;
+	border-radius: 6px;
 	background-color: #fff;
 	font-size: 16px;
   }
@@ -115,18 +114,20 @@
 	padding: 15px;
 	font-size: 16px;
 	cursor: pointer;
-	border-radius: 4px;
-	transition: background-color 0.3s ease;
+	border-radius: 6px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   form input[type="submit"]:hover {
-	background-color: #D36B00; /* Darker shade of darkorange */
+	background-color: #D36B00;
+	transform: scale(1.05);
   }
   
   table {
 	width: 100%;
 	border-collapse: collapse;
 	margin-top: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   table thead tr {
@@ -151,5 +152,6 @@
   table img {
 	width: 50px;
 	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
