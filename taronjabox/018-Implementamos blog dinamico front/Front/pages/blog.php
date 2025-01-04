@@ -10,8 +10,6 @@ $stmt->execute();
 // Obtener todas las entradas
 $entradas = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// Incluir el encabezado del sitio
-include dirname(__DIR__) . '/includes/header.php';  
 ?>
 
 <main>
@@ -27,8 +25,5 @@ include dirname(__DIR__) . '/includes/header.php';
         <?php endforeach; ?>
     </div>
 </main>
-
 <?php
-// Incluir el pie de página
-include dirname(__DIR__) . '/includes/footer.php';  
 ?>
