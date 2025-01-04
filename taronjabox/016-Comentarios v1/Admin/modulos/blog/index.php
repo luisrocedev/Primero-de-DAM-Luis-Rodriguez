@@ -37,5 +37,5 @@ $posts = $blogController->getAllPosts();                                        
     <button onclick="location.href='add.php'">Añadir Nueva Entrada</button>                                 <!-- Botón para añadir una nueva entrada -->
 </div>
 <?php
-include_once '../../includes/footer.php';                                                                   // Se incluye el archivo footer.php
+include_once '../../includes/footer.php';                                                                   
 ?>
