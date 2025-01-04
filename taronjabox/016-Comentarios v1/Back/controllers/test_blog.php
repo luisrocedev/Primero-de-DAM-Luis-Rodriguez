@@ -1,16 +1,9 @@
 <?php
-// Cambiamos las rutas relativas para que apunten a los archivos correctos
-include_once '../includes/db.php'; // Ajustado para ir a la carpeta includes
-include_once 'BlogController.php'; // BlogController.php está en el mismo directorio
-
-// Crear instancia de BlogController
-$blogController = new BlogController();
-
-// Obtener todas las entradas del blog
-$posts = $blogController->getAllPosts();
-
-// Mostrar las entradas
-echo '<pre>';
-print_r($posts);
-echo '</pre>';
+include_once '../includes/db.php';          // Conecta con la base de datos
+include_once 'BlogController.php';          // Incluye el controlador de blog
+$blogController = new BlogController();     // Instancia del controlador para usar sus métodos
+$posts = $blogController->getAllPosts();    // Llama al método que obtiene todas las entradas
+echo '<pre>';                               // Inicia el formato de salida
+print_r($posts);                            // Imprime las entradas obtenidas
+echo '</pre>';                              // Cierra el formato de salida
 ?>
