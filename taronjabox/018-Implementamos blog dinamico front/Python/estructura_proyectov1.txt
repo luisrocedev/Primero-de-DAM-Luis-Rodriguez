@@ -1,4 +1,4 @@
-016-Comentarios v1/
+018-Implementamos blog dinamico front/
     .DS_Store
     database/
         taronjabox.sql
@@ -21,7 +21,6 @@
     Python/
         .DS_Store
         creacion estructura modular python.py
-        estructura_proyecto.txt
         estructura_proyectov1.txt
         listar carpetas y rutas v2.py
     Admin/
@@ -59,7 +58,6 @@
             db.php
             footer.php
         pages/
-            index.php
             entrenadores.php
             blog.php
             precios.php
