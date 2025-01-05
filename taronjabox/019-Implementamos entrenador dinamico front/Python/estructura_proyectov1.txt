@@ -1,6 +1,6 @@
-018-Implementamos blog dinamico front/
+019-Implementamos entrenador dinamico front/
     .DS_Store
-    database/
+    Database/
         taronjabox.sql
     Back/
         .DS_Store
@@ -9,8 +9,6 @@
             db.php
             helpers.php
             test_db.php
-        api/
-            .DS_Store
         controllers/
             test_entrenadores.php
             .DS_Store

@@ -1,0 +1,125 @@
+/* paneldecontrol.css */
+
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Contenedor principal */
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #222;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 25px 0;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem; /* Aumentada la tipografía */
+    display: block;
+    padding: 12px 18px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #f7941d;
+    transform: translateX(5px);
+}
+
+/* Área principal */
+.main-content {
+    flex: 1;
+    padding: 40px 60px;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h1 {
+    font-size: 3rem; /* Aumentada la tipografía */
+    color: #f7941d; /* Naranja TaronjaBox */
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.main-content p {
+    font-size: 1.3rem; /* Aumentada la tipografía */
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* Pie de página */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1rem;
+    border-top: 1px solid #444;
+}
+
+/* Estilos adicionales para el diseño responsivo */
+@media (max-width: 768px) {
+    .admin-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .main-content {
+        padding: 20px;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
