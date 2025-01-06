@@ -2,56 +2,57 @@
 function processFolder($source, $target) {
     // Ensure target folder exists
     if (!file_exists($target)) {
-        mkdir($target, 0777, true);
+        mkdir($target, 0777, true); // Si no existe la carpeta de destino, la crea
     }
 
     // Scan the source directory
-    $items = scandir($source);
+    $items = scandir($source); // Escanea la carpeta fuente
 
     foreach ($items as $item) {
         // Skip current and parent directory references
         if ($item === '.' || $item === '..') {
-            continue;
+            continue; // Salta los directorios '.' y '..'
         }
 
-        $sourcePath = $source . DIRECTORY_SEPARATOR . $item;
-        $targetPath = $target . DIRECTORY_SEPARATOR . $item;
+        $sourcePath = $source . DIRECTORY_SEPARATOR . $item; // Ruta completa del archivo o carpeta fuente
+        $targetPath = $target . DIRECTORY_SEPARATOR . $item; // Ruta completa del archivo o carpeta destino
 
         if (is_dir($sourcePath)) {
-            // If it's a folder, create a folder in the target
+            // Si es un directorio, crea el directorio en el destino
             mkdir($targetPath, 0777, true);
 
-            // Create an empty .txt file inside the folder
+            // Crea un archivo .txt vacío dentro de la carpeta
             $txtFilePath = $targetPath . DIRECTORY_SEPARATOR . $item . '.txt';
             file_put_contents($txtFilePath, '');
 
-            // Recurse into the folder
+            // Recurre a la subcarpeta
             processFolder($sourcePath, $targetPath);
         } else if (is_file($sourcePath)) {
-            // If it's a file, create a folder named after the file (with extension)
+            // Si es un archivo, crea una carpeta con el mismo nombre del archivo (con extensión)
             $fileNameWithExtension = pathinfo($item, PATHINFO_BASENAME);
             $fileFolderPath = $target . DIRECTORY_SEPARATOR . $fileNameWithExtension;
 
-            mkdir($fileFolderPath, 0777, true);
+            mkdir($fileFolderPath, 0777, true); // Crea la carpeta para el archivo
 
-            // Create a .txt file inside this folder with the same name as the original file
+            // Crea un archivo .txt dentro de esta carpeta con el mismo nombre del archivo original
             $txtFilePath = $fileFolderPath . DIRECTORY_SEPARATOR . $fileNameWithExtension . '.txt';
             
-            // Extract docstring content if present
+            // Extrae el contenido de la docstring si está presente
             $docstringContent = extractDocstring($sourcePath);
             
+            // Guarda el contenido extraído en el archivo .txt
             file_put_contents($txtFilePath, $docstringContent);
         }
     }
 }
 
 function extractDocstring($filePath) {
-    $content = file_get_contents($filePath);
-    $extension = pathinfo($filePath, PATHINFO_EXTENSION);
+    $content = file_get_contents($filePath); // Obtiene el contenido del archivo
+    $extension = pathinfo($filePath, PATHINFO_EXTENSION); // Obtiene la extensión del archivo
 
     switch ($extension) {
         case 'php':
-            // Match comments following the opening <?php tag
+            // Busca los comentarios de estilo PHPDoc
             if (preg_match('/<\\?php\\s*\\/\\*\\*(.*?)\\*\\//s', $content, $matches) ||
                 preg_match('/<\\?php\\s*\\/\\*(.*?)\\*\\//s', $content, $matches)) {
                 return trim($matches[1]);
@@ -63,14 +64,14 @@ function extractDocstring($filePath) {
         case 'java':
         case 'c':
         case 'cpp':
-            // Match comments enclosed in /* ... */
+            // Busca los comentarios de estilo /* ... */
             if (preg_match('/\\/\\*(.*?)\\*\\//s', $content, $matches)) {
                 return trim($matches[1]);
             }
             break;
 
         case 'py':
-            // Match Python docstrings (""" ... """ or single-line # comments)
+            // Busca los docstrings de Python (""" ... """ o comentarios de una línea #)
             if (preg_match('/^\s*"""(.*?)"""/s', $content, $matches)) {
                 return trim($matches[1]);
             } elseif (preg_match('/^\s*#\s*(.+)$/m', $content, $matches)) {
@@ -80,24 +81,31 @@ function extractDocstring($filePath) {
 
         case 'html':
         case 'htm':
-            // Match HTML comments <!-- ... -->
+            // Busca los comentarios HTML <!-- ... -->
             if (preg_match('/<!--(.*?)-->/s', $content, $matches)) {
                 return trim($matches[1]);
             }
             break;
 
         default:
-            return '';
+            return ''; // Retorna vacío si no se encuentra docstring
     }
 
     return '';
 }
 
-// Example usage
-$sourceFolder = '../../admin'; // Replace with the path to your source folder
-$targetFolder = 'docs/admin'; // Replace with the path to your target folder
+// Ruta a la carpeta 'Admin' dentro de tu proyecto
+$sourceFolder = realpath('../../Admin');  // Asegúrate de que 'Admin' sea con mayúscula
 
-processFolder($sourceFolder, $targetFolder);
+// Verifica si la ruta de la carpeta fuente existe
+if ($sourceFolder === false || !is_dir($sourceFolder)) {
+    echo "Error: The source folder does not exist. Please check the path.\n";
+    echo "Source folder: $sourceFolder\n";  // Imprime la ruta absoluta
+} else {
+    echo "Source folder path: $sourceFolder\n";  // Imprime la ruta absoluta
+    $targetFolder = 'Documentacion/docs/admin';  // Carpeta destino dentro de Documentacion
+    processFolder($sourceFolder, $targetFolder);
+}
 
 echo "Processing complete!\n";
-
+?>
