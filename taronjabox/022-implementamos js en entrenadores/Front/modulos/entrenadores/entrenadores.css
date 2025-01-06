@@ -1,0 +1,74 @@
+/* entrenador.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.entrenadores-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.entrenador {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Añadido para indicar que es interactivo */
+}
+
+.entrenador img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.entrenador h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+.entrenador p {
+    color: #555;
+    font-size: 1rem;
+    margin: 10px 0;
+    display: none; /* Las descripciones están ocultas por defecto */
+}
+
+.entrenador p.mostrar {
+    display: block;
+    transition: all 0.3s ease-in-out; /* Añadido para animación suave */
+}
+
+.entrenador strong {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .entrenadores-lista {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .entrenadores-lista {
+        grid-template-columns: 1fr;
+    }
+}
