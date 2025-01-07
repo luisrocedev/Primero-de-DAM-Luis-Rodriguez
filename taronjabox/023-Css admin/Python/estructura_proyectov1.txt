@@ -1,4 +1,4 @@
-021-dividimos front en subcarpetas/
+023-Css admin/
     .DS_Store
     Database/
         taronjabox.sql
@@ -27,12 +27,19 @@
         index.php
         logout.php
         css/
-            gestionblog.css
-            gestionentrenadores.css
             .DS_Store
-            login.css
-            paneldecontrol.css
-            editblog.css
+            blog/
+                addblog.css
+                indexblog.css
+                editblog.css
+            paneldecontrol/
+                paneldecontrol.css
+            login/
+                login.css
+            entrenadores/
+                .DS_Store
+                editentrenador.css
+                indexentrenadores.css
         includes/
             header.php
             db.php
@@ -67,4 +74,5 @@
             entrenadores/
                 entrenadores.php
                 entrenadores.css
+                entrenadores.js
             precios/

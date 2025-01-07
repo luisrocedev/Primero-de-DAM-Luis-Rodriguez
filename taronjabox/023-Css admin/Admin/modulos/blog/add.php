@@ -10,6 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {                                 // S
     exit;                                                                   // Termina la ejecución del script
 }
 ?>
+<link rel="stylesheet" href='../../css/blog/addblog.css'>
+
 <h1>Añadir Nueva Entrada al Blog</h1>
 <form method="POST">                                                        <!-- Formulario para crear una nueva entrada -->
     <label for="titulo">Título:</label>

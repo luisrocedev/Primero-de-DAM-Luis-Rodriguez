@@ -6,7 +6,7 @@ if (!$entrenadoresController->getConnectionStatus()) {                          
 }
 $entrenadores = $entrenadoresController->getAllEntrenadores();                              // Llama al método que obtiene todos los entrenadores de la base de datos
 ?>
-<link rel="stylesheet" href="../../css/gestionentrenadores.css"> 
+<link rel="stylesheet" href='../../css/entrenadores/indexentrenadores.css'>
 <h1>Gestión de Entrenadores</h1>
 <div class="entrenadores-container">                                                        <!-- Contenedor para los entrenadores -->
     <table>                                                                                 <!-- Tabla para mostrar los entrenadores -->
@@ -27,7 +27,7 @@ $entrenadores = $entrenadoresController->getAllEntrenadores();                  
                     <td><?php echo htmlspecialchars(substr($entrenador['descripcion'], 0, 100)) . '...'; ?></td> <!-- Muestra los primeros 100 caracteres de la descripción -->
                     <td>
                         <?php if ($entrenador['foto_url']): ?>                              <!-- Si existe una URL para la foto -->
-                            <img src="../../../Front/uploads/<?php echo htmlspecialchars($entrenador['foto_url']); ?>" alt="Foto de <?php echo htmlspecialchars($entrenador['nombre']); ?>" width="50" class="img-thumbnail"> <!-- Muestra la foto del entrenador en miniatura -->
+                            <img src="../../../Front/uploads/<?php echo htmlspecialchars($entrenador['foto_url']); ?>" alt="Foto de <?php echo htmlspecialchars($entrenador['nombre']); ?>" width="100" height="100">
                         <?php else: ?>                                                       <!-- Si no existe foto -->
                             Sin foto                                                         <!-- Muestra "Sin foto" -->
                         <?php endif; ?>

@@ -12,7 +12,7 @@ if (!isset($_SESSION['user_id'])) {             // Si no existe la variable de s
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Hace la página responsiva -->
     <title>Panel de Administración - TaronjaBox</title> 
-    <link rel="stylesheet" href="css/paneldecontrol.css">                   <!-- Vinculamos el archivo CSS -->
+    <link rel="stylesheet" href="css/paneldecontrol/paneldecontrol.css">                   <!-- Vinculamos el archivo CSS -->
     
 </head>
 <body>

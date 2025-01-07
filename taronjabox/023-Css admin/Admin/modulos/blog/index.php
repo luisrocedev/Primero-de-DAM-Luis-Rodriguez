@@ -6,7 +6,7 @@ if (!$blogController->getConnectionStatus()) {                                  
 }
 $posts = $blogController->getAllPosts();                                                                // Se obtienen todas las entradas del blog
 ?>
-<link rel="stylesheet" href="../../css/gestionblog.css">
+<link rel="stylesheet" href='../../css/blog/indexblog.css'>
 
 <h1>Gestión del Blog</h1> 
 <div class="blog-container"> 
