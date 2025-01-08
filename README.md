@@ -1,7 +1,7 @@
 # Repositorio de código del primer año del Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma
 ## Centro de Formación TAME - Mislata
 ## Alumno: Luis Jahir Rodriguez Cedeño
-![]()
+![Luis Jahir Rodriguez Cedeño](luis-rodriguez.jpg)
 
 ---
 
@@ -18,4 +18,4 @@ En este repositorio puede encontrarse el código correspondiente a las siguiente
 
 ### Contenido del proyecto fin de año
 
-En esta seccion denominada taronjabox, se puede encontrar todo el código correspondiente 
+En esta seccion denominada taronjabox, se puede encontrar todo el código correspondiente al proyecto final de año
