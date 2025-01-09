@@ -27,6 +27,10 @@
 		echo "ok";
 
 	}
+	if(isset($_GET['producto'])){
+		echo file_get_contents("../basededatos/productos/".$_GET['producto'].".json");
+		
+	}
 	
 ?>
 	

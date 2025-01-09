@@ -1,5 +1,7 @@
 <main id="blog"> 
-	Esta es la página del blog
+	<h2>Blog</h2>
+	<div id="contienearticulos">
+	</div>
 </main>
 <template id="plantillaentrada">
 	<article>
@@ -8,6 +10,7 @@
 
 			<h4>Titulo</h4>
 			<time>Fecha</time>
+			<p></p>
 		</div>
 	</article>
 </template>

@@ -36,7 +36,7 @@ function procesaCabecera(){
 						 document.querySelector("#categoria").textContent = tituloseccion	// Pongo el titulo de la categoria
 						 document.querySelector("#productos").innerHTML = ""	// Vacio los productos
 						 datos.forEach(function(dato){								// Para cada uno de los productos
-						 document.querySelector("#productos").innerHTML += "<li><a href='producto.php?prod="+dato.Identificador+"'>"+dato.titulo+"</a></li>"	// Los pongo en el listado
+						 document.querySelector("#productos").innerHTML += "<li><a href='producto.php?prod="+dato.titulo+"'>"+dato.titulo+"</a></li>"	// Los pongo en el listado
 						 })
 						let cabecera = document.querySelector("header")
 						difumina(cabecera)

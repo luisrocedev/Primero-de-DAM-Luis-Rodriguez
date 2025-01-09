@@ -18,3 +18,9 @@ main{
 p{
 	text-align:justify;
 }
+h2{
+	text-align:center;
+}
+section{
+	margin-bottom:20px;
+}
