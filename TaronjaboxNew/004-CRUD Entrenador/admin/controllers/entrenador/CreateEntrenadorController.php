@@ -26,8 +26,9 @@ class CreateEntrenadorController {
             $this->model->createEntrenador($nombre, $especialidad, $descripcion, $foto_url);
 
             // Redirigir al listado
-            header('Location: ../admin/controllers/entrenador/ListEntrenadorController.php');
+            header('Location: /TaronjaboxNew/004-CRUD Entrenador/admin/controllers/entrenador/ListEntrenadorController.php');
             exit;
+
         }
         include __DIR__ . '/../../views/entrenador/create_entrenador.php';
     }
