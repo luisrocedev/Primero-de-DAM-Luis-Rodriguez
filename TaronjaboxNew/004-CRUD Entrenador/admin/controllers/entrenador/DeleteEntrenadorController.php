@@ -11,7 +11,8 @@ class DeleteEntrenadorController {
     public function handleRequest() {
         $id = $_GET['id'];
         $this->model->deleteEntrenador($id);
-        header('Location: /admin/controllers/Entrenador/ListEntrenadorController.php');
+        // Redirigir a la lista de entrenadores
+        header('Location: ' . dirname($_SERVER['PHP_SELF']) . '/ListEntrenadorController.php');
         exit;
     }
 }
