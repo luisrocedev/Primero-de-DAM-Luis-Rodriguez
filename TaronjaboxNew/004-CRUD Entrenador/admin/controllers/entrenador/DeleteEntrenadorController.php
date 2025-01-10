@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../../../models/Entrenador/DeleteEntrenadorModel.php';
+require_once __DIR__ . '/../../models/Entrenador/DeleteEntrenadorModel.php';
 
 class DeleteEntrenadorController {
     private $model;
