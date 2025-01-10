@@ -1,0 +1,139 @@
+/taronjabox/
+├── /admin/                                  # Panel de administración para gestionar contenido y configuraciones
+│   ├── /assets/                             # Archivos estáticos para el panel de administración
+│   │   ├── /css/                            # Archivos de estilo CSS específicos para el panel admin
+│   │   │   ├── style.css                    # Estilos globales del panel de administración
+│   │   ├── /js/                             # Archivos JavaScript para interacción en el panel admin
+│   │   │   ├── admin.js                     # Lógica JavaScript para el panel admin (ej. validaciones)
+│   │   └── /images/                         # Imágenes estáticas utilizadas en el panel admin
+│   │       └── logo.png                     # Imagen del logo para el panel de administración
+│   ├── /controllers/                        # Controladores que gestionan la lógica del panel de administración
+│   │   ├── /Blog/                           # Controladores específicos para el módulo Blog
+│   │   │   ├── CreateBlogController.php     # Controlador para crear un nuevo blog
+│   │   │   ├── EditBlogController.php       # Controlador para editar un blog existente
+│   │   │   ├── DeleteBlogController.php     # Controlador para eliminar un blog
+│   │   │   └── ListBlogController.php       # Controlador para listar todos los blogs
+│   │   ├── /Entrenador/                     # Controladores específicos para el módulo Entrenador
+│   │   │   ├── CreateEntrenadorController.php # Controlador para agregar un nuevo entrenador
+│   │   │   ├── EditEntrenadorController.php   # Controlador para editar un entrenador
+│   │   │   ├── DeleteEntrenadorController.php # Controlador para eliminar un entrenador
+│   │   │   └── ListEntrenadorController.php   # Controlador para listar entrenadores
+│   │   ├── /Precio/                         # Controladores específicos para el módulo Precio
+│   │   │   ├── CreatePrecioController.php    # Controlador para agregar un nuevo precio
+│   │   │   ├── EditPrecioController.php      # Controlador para editar un precio
+│   │   │   ├── DeletePrecioController.php    # Controlador para eliminar un precio
+│   │   │   └── ListPrecioController.php      # Controlador para listar precios
+│   ├── /models/                             # Modelos que gestionan la lógica de los datos
+│   │   ├── /Blog/                           # Modelos para manejar los datos de Blog
+│   │   │   ├── CreateBlogModel.php          # Lógica para crear un blog en la base de datos
+│   │   │   ├── EditBlogModel.php            # Lógica para editar un blog en la base de datos
+│   │   │   ├── ListBlogModel.php            # Lógica para obtener todos los blogs
+│   │   │   └── DeleteBlogModel.php          # Lógica para eliminar un blog de la base de datos
+│   │   ├── /Entrenador/                     # Modelos para manejar los datos de Entrenador
+│   │   │   ├── CreateEntrenadorModel.php     # Lógica para agregar un entrenador
+│   │   │   ├── EditEntrenadorModel.php       # Lógica para editar un entrenador
+│   │   │   ├── ListEntrenadorModel.php       # Lógica para listar entrenadores
+│   │   │   └── DeleteEntrenadorModel.php     # Lógica para eliminar un entrenador
+│   │   ├── /Precio/                         # Modelos para manejar los datos de Precio
+│   │   │   ├── CreatePrecioModel.php        # Lógica para agregar un nuevo precio
+│   │   │   ├── EditPrecioModel.php          # Lógica para editar un precio
+│   │   │   ├── ListPrecioModel.php          # Lógica para listar los precios
+│   │   │   └── DeletePrecioModel.php        # Lógica para eliminar un precio
+│   ├── /services/                           # Servicios que contienen la lógica de negocio
+│   │   ├── BlogService.php                  # Servicio para gestionar la lógica de negocio del Blog
+│   │   ├── EntrenadorService.php            # Servicio para gestionar la lógica de negocio de los Entrenadores
+│   │   ├── PrecioService.php                # Servicio para gestionar la lógica de negocio de los Precios
+│   ├── /middleware/                         # Middleware para autenticación y validación
+│   │   ├── AuthMiddleware.php               # Middleware para gestionar la autenticación del administrador
+│   │   ├── ValidateBlogInput.php           # Middleware para validar la entrada de datos del Blog
+│   │   ├── RoleMiddleware.php              # Middleware para verificar los roles de usuario
+│   ├── /views/                              # Vistas para mostrar las interfaces en el panel admin
+│   │   ├── /Blog/                           # Plantillas de Blog
+│   │   │   ├── create_blog.php              # Formulario para crear un nuevo blog
+│   │   │   ├── edit_blog.php                # Formulario para editar un blog
+│   │   │   └── list_blog.php                # Vista para listar los blogs
+│   │   ├── /Entrenador/                     # Plantillas de Entrenador
+│   │   │   ├── create_entrenador.php         # Formulario para agregar un nuevo entrenador
+│   │   │   ├── edit_entrenador.php           # Formulario para editar un entrenador
+│   │   │   └── list_entrenador.php           # Vista para listar entrenadores
+│   │   ├── /Precio/                         # Plantillas de Precio
+│   │   │   ├── create_precio.php            # Formulario para agregar un nuevo precio
+│   │   │   ├── edit_precio.php              # Formulario para editar un precio
+│   │   │   └── list_precio.php              # Vista para listar precios
+│   ├── /includes/                           # Archivos comunes que se incluyen en las vistas
+│   │   ├── header.php                       # Cabecera común para el panel admin
+│   │   ├── footer.php                       # Pie de página común para el panel admin
+│   │   └── sidebar.php                      # Barra lateral común para el panel admin
+├── /front/                                  # Frontend del sitio web visible para el usuario
+│   ├── /assets/                             # Archivos estáticos para el frontend
+│   │   ├── /css/                            # Archivos de estilo CSS específicos para el frontend
+│   │   │   ├── frontend.css                 # Estilos globales del frontend
+│   │   ├── /js/                             # Archivos JavaScript para el frontend
+│   │   │   ├── frontend.js                  # Lógica JavaScript para interactividad del frontend
+│   │   └── /images/                         # Imágenes utilizadas en el frontend
+│   │       └── background.jpg               # Imagen de fondo para el frontend
+│   ├── /controllers/                        # Controladores que gestionan la lógica del frontend
+│   │   ├── /Blog/                           # Controladores para manejar las vistas de blogs en el frontend
+│   │   │   ├── ListBlogController.php       # Controlador para listar blogs en el frontend
+│   │   │   └── ShowBlogController.php       # Controlador para mostrar un blog específico
+│   │   ├── /Entrenador/                     # Controladores para manejar las vistas de entrenadores
+│   │   │   ├── ListEntrenadorController.php # Controlador para listar entrenadores
+│   │   │   └── ShowEntrenadorController.php # Controlador para mostrar un entrenador específico
+│   │   ├── /Precio/                         # Controladores para manejar las vistas de precios
+│   │   │   └── ShowPrecioController.php     # Controlador para mostrar precios
+│   ├── /models/                             # Modelos para manejar los datos del frontend
+│   │   ├── /Blog/                           # Modelos para los blogs
+│   │   │   └── ListBlogModel.php            # Lógica para obtener los blogs del frontend
+│   │   ├── /Entrenador/                     # Modelos para los entrenadores
+│   │   │   └── ListEntrenadorModel.php       # Lógica para obtener los entrenadores
+│   │   ├── /Precio/                         # Modelos para los precios
+│   │   │   └── ShowPrecioModel.php          # Lógica para obtener los precios
+│   ├── /services/                           # Servicios que gestionan la lógica del frontend
+│   │   ├── BlogService.php                  # Lógica de negocio relacionada con los blogs
+│   │   ├── EntrenadorService.php            # Lógica de negocio relacionada con los entrenadores
+│   │   └── PrecioService.php                # Lógica de negocio relacionada con los precios
+│   ├── /views/                              # Plantillas del frontend para mostrar la información al usuario
+│   │   ├── /Blog/                           # Vistas de los blogs
+│   │   │   ├── blog_list.php                # Vista para listar blogs
+│   │   │   └── blog_show.php                # Vista para mostrar un blog específico
+│   │   ├── /Entrenador/                     # Vistas de los entrenadores
+│   │   │   ├── entrenador_list.php          # Vista para listar entrenadores
+│   │   │   └── entrenador_show.php          # Vista para mostrar un entrenador específico
+│   │   ├── /Precio/                         # Vistas de los precios
+│   │   │   └── precio_show.php              # Vista para mostrar el precio
+│   ├── /includes/                           # Archivos comunes para el frontend
+│   │   ├── header.php                       # Cabecera común para el frontend
+│   │   ├── footer.php                       # Pie de página común para el frontend
+│   │   └── sidebar.php                      # Barra lateral común para el frontend
+├── /backend/                                # Backend del sistema para gestionar usuarios y configuraciones
+│   ├── /controllers/                        # Controladores para gestionar la lógica del backend
+│   │   ├── DashboardController.php          # Controlador para el panel de administración de la cuenta
+│   │   ├── UserController.php               # Controlador para gestionar usuarios
+│   │   └── SettingsController.php           # Controlador para gestionar configuraciones del sistema
+│   ├── /models/                             # Modelos del backend
+│   │   ├── UserModel.php                    # Modelo para gestionar la base de datos de usuarios
+│   │   └── SettingsModel.php                # Modelo para gestionar la configuración del sistema
+│   ├── /repositories/                       # Repositorios que interactúan con la base de datos
+│   │   ├── UserRepository.php               # Lógica para acceder a los datos de los usuarios
+│   │   └── SettingsRepository.php           # Lógica para acceder a los datos de configuración
+│   ├── /services/                           # Servicios para la lógica del backend
+│   │   ├── UserService.php                  # Lógica de negocio para los usuarios
+│   │   └── SettingsService.php              # Lógica de negocio para las configuraciones del sistema
+│   ├── /includes/                           # Archivos comunes para el backend
+│   │   ├── header.php                       # Cabecera común para el backend
+│   │   ├── footer.php                       # Pie de página común para el backend
+│   │   └── sidebar.php                      # Barra lateral común para el backend
+├── /helpers/                                # Funciones y utilidades globales reutilizables
+│   ├── helpers.php                          # Funciones globales para manejar rutas, validaciones, etc.
+│   └── functions.php                        # Funciones adicionales utilizadas en todo el proyecto
+├── /uploads/                                # Carpeta para almacenar archivos subidos por el usuario
+│   ├── /blog/                               # Archivos relacionados con blogs subidos
+│   │   └── blog_image.jpg                   # Imagen asociada a un blog
+│   ├── /entrenador/                         # Archivos de imágenes de entrenadores
+│   │   └── entrenador_photo.jpg             # Foto de un entrenador
+│   └── /precio/                             # Archivos relacionados con precios
+│       └── precio_image.jpg                 # Imagen asociada a un precio
+└── /config/                                 # Archivos de configuración del proyecto
+    ├── config.php                           # Configuración general del sistema
+    ├── database.php                         # Configuración de la base de datos
+    └── routes.php                           # Configuración de las rutas del sistema
