@@ -1,8 +1,9 @@
 import os
 
-# Estructura de directorios y archivos
-project_structure = {
-    'taronjabox': {
+# Función para crear la estructura de carpetas y archivos
+def crear_estructura(base_path):
+    # Definimos la estructura como un diccionario
+    estructura = {
         'admin': {
             'assets': {
                 'css': ['admin.css'],
@@ -17,8 +18,8 @@ project_structure = {
                 'precios': ['precios.php', 'precios.controller.php', 'precios.model.php']
             },
             'includes': ['header.php', 'footer.php'],
-            'index.php': '',
-            'login.php': ''
+            'index.php': None,
+            'login.php': None
         },
         'front': {
             'assets': {
@@ -34,55 +35,60 @@ project_structure = {
                 'contacto': ['contacto.php', 'contacto.controller.php', 'contacto.model.php']
             },
             'includes': ['header.php', 'footer.php'],
-            'index.php': ''
+            'index.php': None
         },
         'backend': {
             'includes': ['conexion.php', 'helpers.php', 'funciones.php'],
             'controllers': {
-                'blog.controller.php': '',
-                'entrenadores.controller.php': '',
-                'horarios.controller.php': '',
-                'mensajes.controller.php': '',
-                'precios.controller.php': '',
-                'sobre_mi.controller.php': '',
-                'contacto.controller.php': ''
+                'blog.controller.php': None,
+                'entrenadores.controller.php': None,
+                'horarios.controller.php': None,
+                'mensajes.controller.php': None,
+                'precios.controller.php': None,
+                'sobre_mi.controller.php': None,
+                'contacto.controller.php': None
             },
             'models': {
-                'blog.model.php': '',
-                'entrenadores.model.php': '',
-                'horarios.model.php': '',
-                'mensajes.model.php': '',
-                'precios.model.php': '',
-                'sobre_mi.model.php': '',
-                'contacto.model.php': ''
+                'blog.model.php': None,
+                'entrenadores.model.php': None,
+                'horarios.model.php': None,
+                'mensajes.model.php': None,
+                'precios.model.php': None,
+                'sobre_mi.model.php': None,
+                'contacto.model.php': None
             },
-            'index.php': ''
+            'index.php': None
         },
         'helpers': {
-            'helpers.php': ''
+            'helpers.php': None
         },
         'uploads': {
-            'blog': [],
-            'entrenadores': [],
-            'imagenes': []
+            'blog': None,
+            'entrenadores': None,
+            'imagenes': None
         }
     }
-}
 
-def create_structure(base_path, structure):
-    for name, value in structure.items():
-        current_path = os.path.join(base_path, name)
-        
-        if isinstance(value, dict):  # Si el valor es un diccionario, se sigue creando la estructura
-            os.makedirs(current_path, exist_ok=True)
-            create_structure(current_path, value)
-        else:  # Si el valor es una lista de archivos, se crean los archivos vacíos
-            os.makedirs(current_path, exist_ok=True)
-            for file_name in value:
-                open(os.path.join(current_path, file_name), 'w').close()
+    # Función recursiva para crear carpetas y archivos
+    def crear_directorios_y_archivos(path, estructura):
+        for nombre, contenido in estructura.items():
+            nueva_ruta = os.path.join(path, nombre)
+            if isinstance(contenido, dict):
+                os.makedirs(nueva_ruta, exist_ok=True)
+                crear_directorios_y_archivos(nueva_ruta, contenido)
+            else:
+                os.makedirs(os.path.dirname(nueva_ruta), exist_ok=True)
+                with open(nueva_ruta, 'w') as archivo:
+                    if contenido is not None:
+                        archivo.write(f'Contenido de {nombre}')
 
-# Crear la estructura de carpetas y archivos
-base_path = 'C:/xampp/htdocs/Primero-de-DAM-Luis-Rodriguez/TaronjaboxNew'  # Cambia este path si lo deseas en otra ubicación
-create_structure(base_path, project_structure)
+    # Crear la estructura a partir de la ruta base
+    os.makedirs(base_path, exist_ok=True)
+    crear_directorios_y_archivos(base_path, estructura)
 
-print("Estructura de proyecto creada exitosamente.")
+# Ruta base para la creación de la estructura
+base_path = 'C:/xampp/htdocs/Primero-de-DAM-Luis-Rodriguez/TaronjaboxNew'
+crear_estructura(base_path)
+
+# Verificar que la estructura se creó correctamente
+base_path
