@@ -16,7 +16,7 @@ class CreateEntrenadorController {
             $foto_url = $_FILES['foto_url']['name'];
 
             // Subir imagen
-            $uploadDir = __DIR__ . '/../../../uploads/entrenador/';
+            $uploadDir = dirname(__DIR__, 3) . '/uploads/entrenador/';
             if (!file_exists($uploadDir)) {
                 mkdir($uploadDir, 0777, true); // Crear carpeta si no existe
             }
@@ -25,11 +25,13 @@ class CreateEntrenadorController {
             // Guardar datos en la BD
             $this->model->createEntrenador($nombre, $especialidad, $descripcion, $foto_url);
 
-            // Redirigir al listado
-            header('Location: ../admin/controllers/entrenador/ListEntrenadorController.php');
+            // Redirigir al listado de forma flexible
+            header('Location: ' . dirname($_SERVER['PHP_SELF']) . '/ListEntrenadorController.php');
             exit;
         }
-        include __DIR__ . '/../../views/entrenador/create_entrenador.php';
+
+        // Incluir la vista de forma flexible
+        include dirname(__DIR__, 2) . '/views/entrenador/create_entrenador.php';
     }
 }
 

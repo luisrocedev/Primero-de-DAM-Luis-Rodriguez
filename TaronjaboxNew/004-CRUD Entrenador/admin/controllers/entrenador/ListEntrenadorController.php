@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ . '/../../../models/Entrenador/ListEntrenadorModel.php';
+// Ajustar según la ubicación real del archivo
+require_once __DIR__ . '/../../models/entrenador/ListEntrenadorModel.php';
 
 class AdminListEntrenadorController {
     private $model;
@@ -10,7 +11,7 @@ class AdminListEntrenadorController {
 
     public function showEntrenadores() {
         $entrenadores = $this->model->getAllEntrenadores();
-        include __DIR__ . '/../../../views/Entrenador/list_entrenador.php';
+        include __DIR__ . '/../../views/entrenador/list_entrenador.php';
     }
 }
 

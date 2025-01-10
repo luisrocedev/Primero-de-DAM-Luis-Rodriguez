@@ -17,19 +17,26 @@ class EditEntrenadorController {
 
             // Subir nueva imagen si existe
             if ($foto) {
-                $uploadDir = __DIR__ . '/../../../uploads/entrenador/';
+                $uploadDir = dirname(__DIR__, 3) . '/uploads/entrenador/';
+                if (!file_exists($uploadDir)) {
+                    mkdir($uploadDir, 0777, true); // Crear carpeta si no existe
+                }
                 move_uploaded_file($_FILES['foto']['tmp_name'], $uploadDir . $foto);
             } else {
                 $foto = $_POST['foto_actual'];
             }
 
             $this->model->updateEntrenador($id, $nombre, $descripcion, $foto);
-            header('Location: /admin/controllers/Entrenador/ListEntrenadorController.php');
+
+            // Redirigir de forma flexible a la lista de entrenadores
+            header('Location: ' . dirname($_SERVER['PHP_SELF']) . '/ListEntrenadorController.php');
             exit;
         } else {
             $id = $_GET['id'];
             $entrenador = $this->model->getEntrenadorById($id);
-            include __DIR__ . '/../../../views/Entrenador/edit_entrenador.php';
+
+            // Incluir la vista relativa al directorio actual
+            include dirname(__DIR__, 3) . '/views/entrenador/edit_entrenador.php';
         }
     }
 }
