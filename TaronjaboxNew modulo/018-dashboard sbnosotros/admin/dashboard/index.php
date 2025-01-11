@@ -18,6 +18,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
             <li><a href="entrenadores.php">Entrenadores</a></li>
             <li><a href="horarios.php">Horarios</a></li>
             <li><a href="precios.php">Precios</a></li>
+            <li><a href="sobre_nosotros.php">Sobre nosotros</a></li>
             <li><a href="../../backend/routes/auth.php?action=logout">Cerrar Sesión</a></li>
         </ul>
     </nav>
