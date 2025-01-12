@@ -14,7 +14,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
 <body>
     <nav>s
         <ul>
-            <li><a href="../../blog.php">Blog</a></li>
+            <li><a href="blog.php">Blog</a></li>
             <li><a href="entrenadores.php">Entrenadores</a></li>
             <li><a href="horarios.php">Horarios</a></li>
             <li><a href="precios.php">Precios</a></li>
