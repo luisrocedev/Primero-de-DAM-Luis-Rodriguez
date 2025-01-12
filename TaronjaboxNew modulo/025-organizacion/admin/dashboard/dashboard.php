@@ -9,10 +9,10 @@ if (!isset($_SESSION['admin_logged_in'])) {
 <html lang="es">
 <head>
     <title>Dashboard</title>
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    <nav>s
+    <nav>
         <ul>
             <li><a href="blog.php">Blog</a></li>
             <li><a href="entrenadores.php">Entrenadores</a></li>
