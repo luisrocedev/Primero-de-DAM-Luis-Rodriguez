@@ -1,32 +1,39 @@
-024-corregimos index js/
+025-organizacion/
     .DS_Store
     config/
         database.php
     admin/
         .DS_Store
         dashboard/
-            sobre_nosotros.js
-            contacto.php
-            horarios.css
             .DS_Store
             index.php
-            entrenadores.php
-            contacto.css
-            horarios.php
-            contacto.js
-            entrenadores.css
-            precios.js
-            sobre_nosotros.css
-            entrenadores.js
-            blog.js
-            blog.php
-            horarios.js
-            precios.css
-            sobre_nosotros.php
-            dashboard.js
             menu.css
-            blog.css
-            precios.php
+            sobre_nosotros/
+                sobre_nosotros.js
+                sobre_nosotros.css
+                sobre_nosotros.php
+            contacto/
+                contacto.php
+                contacto.css
+                contacto.js
+            horarios/
+                horarios.css
+                horarios.php
+                horarios.js
+            blog/
+                blog.js
+                blog.php
+                blog.css
+            dashboard/
+                dashboard.js
+            entrenadores/
+                entrenadores.php
+                entrenadores.css
+                entrenadores.js
+            precios/
+                precios.js
+                precios.css
+                precios.php
         helpers/
             utils.php
         login/

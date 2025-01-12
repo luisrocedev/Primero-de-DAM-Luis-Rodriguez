@@ -23,5 +23,5 @@ def listar_estructura(ruta, archivo_salida):
 
 # Llamar a la función para listar la estructura de tu proyecto
 carpeta = input("Indica la carpeta sobre la cual sacar la estructura: ")
-listar_estructura('/Applications/MAMP/htdocs/GitHub/Primero-de-DAM-Luis-Rodriguez/TaronjaboxNew modulo/024-corregimos index js', 'estructura_proyectov1.txt')
+listar_estructura('/Applications/MAMP/htdocs/GitHub/Primero-de-DAM-Luis-Rodriguez/TaronjaboxNew modulo/025-organizacion', 'estructura_proyectov1.txt')
 print("La estructura del proyecto ha sido guardada en 'estructura_proyecto.txt'.")
