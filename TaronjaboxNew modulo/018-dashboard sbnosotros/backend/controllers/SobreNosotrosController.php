@@ -23,7 +23,7 @@ class SobreNosotrosController {
             case 'POST': // Añadir un nuevo registro
                 $titulo = $_POST['titulo'] ?? '';
                 $contenido = $_POST['contenido'] ?? '';
-                $imagen_url = $_POST['imagen_url'] ?? '';
+                $imagen_url = $_POST['imagen_url'] ?? null;
 
                 echo json_encode([
                     'success' => $this->sobreNosotros->add($titulo, $contenido, $imagen_url)
