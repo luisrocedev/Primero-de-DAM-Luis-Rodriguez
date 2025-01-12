@@ -5,9 +5,10 @@
     admin/
         .DS_Store
         dashboard/
+            dashboard.php
             .DS_Store
-            index.php
-            menu.css
+            dashboard.css
+            dashboard.js
             sobre_nosotros/
                 sobre_nosotros.js
                 sobre_nosotros.css
@@ -24,8 +25,6 @@
                 blog.js
                 blog.php
                 blog.css
-            dashboard/
-                dashboard.js
             entrenadores/
                 entrenadores.php
                 entrenadores.css
