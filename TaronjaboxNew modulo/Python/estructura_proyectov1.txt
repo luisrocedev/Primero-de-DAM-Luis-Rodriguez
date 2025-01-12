@@ -1,22 +1,28 @@
-015-carpeta uploads/
+024-corregimos index js/
     .DS_Store
     config/
         database.php
     admin/
         .DS_Store
         dashboard/
+            sobre_nosotros.js
+            contacto.php
             horarios.css
             .DS_Store
             index.php
             entrenadores.php
+            contacto.css
             horarios.php
+            contacto.js
             entrenadores.css
             precios.js
+            sobre_nosotros.css
             entrenadores.js
             blog.js
             blog.php
             horarios.js
             precios.css
+            sobre_nosotros.php
             dashboard.js
             menu.css
             blog.css
@@ -30,6 +36,8 @@
     backend/
         .DS_Store
         models/
+            SobreNosotros.php
+            Contacto.php
             Precio.php
             Entrenador.php
             Blog.php
@@ -38,26 +46,41 @@
             Admin.php
         controllers/
             PrecioController.php
+            ContactoController.php
+            SobreNosotrosController.php
             HorarioController.php
             BlogController.php
             EntrenadorController.php
         routes/
+            contacto.php
             auth.php
             entrenadores.php
             horarios.php
             blog.php
+            sobre_nosotros.php
             precios.php
     basededatos/
+        .DS_Store
         taronjabox.sql
     front/
         .DS_Store
         index.php
         modulos/
             .DS_Store
+            footer/
+                footer.php
+            sobre_nosotros/
+                sobre_nosotros.js
+                sobre_nosotros.css
+                sobre_nosotros.php
             entrenador/
                 entrenador.js
                 entrenador.php
                 entrenador.css
+            contacto/
+                contacto.php
+                contacto.css
+                contacto.js
             horarios/
                 horarios.css
                 horarios.php
@@ -66,6 +89,12 @@
                 blog.js
                 blog.php
                 blog.css
+            destacados/
+                destacados.php
+            hero/
+                hero.php
+            header/
+                header.php
             precios/
                 precios.js
                 precios.css
