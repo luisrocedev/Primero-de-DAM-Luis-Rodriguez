@@ -1,4 +1,4 @@
-024-corregimos index js/
+028-mail JSON/
     .DS_Store
     config/
         database.php
@@ -15,6 +15,7 @@
             horarios.php
             contacto.js
             entrenadores.css
+            seo.php
             precios.js
             sobre_nosotros.css
             entrenadores.js
@@ -33,6 +34,10 @@
             index.php
             login.css
             login.js
+    uploads/
+        contact_messages/
+            mensaje_1736787262.json
+            mensaje_1736787895.json
     backend/
         .DS_Store
         models/
@@ -106,5 +111,7 @@
             js/
                 index.js
     helpers/
+        seo_checker.py
+        seo_runner.php
         getBaseURL.php
         utils.php

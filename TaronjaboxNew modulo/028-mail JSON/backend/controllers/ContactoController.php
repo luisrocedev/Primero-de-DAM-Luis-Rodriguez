@@ -1,28 +1,31 @@
 <?php
 require_once '../models/Contacto.php';
 
-class ContactoController
-{
+class ContactoController {
     private $contacto;
 
-    public function __construct()
-    {
+    public function __construct() {
         $this->contacto = new Contacto();
     }
 
-    public function handleRequest()
-    {
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    public function handleRequest() {
+        $method = $_SERVER['REQUEST_METHOD'];
+
+        if ($method === 'POST') {
             $this->saveMessage();
-        } elseif ($_SERVER['REQUEST_METHOD'] === 'GET') {
+        } elseif ($method === 'GET') {
             echo json_encode($this->contacto->getAllMessages());
-        } elseif ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
-            $this->deleteMessage();
+        } elseif ($method === 'DELETE') {
+            $id = $_GET['id'] ?? null;
+            if ($id) {
+                echo json_encode(['success' => $this->contacto->deleteMessage($id)]);
+            } else {
+                echo json_encode(['success' => false, 'message' => 'ID de mensaje no válido.']);
+            }
         }
     }
 
-    private function saveMessage()
-    {
+    private function saveMessage() {
         $nombre = $_POST['nombre'] ?? '';
         $email = $_POST['email'] ?? '';
         $mensaje = $_POST['mensaje'] ?? '';
@@ -33,30 +36,26 @@ class ContactoController
         }
 
         $success = $this->contacto->saveMessage($nombre, $email, $mensaje);
-
         if ($success) {
+            $data = [
+                'nombre' => $nombre,
+                'email' => $email,
+                'mensaje' => $mensaje,
+                'creado_en' => date('Y-m-d H:i:s')
+            ];
+
+            $directory = '../../uploads/contact_messages/';
+            if (!is_dir($directory)) {
+                mkdir($directory, 0777, true);
+            }
+
+            $fileName = $directory . 'mensaje_' . time() . '.json';
+            file_put_contents($fileName, json_encode($data, JSON_PRETTY_PRINT));
+
             echo json_encode(['success' => true, 'message' => 'Mensaje guardado correctamente.']);
         } else {
             echo json_encode(['success' => false, 'message' => 'Error al guardar el mensaje.']);
         }
     }
-
-    private function deleteMessage()
-    {
-        parse_str(file_get_contents("php://input"), $_DELETE);
-        $id = $_DELETE['id'] ?? 0;
-
-        if ($id <= 0) {
-            echo json_encode(['success' => false, 'message' => 'ID de mensaje no válido.']);
-            return;
-        }
-
-        $success = $this->contacto->deleteMessage($id);
-
-        if ($success) {
-            echo json_encode(['success' => true, 'message' => 'Mensaje eliminado correctamente.']);
-        } else {
-            echo json_encode(['success' => false, 'message' => 'Error al eliminar el mensaje.']);
-        }
-    }
 }
+?>
