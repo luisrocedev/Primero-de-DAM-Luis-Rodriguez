@@ -1,53 +1,32 @@
-025-modular v2/
+024-corregimos index js/
     .DS_Store
     config/
         database.php
     admin/
         .DS_Store
         dashboard/
-            dashboard.php
+            sobre_nosotros.js
+            contacto.php
+            horarios.css
             .DS_Store
-            styles/
-                dashboard.css
-            scripts/
-                dashboard.js
-            modulos/
-                sobre_nosotros/
-                    sobre_nosotros.php
-                    styles/
-                        sobre_nosotros.css
-                    scripts/
-                        sobre_nosotros.js
-                contacto/
-                    contacto.php
-                    styles/
-                        contacto.css
-                    scripts/
-                        contacto.js
-                horarios/
-                    horarios.php
-                    styles/
-                        horarios.css
-                    scripts/
-                        horarios.js
-                blog/
-                    blog.php
-                    styles/
-                        blog.css
-                    scripts/
-                        blog.js
-                entrenadores/
-                    entrenadores.php
-                    styles/
-                        entrenadores.css
-                    scripts/
-                        entrenadores.js
-                precios/
-                    precios.php
-                    styles/
-                        precios.css
-                    scripts/
-                        precios.js
+            index.php
+            entrenadores.php
+            contacto.css
+            horarios.php
+            contacto.js
+            entrenadores.css
+            precios.js
+            sobre_nosotros.css
+            entrenadores.js
+            blog.js
+            blog.php
+            horarios.js
+            precios.css
+            sobre_nosotros.php
+            dashboard.js
+            menu.css
+            blog.css
+            precios.php
         helpers/
             utils.php
         login/
@@ -91,35 +70,25 @@
             footer/
                 footer.php
             sobre_nosotros/
+                sobre_nosotros.js
+                sobre_nosotros.css
                 sobre_nosotros.php
-                styles/
-                    sobre_nosotros.css
-                scripts/
-                    sobre_nosotros.js
             entrenador/
+                entrenador.js
                 entrenador.php
-                styles/
-                    entrenador.css
-                scripts/
-                    entrenador.js
+                entrenador.css
             contacto/
                 contacto.php
-                styles/
-                    contacto.css
-                scripts/
-                    contacto.js
+                contacto.css
+                contacto.js
             horarios/
+                horarios.css
                 horarios.php
-                styles/
-                    horarios.css
-                scripts/
-                    horarios.js
+                horarios.js
             blog/
+                blog.js
                 blog.php
-                styles/
-                    blog.css
-                scripts/
-                    blog.js
+                blog.css
             destacados/
                 destacados.php
             hero/
@@ -127,11 +96,9 @@
             header/
                 header.php
             precios/
+                precios.js
+                precios.css
                 precios.php
-                styles/
-                    precios.css
-                scripts/
-                    precios.js
         assets/
             .DS_Store
             css/
@@ -140,4 +107,4 @@
                 index.js
     helpers/
         getBaseURL.php
-        constants.php
+        utils.php
