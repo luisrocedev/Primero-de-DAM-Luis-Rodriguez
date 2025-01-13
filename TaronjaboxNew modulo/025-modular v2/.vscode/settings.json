@@ -1,0 +1,13 @@
+{
+    "php.suggest.basic": false,
+    "php.validate.executablePath": "C:/xampp/php/php.exe", // Ruta al ejecutable PHP en tu sistema
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true
+    },
+    "path-autocomplete.pathMappings": {
+        "/": "C:/xampp/htdocs/Primero-de-DAM-Luis-Rodriguez/TaronjaboxNew modulo/025-modular v2"
+    },
+    "path-autocomplete.useBackslash": false,
+    "path-autocomplete.pathSeparator": "/"
+}
