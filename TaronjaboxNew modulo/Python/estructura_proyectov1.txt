@@ -1,38 +1,35 @@
 025-organizacion/
-    .DS_Store
     config/
         database.php
     admin/
-        .DS_Store
         dashboard/
             dashboard.php
-            .DS_Store
-            dashboard.css
-            dashboard.js
+            styles/
+                dashboard.css
             sobre_nosotros/
-                sobre_nosotros.js
-                sobre_nosotros.css
                 sobre_nosotros.php
+                sobre_nosotros.css
+                sobre_nosotros.js
             contacto/
                 contacto.php
                 contacto.css
                 contacto.js
             horarios/
-                horarios.css
                 horarios.php
+                horarios.css
                 horarios.js
             blog/
-                blog.js
                 blog.php
                 blog.css
+                blog.js
             entrenadores/
                 entrenadores.php
                 entrenadores.css
                 entrenadores.js
             precios/
-                precios.js
-                precios.css
                 precios.php
+                precios.css
+                precios.js
         helpers/
             utils.php
         login/
@@ -40,7 +37,6 @@
             login.css
             login.js
     backend/
-        .DS_Store
         models/
             SobreNosotros.php
             Contacto.php
@@ -66,35 +62,32 @@
             sobre_nosotros.php
             precios.php
     basededatos/
-        .DS_Store
         taronjabox.sql
     front/
-        .DS_Store
         index.php
         modulos/
-            .DS_Store
             footer/
                 footer.php
             sobre_nosotros/
-                sobre_nosotros.js
-                sobre_nosotros.css
                 sobre_nosotros.php
+                sobre_nosotros.css
+                sobre_nosotros.js
             entrenador/
-                entrenador.js
                 entrenador.php
                 entrenador.css
+                entrenador.js
             contacto/
                 contacto.php
                 contacto.css
                 contacto.js
             horarios/
-                horarios.css
                 horarios.php
+                horarios.css
                 horarios.js
             blog/
-                blog.js
                 blog.php
                 blog.css
+                blog.js
             destacados/
                 destacados.php
             hero/
@@ -102,11 +95,10 @@
             header/
                 header.php
             precios/
-                precios.js
-                precios.css
                 precios.php
+                precios.css
+                precios.js
         assets/
-            .DS_Store
             css/
                 index.css
             js/
