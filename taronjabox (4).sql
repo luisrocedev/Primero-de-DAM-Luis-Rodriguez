@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-01-2025 a las 22:25:59
+-- Tiempo de generación: 14-01-2025 a las 01:10:20
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -59,8 +59,31 @@ CREATE TABLE `blog` (
 --
 
 INSERT INTO `blog` (`id`, `titulo`, `contenido`, `fecha`, `autor`) VALUES
-(4, 'Campeonato valencia crossfit', 'El dia de ayer comenzo el primer campeonato de crossfit en valencia con muchos competidores de todas las clases', '2024-12-31 00:00:00', 'Admin'),
-(9, 'esto es una prueba ', 'ESTO ES UNA PRUEBA', '2025-01-04 15:15:44', 'HOLA');
+(4, 'Campeonato valencia crossfit', 'El dia de ayer comenzo el primer campeonato de crossfit en valencia con muchos competidores de todas las clasessletsgouyuyu', '2024-12-31 00:00:00', 'Admin');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `contacto`
+--
+
+CREATE TABLE `contacto` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `mensaje` text NOT NULL,
+  `creado_en` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `contacto`
+--
+
+INSERT INTO `contacto` (`id`, `nombre`, `email`, `mensaje`, `creado_en`) VALUES
+(3, 'Luis Rodriguez', 'luis@gmail.com', 'fsdfdsf', '2025-01-13 15:57:16'),
+(4, 'Luis Rodriguez', 'luis@gmail.com', 'Estoy interesado', '2025-01-13 16:54:22'),
+(5, 'prueba', 'jahirguaperas2@gmail.com', 'dasdasd', '2025-01-13 17:04:55'),
+(6, 'Luis Rodriguezgfdgfdgfdgfd', 'luis@gmail.com', 'gfdgfdgfd', '2025-01-13 17:15:46');
 
 -- --------------------------------------------------------
 
@@ -81,8 +104,8 @@ CREATE TABLE `entrenadores` (
 --
 
 INSERT INTO `entrenadores` (`id`, `nombre`, `especialidad`, `descripcion`, `foto_url`) VALUES
-(5, 'Luis Rodríguez', 'Halterofilia', 'guapo', 'bodybuilding-concept-with-strong-man-holding-barbell.jpg'),
-(6, 'Giulia Imperio', 'Halterofilia', 'Strong', 'pexels-cottonbro-7675406.jpg');
+(44, 'Calum Clements', 'crossfit', 'dasdsaad', 'https://federpesistica.it/teamitaliafipe/wp-content/uploads/2022/11/giulia-imperio.jpg'),
+(45, 'Luis Rodriguez', 'bjj', 'bjj', 'https://sportlifeathletes.com/wp-content/uploads/2021/09/Diseno-sin-titulo-1.jpg');
 
 -- --------------------------------------------------------
 
@@ -97,6 +120,13 @@ CREATE TABLE `horarios` (
   `actividad` varchar(100) NOT NULL,
   `entrenador_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `horarios`
+--
+
+INSERT INTO `horarios` (`id`, `dia`, `hora`, `actividad`, `entrenador_id`) VALUES
+(7, '23', '23:33:00', 'Crossfit', 44);
 
 -- --------------------------------------------------------
 
@@ -131,28 +161,29 @@ CREATE TABLE `precios` (
 
 INSERT INTO `precios` (`id`, `nombre_plan`, `descripcion`, `precio`) VALUES
 (1, 'Plan Mensual', 'Acceso ilimitado durante 30 días a todas las clases.', 50.00),
-(2, 'Plan Anual', 'Acceso ilimitado durante todo un año, con descuento especial.', 500.00),
-(3, 'Prueba desde dashboard', 'bvn', 0.05);
+(4, 'Plan Elite', 'dasd', 4000.00);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `sobre_mi`
+-- Estructura de tabla para la tabla `sobre_nosotros`
 --
 
-CREATE TABLE `sobre_mi` (
+CREATE TABLE `sobre_nosotros` (
   `id` int(11) NOT NULL,
   `titulo` varchar(255) NOT NULL,
-  `descripcion` text NOT NULL,
-  `imagen_url` varchar(255) DEFAULT NULL
+  `contenido` text NOT NULL,
+  `imagen_url` varchar(255) DEFAULT NULL,
+  `creado_en` timestamp NOT NULL DEFAULT current_timestamp(),
+  `actualizado_en` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `sobre_mi`
+-- Volcado de datos para la tabla `sobre_nosotros`
 --
 
-INSERT INTO `sobre_mi` (`id`, `titulo`, `descripcion`, `imagen_url`) VALUES
-(1, 'Bienvenidos a TaronjaBox', 'Somos un centro dedicado al entrenamiento funcional y al bienestar físico. Nuestro equipo de entrenadores te ayudará a alcanzar tus metas.', 'sobre_mi.jpg');
+INSERT INTO `sobre_nosotros` (`id`, `titulo`, `contenido`, `imagen_url`, `creado_en`, `actualizado_en`) VALUES
+(5, 'fdsfdsfdscdfds', 'fdsfdsfsdfdsfsdfsd', NULL, '2025-01-13 15:57:38', '2025-01-13 15:57:38');
 
 --
 -- Índices para tablas volcadas
@@ -169,6 +200,12 @@ ALTER TABLE `admins`
 -- Indices de la tabla `blog`
 --
 ALTER TABLE `blog`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `contacto`
+--
+ALTER TABLE `contacto`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -197,9 +234,9 @@ ALTER TABLE `precios`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `sobre_mi`
+-- Indices de la tabla `sobre_nosotros`
 --
-ALTER TABLE `sobre_mi`
+ALTER TABLE `sobre_nosotros`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -219,16 +256,22 @@ ALTER TABLE `blog`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
+-- AUTO_INCREMENT de la tabla `contacto`
+--
+ALTER TABLE `contacto`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT de la tabla `entrenadores`
 --
 ALTER TABLE `entrenadores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT de la tabla `horarios`
 --
 ALTER TABLE `horarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `mensajes`
@@ -240,13 +283,13 @@ ALTER TABLE `mensajes`
 -- AUTO_INCREMENT de la tabla `precios`
 --
 ALTER TABLE `precios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT de la tabla `sobre_mi`
+-- AUTO_INCREMENT de la tabla `sobre_nosotros`
 --
-ALTER TABLE `sobre_mi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `sobre_nosotros`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas
