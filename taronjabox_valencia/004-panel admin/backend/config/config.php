@@ -1,8 +1,8 @@
 <?php
 // Configuración de la base de datos
 define('DB_HOST', 'localhost');
-define('DB_USER', '	taronjaboxvalencia'); // Cambia 'root' si tienes otro usuario
-define('DB_PASSWORD', '	taronjaboxvalencia'); // Cambia '' si tu usuario tiene contraseña
+define('DB_USER', 'taronjaboxvalencia'); // Cambia 'root' si tienes otro usuario
+define('DB_PASSWORD', 'taronjaboxvalencia'); // Cambia '' si tu usuario tiene contraseña
 define('DB_NAME', 'taronjaboxvalencia');
 
 // Habilitar reportes de error para depuración
