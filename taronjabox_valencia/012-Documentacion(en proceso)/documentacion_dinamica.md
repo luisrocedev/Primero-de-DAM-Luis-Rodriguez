@@ -8,7 +8,7 @@ Está diseñada para gestionar de manera dinámica contenido relacionado con un 
 
 ## Docstrings en el Código
 
-*(Actualizado el: 2025-01-18 22:41:15)*
+*(Actualizado el: 2025-01-18 21:47:02)*
 
 ### Archivo: `NoticiasModel.php`
 - Clase NoticiasModel
