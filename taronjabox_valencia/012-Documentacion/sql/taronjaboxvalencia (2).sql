@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-01-2025 a las 19:16:52
+-- Tiempo de generación: 18-01-2025 a las 23:08:42
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -49,6 +49,13 @@ CREATE TABLE `galeria` (
   `fecha_subida` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `galeria`
+--
+
+INSERT INTO `galeria` (`id`, `titulo`, `imagen`, `fecha_subida`) VALUES
+(4, 'esto es una prueba sd', '1280369.png', '2025-01-18 19:43:26');
+
 -- --------------------------------------------------------
 
 --
@@ -60,7 +67,8 @@ CREATE TABLE `mensajes_contacto` (
   `nombre` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `mensaje` text NOT NULL,
-  `fecha` timestamp NOT NULL DEFAULT current_timestamp()
+  `fecha` timestamp NOT NULL DEFAULT current_timestamp(),
+  `leido` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -78,6 +86,13 @@ CREATE TABLE `noticias_eventos` (
   `fecha_evento` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `noticias_eventos`
+--
+
+INSERT INTO `noticias_eventos` (`id`, `titulo`, `contenido`, `imagen`, `fecha_creacion`, `fecha_evento`) VALUES
+(2, 'dsa', 'dsa', 'dsa', '2025-01-18 19:16:54', '0000-00-00');
+
 -- --------------------------------------------------------
 
 --
@@ -90,6 +105,13 @@ CREATE TABLE `usuarios_admin` (
   `password` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios_admin`
+--
+
+INSERT INTO `usuarios_admin` (`id`, `username`, `password`, `created_at`) VALUES
+(1, 'admin', 'admin123', '2025-01-18 18:18:28');
 
 --
 -- Índices para tablas volcadas
@@ -133,31 +155,31 @@ ALTER TABLE `usuarios_admin`
 -- AUTO_INCREMENT de la tabla `clases`
 --
 ALTER TABLE `clases`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `galeria`
 --
 ALTER TABLE `galeria`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `mensajes_contacto`
 --
 ALTER TABLE `mensajes_contacto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `noticias_eventos`
 --
 ALTER TABLE `noticias_eventos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios_admin`
 --
 ALTER TABLE `usuarios_admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
