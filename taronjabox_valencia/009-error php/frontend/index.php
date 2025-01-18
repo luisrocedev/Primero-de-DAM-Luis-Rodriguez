@@ -2,20 +2,22 @@
 require_once '../backend/controllers/Controller.php';
 require_once '../backend/models/Trainer.php';
 
-// Listado de rutas válidas
-$validRoutes = ['home', 'about', 'trainers'];
+// Verificar rutas válidas
+$validRoutes = ['home', 'trainers'];
 
-// Obtener la ruta desde la URL
-$route = isset($_GET['route']) ? $_GET['route'] : 'home'; // Por defecto, "home"
+$route = isset($_GET['route']) ? $_GET['route'] : 'home'; // Por defecto "home"
 
-// Verificar si la ruta es válida
 if (in_array($route, $validRoutes)) {
     $data = [];
 
-    // Si la ruta es "trainers", cargar datos del modelo
     if ($route === 'trainers') {
         $trainerModel = new Trainer();
         $data['trainers'] = $trainerModel->getAllTrainers();
+
+        // Verifica si hay datos
+        if (empty($data['trainers'])) {
+            die("No se encontraron entrenadores.");
+        }
     }
 
     Controller::loadView('frontend', $route, $data);
