@@ -1,14 +1,14 @@
 <?php
-// Define la ruta base dinámica
-$base_url = dirname($_SERVER['SCRIPT_NAME']);
+// Define la ruta base fija
+$base_url = '/Primero-de-DAM-Luis-Rodriguez/taronjabox_valencia';
 ?>
 <header>
     <h1>TaronjaBox Valencia</h1>
     <nav>
-        <a href="<?= $base_url ?>/index.php">Inicio</a>
-        <a href="<?= $base_url ?>/views/noticias/noticias.php">Noticias</a>
-        <a href="<?= $base_url ?>/views/clases/clases.php">Clases</a>
-        <a href="<?= $base_url ?>/views/galeria/galeria.php">Galería</a>
-        <a href="<?= $base_url ?>/views/contacto/contacto.php">Contacto</a>
+        <a href="<?= $base_url ?>/frontend/index.php">Inicio</a>
+        <a href="<?= $base_url ?>/frontend/views/noticias/noticias.php">Noticias</a>
+        <a href="<?= $base_url ?>/frontend/views/clases/clases.php">Clases</a>
+        <a href="<?= $base_url ?>/frontend/views/galeria/galeria.php">Galería</a>
+        <a href="<?= $base_url ?>/frontend/views/contacto/contacto.php">Contacto</a>
     </nav>
 </header>

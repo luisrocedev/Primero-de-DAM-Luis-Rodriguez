@@ -7,7 +7,7 @@ const cargarDestacados = async () => {
         console.log("Iniciando la carga de destacados...");
 
         // Realizar la petición al endpoint
-        const response = await fetch("../../..backend/controllers/DestacadosAPI.php");
+        const response = await fetch("../../../backend/controllers/DestacadosAPI.php");
         if (!response.ok) throw new Error("Error al cargar destacados");
         
         const destacados = await response.json();
