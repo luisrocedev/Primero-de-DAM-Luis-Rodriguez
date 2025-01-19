@@ -1,30 +1,22 @@
-<!-- views/noticias/noticias.php -->
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias</title>
-    <link rel="stylesheet" href="noticias.css">
+    <title>Noticias - TaronjaBox Valencia</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Noticias</h1>
-    </header>
+    <?php include '../includes/header.php'; ?>
     <main>
-        <section id="filtros">
-            <form id="form-filtros">
-                <input type="text" id="buscar" placeholder="Buscar por título o contenido">
-                <button type="submit">Filtrar</button>
-            </form>
-        </section>
-        <div id="noticias-container">
-            <p>Cargando noticias...</p>
-        </div>
+        <h2>Noticias</h2>
+        <p>Aquí van las noticias dinámicas.</p>
     </main>
-    <script type="module" src="noticias.js"></script>
+    <footer>
+        <p>&copy; <?= date('Y'); ?> TaronjaBox Valencia. Todos los derechos reservados.</p>
+    </footer>
 </body>
 
 </html>
