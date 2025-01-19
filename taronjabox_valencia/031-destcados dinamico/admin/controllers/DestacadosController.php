@@ -1,5 +1,5 @@
 <?php
-require_once '../config/Database.php';
+require_once '../../backend/models/Database.php';
 
 class DestacadosController
 {
@@ -7,7 +7,7 @@ class DestacadosController
 
     public function __construct()
     {
-        $this->db = Database::connect();
+        $this->db = new Database(); // Crear instancia de la clase Database
     }
 
     // Obtener todos los destacados
