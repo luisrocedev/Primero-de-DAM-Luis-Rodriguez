@@ -2,38 +2,39 @@
 session_start();
 require_once '../backend/config/config.php';
 
-$message = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['username'] ?? '';
-    $password = $_POST['password'] ?? '';
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
 
-    // Conexión a la base de datos
-    $connection = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+    if (!empty($username) && !empty($password)) {
+        $conn = getDatabaseConnection();
 
-    if ($connection->connect_error) {
-        die("Error en la conexión: " . $connection->connect_error);
-    }
+        // Buscar el usuario en la base de datos
+        $stmt = $conn->prepare("SELECT * FROM usuarios_admin WHERE username = :username");
+        $stmt->bindParam(':username', $username);
+        $stmt->execute();
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    $query = "SELECT * FROM usuarios_admin WHERE username = ? AND password = ?";
-    $stmt = $connection->prepare($query);
-    $hashedPassword = md5($password);
-    $stmt->bind_param('ss', $username, $hashedPassword);
-    $stmt->execute();
-    $result = $stmt->get_result();
+        if ($user && $password === $user['password']) { // Comparación de texto plano
+            // Configurar la sesión
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['username'] = $user['username'];
 
-    if ($result->num_rows > 0) {
-        $_SESSION['admin_logged_in'] = true;
-        $_SESSION['admin_username'] = $username;
-        header('Location: index.php');
-        exit;
+            // Redirigir al panel
+            header('Location: index.php');
+            exit;
+        } else {
+            $error = "Usuario o contraseña incorrectos.";
+        }
     } else {
-        $message = 'Credenciales incorrectas.';
+        $error = "Por favor, completa todos los campos.";
     }
-
-    $stmt->close();
-    $connection->close();
+} else {
+    $error = ""; // Definir $error si no se ha enviado el formulario
 }
 ?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -46,8 +47,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
     <h1>Inicio de Sesión</h1>
-    <?php if ($message): ?>
-        <p style="color: red;"><?= htmlspecialchars($message); ?></p>
+    <?php if (!empty($error)): ?>
+        <p style="color: red;"><?= htmlspecialchars($error); ?></p>
     <?php endif; ?>
     <form method="POST" action="">
         <label for="username">Usuario:</label>
