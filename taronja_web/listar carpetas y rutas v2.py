@@ -22,6 +22,6 @@ def listar_estructura(ruta, archivo_salida):
                 f.write(f"{file_indent}{file}\n")
 
 # Llamar a la función para listar la estructura de tu proyecto
-carpeta = input("/Applications/MAMP/htdocs/GitHub/Primero-de-DAM-Luis-Rodriguez/taronja_web/014-contacto")
+carpeta = input('/Applications/MAMP/htdocs/GitHub/Primero-de-DAM-Luis-Rodriguez/taronja_web/016-Implementar fetch')
 listar_estructura(carpeta, 'estructura_proyecto.txt')
 print("La estructura del proyecto ha sido guardada en 'estructura_proyecto.txt'.")
