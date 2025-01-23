@@ -1,0 +1,118 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    background-color: #007BFF;
+    color: white;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    padding: 1rem;
+    background-color: #e9ecef;
+    margin: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #495057;
+}
+
+.toc {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+.toc li {
+    margin-bottom: 0.5rem;
+}
+
+.toc li a {
+    text-decoration: none;
+    color: #007BFF;
+    padding: 0.5rem;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.toc li a:hover {
+    background-color: #e9ecef;
+}
+
+.content {
+    width: 75%;
+    padding: 2rem;
+    overflow-y: auto;
+    background-color: #ffffff;
+}
+
+pre {
+    font-family: 'Courier New', monospace;
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+.loading {
+    color: #6c757d;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Animación de deslizamiento */
+.nested {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.nested.open {
+    max-height: 500px;
+    /* Lo suficientemente grande para contener el contenido */
+    transition: max-height 0.3s ease-in;
+}
+
+.folder {
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.folder::before {
+    content: '📁';
+    margin-right: 5px;
+}
+
+.folder.open::before {
+    content: '📂';
+    /* Cambia el icono al abrir */
+}

@@ -1,15 +1,14 @@
 <?php
+// includes/functions.php
 
-// Función para recorrer las carpetas del proyecto y generar archivos .txt con los docstrings
+/**
+ * Procesa una carpeta y genera archivos .txt con los docstrings de los archivos PHP y CSS.
+ */
 function processFolder($source, $target)
 {
-    echo "Procesando carpeta: $source\n";
-
     // Asegurarse de que la carpeta de destino exista
     if (!file_exists($target)) {
-        if (!mkdir($target, 0777, true)) {
-            throw new Exception("No se pudo crear la carpeta de destino: $target");
-        }
+        mkdir($target, 0777, true);
     }
 
     // Obtener archivos PHP y CSS directamente
@@ -19,29 +18,27 @@ function processFolder($source, $target)
     );
 
     foreach ($files as $file) {
-        echo "Extrayendo docstring de: $file\n";
         $fileNameWithoutExtension = pathinfo($file, PATHINFO_FILENAME);
         $fileFolderPath = $target . DIRECTORY_SEPARATOR . $fileNameWithoutExtension . '.txt';
 
         $docstringContent = extractDocstring($file);
 
         // Guardar el contenido del docstring en el archivo .txt
-        if (!file_put_contents($fileFolderPath, $docstringContent)) {
-            throw new Exception("No se pudo escribir en el archivo: $fileFolderPath");
-        }
+        file_put_contents($fileFolderPath, $docstringContent);
     }
 
     // Procesar subcarpetas recursivamente
     $folders = glob($source . DIRECTORY_SEPARATOR . '*', GLOB_ONLYDIR);
     foreach ($folders as $folder) {
-        echo "Procesando subcarpeta: $folder\n";
         $folderName = basename($folder);
         $newTarget = $target . DIRECTORY_SEPARATOR . $folderName;
         processFolder($folder, $newTarget);
     }
 }
 
-// Función para extraer el docstring de los archivos PHP y CSS
+/**
+ * Extrae el docstring de un archivo PHP o CSS.
+ */
 function extractDocstring($filePath)
 {
     $content = file_get_contents($filePath);
@@ -67,16 +64,4 @@ function extractDocstring($filePath)
     }
 
     return '';
-}
-
-// Usar la función para procesar la carpeta
-$sourceFolder = '../darkorange/003-docstrings/'; // Ruta a tu carpeta de archivos PHP y CSS (ajústala según tu estructura)
-$targetFolder = 'documentacion/docs/admin';  // Ruta de destino donde se almacenarán los archivos .txt
-
-// Ejecutar la función de procesamiento
-try {
-    processFolder($sourceFolder, $targetFolder);
-    echo "Procesamiento completado con éxito!\n";
-} catch (Exception $e) {
-    echo "Error: " . $e->getMessage() . "\n";
 }
