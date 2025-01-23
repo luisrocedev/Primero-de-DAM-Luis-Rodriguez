@@ -1,0 +1,97 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente limpia y moderna */
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333; /* Texto oscuro para el contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centrar verticalmente */
+    margin: 0;
+}
+
+/* Contenedor principal del formulario */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff; /* Fondo blanco para el formulario */
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
+
+/* Títulos del formulario */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas del formulario */
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Campos de entrada */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Botón de submit */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7f32; /* Color darkorange */
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e66624; /* Un tono más oscuro de darkorange */
+}
+
+/* Mensajes de error */
+p {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Enlaces */
+a {
+    color: #ff7f32; /* Color darkorange */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+        width: 90%;
+    }
+}
