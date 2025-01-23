@@ -1,0 +1,10 @@
+* Login de administrador.
+
+ * Este script maneja el proceso de inicio de sesión para administradores.
+ * Recibe las credenciales de usuario y contraseña enviadas por el formulario,
+ * verifica su validez en la base de datos y, si son correctas,
+ * inicia una sesión de usuario y redirige al panel de control.
+
+ * @author [Luis Rodriguez]
+ * @version 1.0
+ * @since 2023-11-20
