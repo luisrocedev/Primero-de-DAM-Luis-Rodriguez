@@ -1,0 +1,55 @@
+* Estilos del panel de administración
+ *
+ * Este archivo define el diseño y los estilos principales del panel de administración.
+ * Contiene configuraciones para:
+ * - Reset básico de márgenes y paddings.
+ * - Diseño global del cuerpo y tipografía.
+ * - Encabezado del panel con navegación interactiva.
+ * - Formularios con campos estilizados.
+ * - Tablas para mostrar entradas o datos.
+ * - Botones con transiciones suaves.
+ * - Pie de página y links.
+ *
+ * Colores principales:
+ * - Fondo oscuro: #1c1c1c, #2d2d2d, #3d3d3d
+ * - Color destacado (Darkorange): #ff8c00
+ *
+ * Uso: Aplica estos estilos para mantener una apariencia consistente en el panel.
+
+Estilos globales
+
+Fondo oscuro
+
+Encabezado del panel de administración
+
+Darkorange
+
+Contenedor principal del panel
+
+Fondo gris oscuro
+
+Estilos de formularios
+
+Darkorange
+
+Botones
+
+Darkorange
+
+Darkorange más oscuro
+
+Tabla para mostrar entradas de blog
+
+Fondo oscuro
+
+Darkorange
+
+Pie de página
+
+Fondo oscuro
+
+Darkorange
+
+Links
+
+Darkorange

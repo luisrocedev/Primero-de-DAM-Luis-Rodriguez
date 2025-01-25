@@ -1,2 +1,0 @@
-* Verifica si el usuario está autenticado.
- * Si no está autenticado, redirige al login. Si está autenticado, permite el acceso al dashboard.

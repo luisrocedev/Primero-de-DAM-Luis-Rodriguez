@@ -1,0 +1,10 @@
+* Verificar si el usuario está autenticado.
+ * Si no lo está, redirigir al login.
+
+* Verificar si se han proporcionado los parámetros necesarios:
+ * - tabla: nombre de la tabla.
+ * - id: identificador del registro a editar.
+ * - seccion: sección actual.
+
+* Procesar el formulario al enviarse.
+ * Actualizar el registro en la tabla con los nuevos datos.

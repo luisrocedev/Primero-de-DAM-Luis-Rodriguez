@@ -5,14 +5,14 @@ body {
     padding: 0;
     display: flex;
     height: 100vh;
-    overflow: hidden;
+    overflow: hidden; /* Evita desplazamientos en el contenedor general */
 }
 
 h1 {
     text-align: center;
     margin: 0;
     padding: 1rem;
-    background-color: #007BFF;
+    background-color: #84ff00;
     color: white;
 }
 
@@ -20,7 +20,10 @@ h1 {
     width: 25%;
     background-color: #f8f9fa;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Altura completa de la barra lateral */
+    overflow: hidden; /* Control de scroll solo en la lista */
 }
 
 .sidebar h2 {
@@ -32,10 +35,13 @@ h1 {
     color: #495057;
 }
 
+/* Estilo para el índice con scroll */
 .toc {
     list-style-type: none;
     padding: 1rem;
     margin: 0;
+    overflow-y: auto; /* Habilitar desplazamiento vertical para la lista */
+    height: calc(100vh - 140px); /* Altura dinámica para incluir encabezados */
 }
 
 .toc li {
@@ -58,7 +64,7 @@ h1 {
 .content {
     width: 75%;
     padding: 2rem;
-    overflow-y: auto;
+    overflow-y: auto; /* Permitir scroll en la sección principal si el contenido es extenso */
     background-color: #ffffff;
 }
 
@@ -68,8 +74,8 @@ pre {
     padding: 1rem;
     border-radius: 8px;
     border: 1px solid #dee2e6;
-    overflow-x: auto;
-    white-space: pre-wrap;
+    overflow-x: auto; /* Permitir desplazamiento horizontal para el contenido de código */
+    white-space: pre-wrap; /* Ajustar contenido para no exceder el contenedor */
 }
 
 .loading {

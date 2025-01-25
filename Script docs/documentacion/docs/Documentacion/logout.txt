@@ -1,6 +1,0 @@
-* Cierra la sesión del usuario
- *
- * Este archivo destruye la sesión actual del usuario y lo redirige a la página de inicio de sesión.
- * @author [Luis Rodriguez]
- * @version 1.0
- * @since 2023-11-20

@@ -1,0 +1,1 @@
+Estilos para el encabezado del panel de administración

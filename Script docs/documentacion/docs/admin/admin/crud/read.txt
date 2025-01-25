@@ -1,0 +1,6 @@
+* Verificar si el usuario está autenticado.
+ * Si no lo está, redirigir al login.
+
+* Verificar si se han proporcionado los parámetros necesarios:
+ * - tabla: nombre de la tabla.
+ * - seccion: sección actual.

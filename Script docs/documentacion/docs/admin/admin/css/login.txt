@@ -1,0 +1,49 @@
+Reset básico
+
+Estilos globales
+
+Fuente moderna y limpia
+
+Fondo claro
+
+Color del texto oscuro para el contraste
+
+Asegura que el formulario esté centrado en la pantalla
+
+Estilo del contenedor del formulario
+
+Ancho máximo para el formulario
+
+Fondo blanco para el formulario
+
+Sombra suave
+
+Animación al enfocar el formulario
+
+Eleva el formulario ligeramente
+
+Título
+
+Etiquetas de los campos
+
+Estilo de los campos de entrada
+
+Cambio de color al hacer foco en los campos
+
+Color darkorange al enfocar
+
+Botón de envío
+
+Color darkorange
+
+Un tono más oscuro de darkorange
+
+Mensajes de error
+
+Estilo del enlace
+
+Color darkorange
+
+Subraya el enlace al pasar el mouse
+
+Diseño responsivo

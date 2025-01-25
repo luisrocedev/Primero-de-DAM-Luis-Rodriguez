@@ -1,0 +1,8 @@
+* Verificar si el usuario está autenticado.
+ * Si no lo está, redirigir al login.
+
+* Verificar si se han proporcionado los parámetros necesarios
+ * (la tabla y la sección).
+
+* Procesar el formulario al enviarse.
+ * Insertar un nuevo registro en la tabla indicada.

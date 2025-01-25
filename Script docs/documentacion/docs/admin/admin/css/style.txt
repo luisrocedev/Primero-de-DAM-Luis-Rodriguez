@@ -1,0 +1,11 @@
+Reset básico
+
+Estilos globales
+
+Contenedor principal del panel
+
+Estilos de formularios
+
+Tabla para mostrar entradas de blog
+
+Pie de página

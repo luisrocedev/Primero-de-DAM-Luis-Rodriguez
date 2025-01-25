@@ -1,5 +1,0 @@
-* Inicia una sesión de usuario y verifica la autenticación.
- *
- * Este script comprueba si existe una sesión de usuario activa.
- * Si el usuario ya ha iniciado sesión, se redirige al panel de control (dashboard).
- * De lo contrario, se redirige a la página de inicio de sesión.

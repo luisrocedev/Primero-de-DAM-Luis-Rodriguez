@@ -70,7 +70,7 @@ function extractDocstring($filePath)
 }
 
 // Usar la función para procesar la carpeta
-$sourceFolder = '../darkorange/003-docstrings/'; // Ruta a tu carpeta de archivos PHP y CSS (ajústala según tu estructura)
+$sourceFolder = '../darkorange/014-documentacion/'; // Ruta a tu carpeta de archivos PHP y CSS (ajústala según tu estructura)
 $targetFolder = 'documentacion/docs/admin';  // Ruta de destino donde se almacenarán los archivos .txt
 
 // Ejecutar la función de procesamiento

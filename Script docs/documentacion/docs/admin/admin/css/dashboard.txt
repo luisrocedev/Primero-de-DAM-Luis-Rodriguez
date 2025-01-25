@@ -1,0 +1,31 @@
+Reset básico
+
+Estilos globales
+
+Fuente moderna
+
+Fondo ligeramente más oscuro
+
+Contenedor principal
+
+Reducir el ancho máximo
+
+Margen superior e inferior
+
+Estilo para el encabezado
+
+Color tomato
+
+Mantener el color blanco al pasar el mouse
+
+Estilo para el contenido principal
+
+Color tomato
+
+Estilo del pie de página
+
+Estilos adicionales
+
+Color tomato al pasar el mouse
+
+Diseño responsivo

@@ -1,0 +1,4 @@
+* Login de administrador.
+ * 
+ * Maneja el proceso de inicio de sesión para administradores.
+ * Verifica las credenciales en la base de datos y redirige al panel de control si son correctas.

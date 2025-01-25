@@ -1,0 +1,3 @@
+* Configuración básica del proyecto.
+ * 
+ * Define la ruta base del proyecto para facilitar el manejo de rutas relativas.
