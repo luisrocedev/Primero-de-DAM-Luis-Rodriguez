@@ -1,0 +1,17 @@
+#hud {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+#vida, #municion {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
