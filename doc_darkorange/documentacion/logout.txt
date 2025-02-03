@@ -1,0 +1,3 @@
+* Cierra la sesión del usuario.
+ * 
+ * Destruye la sesión actual y redirige al usuario a la página de inicio de sesión.

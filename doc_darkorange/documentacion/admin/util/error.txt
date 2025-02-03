@@ -1,0 +1,2 @@
+* Configuración para mostrar errores en el entorno de desarrollo.
+ * Habilita la visualización de errores, incluyendo errores de arranque y todo tipo de errores.

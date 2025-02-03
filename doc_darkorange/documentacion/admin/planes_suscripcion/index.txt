@@ -1,0 +1,3 @@
+* Página de gestión de "Planes_Ssuscripcion".
+ * Incluye la lógica centralizada, muestra un formulario para crear nuevos registros
+ * y una tabla dinámica con los precios existentes.

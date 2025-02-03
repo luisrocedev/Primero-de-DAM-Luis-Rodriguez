@@ -1,0 +1,2 @@
+* Muestra una tabla dinámica con los registros de una tabla específica.
+ * Incluye opciones para editar y eliminar registros.

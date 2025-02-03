@@ -1,0 +1,7 @@
+* Verificar si el usuario está autenticado.
+ * Si no lo está, redirigir al login.
+
+* Verificar si se han proporcionado los parámetros necesarios:
+ * - tabla: nombre de la tabla de la base de datos.
+ * - id: identificador del registro a eliminar.
+ * - seccion: sección actual para redirigir después de la operación.

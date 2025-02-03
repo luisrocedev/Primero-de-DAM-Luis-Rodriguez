@@ -1,0 +1,35 @@
+========== CONTENEDOR PRINCIPAL DE CADA SECCIÓN ==========
+
+Centrado
+
+✅ Ajustar el contenido para respetar el sidebar a la DERECHA
+
+✅ Espacio para el sidebar (ajustado)
+
+========== TÍTULOS DE SECCIÓN ==========
+
+========== MENSAJES DE CONFIRMACIÓN Y ERROR ==========
+
+========== BOTÓN "CREAR NUEVO REGISTRO" ==========
+
+========== TABLA DE REGISTROS MEJORADA ==========
+
+✅ ENCABEZADOS DE LA TABLA
+
+✅ CUERPO DE LA TABLA
+
+✅ ID en negrita y centrado
+
+✅ Alternar color de filas
+
+✅ CORREGIDO: Alinear correctamente los botones de acción
+
+BOTONES DE ACCIÓN
+
+✅ Solución: Todos los botones tendrán el mismo ancho
+
+Botón Editar
+
+Botón Eliminar
+
+✅ RESPONSIVE PARA MÓVILES

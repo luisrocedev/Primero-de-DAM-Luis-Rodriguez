@@ -1,0 +1,7 @@
+========== ESTILOS DEL HEADER ==========
+
+Ajuste para evitar que el contenido quede debajo del header
+
+========== NAVEGACIÓN ==========
+
+========== RESPONSIVE ==========

@@ -1,0 +1,3 @@
+* Gestión de mensajes de contacto.
+ * 
+ * Muestra una interfaz para gestionar los mensajes de contacto, incluyendo la visualización y eliminación de mensajes.

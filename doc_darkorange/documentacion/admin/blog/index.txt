@@ -1,0 +1,3 @@
+* Gestión del blog.
+ * 
+ * Muestra una interfaz para gestionar las entradas del blog, incluyendo la creación y visualización de entradas.

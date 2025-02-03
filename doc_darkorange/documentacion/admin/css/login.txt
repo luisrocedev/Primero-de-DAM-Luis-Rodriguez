@@ -1,0 +1,21 @@
+Resetear márgenes y padding para evitar desplazamientos
+
+Estilos generales del login
+
+Color de fondo oscuro
+
+Asegura que ocupa todo el viewport
+
+Contenedor del formulario de login
+
+Asegura que el contenido interno esté centrado
+
+Estilo del título
+
+Campos de entrada
+
+Botón de inicio de sesión
+
+Mensajes de error
+
+Asegurar que en pantallas pequeñas también esté bien centrado

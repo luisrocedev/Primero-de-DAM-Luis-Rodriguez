@@ -1,0 +1,2 @@
+* Carga la lógica necesaria para una sección específica.
+ * Incluye la verificación de sesión, conexión a la base de datos y obtención de registros.
