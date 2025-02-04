@@ -1,15 +1,30 @@
-========== RESET GENERAL SOLO PARA DASHBOARD ==========
+=======================================
+   RESET GENERAL SOLO PARA DASHBOARD
+   =======================================
 
-========== AJUSTE DEL CONTENIDO PRINCIPAL (NO AFECTA EL CRUD) ==========
+=======================================
+   AJUSTE DEL CONTENIDO PRINCIPAL
+   (NO AFECTA EL CRUD)
+   =======================================
 
 Respeta el sidebar
 
-========== ESTILO DEL TÍTULO ==========
+=======================================
+   ESTILO DEL TÍTULO
+   =======================================
 
-========== ESTILO DEL PÁRRAFO DE BIENVENIDA ==========
+=======================================
+   ESTILO DEL PÁRRAFO DE BIENVENIDA
+   =======================================
 
-========== CONTENEDOR DEL DASHBOARD ==========
+=======================================
+   CONTENEDOR DEL DASHBOARD
+   =======================================
 
-========== EFECTO DE HOVER EN EL CONTENEDOR ==========
+=======================================
+   EFECTO DE HOVER EN EL CONTENEDOR
+   =======================================
 
-========== RESPONSIVE PARA MÓVILES ==========
+=======================================
+   RESPONSIVE PARA MÓVILES
+   =======================================

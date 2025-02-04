@@ -1,9 +1,13 @@
-Estilos generales del footer
+=======================================
+   ESTILOS GENERALES DEL FOOTER
+   =======================================
 
 Color oscuro para contraste
 
 Fijar el footer en la parte inferior
 
-Ajuste para evitar superposición con contenido
+=======================================
+   AJUSTE PARA EVITAR SUPERPOSICIÓN CON EL CONTENIDO
+   =======================================
 
 Espacio para que el footer no cubra contenido

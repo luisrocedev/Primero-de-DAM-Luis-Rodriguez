@@ -1,17 +1,29 @@
-========== SIDEBAR (Menú lateral) ==========
+=======================================
+   SIDEBAR (MENÚ LATERAL)
+   =======================================
 
-Título del menú
+=======================================
+   TÍTULO DEL MENÚ
+   =======================================
 
-Lista de opciones
+=======================================
+   LISTA DE OPCIONES
+   =======================================
 
-Estilos de los enlaces del menú
+=======================================
+   ESTILOS DE LOS ENLACES DEL MENÚ
+   =======================================
 
 Íconos dentro del menú
 
 Efecto hover en los enlaces
 
-========== CONTENIDO PRINCIPAL AJUSTADO ==========
+=======================================
+   CONTENIDO PRINCIPAL AJUSTADO
+   =======================================
 
 Ajustar espacio para que no se solape con el menú
 
-========== RESPONSIVE (Ocultar menú en móviles) ==========
+=======================================
+   RESPONSIVE (OCULTAR MENÚ EN MÓVILES)
+   =======================================

@@ -1,6 +1,10 @@
-========== RESET GENERAL ==========
+=======================================
+   RESET GENERAL
+   =======================================
 
-========== PALETA DE COLORES (Variables CSS) ==========
+=======================================
+   PALETA DE COLORES (Variables CSS)
+   =======================================
 
 Azul oscuro
 
@@ -18,20 +22,46 @@ Hover más oscuro
 
 Azul botones
 
-========== ESTILOS GENERALES DEL BODY ==========
+=======================================
+   ESTILOS GENERALES DEL BODY
+   =======================================
 
-========== CONTENEDOR PRINCIPAL ==========
+=======================================
+   CONTENEDOR PRINCIPAL
+   =======================================
 
 Para evitar que se solape con el sidebar
 
-========== CONTENEDOR DEL DASHBOARD ==========
+=======================================
+   CONTENEDOR DEL DASHBOARD
+   =======================================
 
-========== ESTILOS DEL TÍTULO DEL DASHBOARD ==========
+=======================================
+   ESTILOS DEL TÍTULO DEL DASHBOARD
+   =======================================
 
-========== ESTILO DEL TEXTO INFORMATIVO ==========
+=======================================
+   ESTILO DEL TEXTO INFORMATIVO
+   =======================================
 
-========== BOTONES GENERALES ==========
+=======================================
+   BOTONES GENERALES
+   =======================================
 
-========== MENSAJES DE ÉXITO Y ERROR ==========
+Botón primario
 
-========== RESPONSIVE ==========
+Botón de éxito
+
+Botón de peligro
+
+=======================================
+   MENSAJES DE ÉXITO Y ERROR
+   =======================================
+
+Mensajes de éxito
+
+Mensajes de error
+
+=======================================
+   RESPONSIVE (MÓVILES)
+   =======================================
