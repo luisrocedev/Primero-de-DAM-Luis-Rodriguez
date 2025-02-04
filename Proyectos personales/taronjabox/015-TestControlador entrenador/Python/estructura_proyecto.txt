@@ -1,5 +1,0 @@
-Python/
-    .DS_Store
-    creacion estructura modular python.py
-    estructura_proyecto.txt
-    listar carpetas y rutas v2.py
