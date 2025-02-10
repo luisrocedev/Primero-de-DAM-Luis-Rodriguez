@@ -1,21 +1,39 @@
-Resetear márgenes y padding para evitar desplazamientos
+=======================================
+   RESETEO GENERAL DE MÁRGENES Y PADDING
+   =======================================
 
-Estilos generales del login
+=======================================
+   ESTILOS GENERALES DEL LOGIN
+   =======================================
 
 Color de fondo oscuro
 
 Asegura que ocupa todo el viewport
 
-Contenedor del formulario de login
+=======================================
+   CONTENEDOR DEL FORMULARIO DE LOGIN
+   =======================================
 
 Asegura que el contenido interno esté centrado
 
-Estilo del título
+=======================================
+   ESTILO DEL TÍTULO
+   =======================================
 
-Campos de entrada
+=======================================
+   CAMPOS DE ENTRADA
+   =======================================
 
-Botón de inicio de sesión
+=======================================
+   BOTÓN DE INICIO DE SESIÓN
+   =======================================
 
-Mensajes de error
+Efecto hover en el botón
 
-Asegurar que en pantallas pequeñas también esté bien centrado
+=======================================
+   MENSAJES DE ERROR
+   =======================================
+
+=======================================
+   RESPONSIVE: AJUSTE PARA PANTALLAS PEQUEÑAS
+   =======================================

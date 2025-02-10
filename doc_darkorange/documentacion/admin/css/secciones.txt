@@ -1,35 +1,55 @@
-========== CONTENEDOR PRINCIPAL DE CADA SECCIÓN ==========
+=======================================
+   CONTENEDOR PRINCIPAL DE CADA SECCIÓN
+   =======================================
 
 Centrado
 
-✅ Ajustar el contenido para respetar el sidebar a la DERECHA
+=======================================
+   AJUSTAR CONTENIDO PARA RESPETAR EL SIDEBAR A LA DERECHA
+   =======================================
 
-✅ Espacio para el sidebar (ajustado)
+✅ Espacio para el sidebar
 
-========== TÍTULOS DE SECCIÓN ==========
+=======================================
+   TÍTULOS DE SECCIÓN
+   =======================================
 
-========== MENSAJES DE CONFIRMACIÓN Y ERROR ==========
+=======================================
+   MENSAJES DE CONFIRMACIÓN Y ERROR
+   =======================================
 
-========== BOTÓN "CREAR NUEVO REGISTRO" ==========
+Mensajes de éxito
 
-========== TABLA DE REGISTROS MEJORADA ==========
+Mensajes de error
 
-✅ ENCABEZADOS DE LA TABLA
+=======================================
+   BOTÓN "CREAR NUEVO REGISTRO"
+   =======================================
 
-✅ CUERPO DE LA TABLA
+Efecto hover en el botón
+
+=======================================
+   TABLA DE REGISTROS MEJORADA
+   =======================================
+
+✅ Encabezados de la tabla
+
+✅ Cuerpo de la tabla
 
 ✅ ID en negrita y centrado
 
 ✅ Alternar color de filas
 
-✅ CORREGIDO: Alinear correctamente los botones de acción
+=======================================
+   BOTONES DE ACCIÓN
+   =======================================
 
-BOTONES DE ACCIÓN
+✅ Botón Editar
 
-✅ Solución: Todos los botones tendrán el mismo ancho
+✅ Botón Eliminar
 
-Botón Editar
+✅ Hover en los botones
 
-Botón Eliminar
-
-✅ RESPONSIVE PARA MÓVILES
+=======================================
+   RESPONSIVE PARA MÓVILES
+   =======================================
